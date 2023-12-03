@@ -154,6 +154,37 @@ header nav ul li a:hover {
         font-weight: 900;
         line-height: 3rem;
     }
+
+    .button-container {
+        display: flex;
+    }
+
+    .container-padding {
+        padding: 0 1rem !important;
+    }
+
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .8rem !important;
+        cursor: pointer;
+        padding: .5rem 2rem !important;
+    }
+
+    .button-container-margin {
+        margin-top: 2rem;
+    }
+
+    .header-para {
+        font-size: 1rem !important;
+    }
+
+    .home-img {
+        border-radius: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
 }
 
 /* Medium screens (tablets) */
