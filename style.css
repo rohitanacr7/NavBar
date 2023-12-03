@@ -125,14 +125,8 @@ header nav ul li a:hover {
 
 
   
-
-/*----- Screen Responsive -------*/
-@media only screen and (max-width: 900px) {
-    header {
-        padding: 0 30px;
-    }
-}
-@media only screen and (max-width: 700px) {
+/* Small screens (phones) */
+@media only screen and (max-width: 480px) {
     .hamburger {
         display: block;
     }
@@ -157,80 +151,20 @@ header nav ul li a:hover {
         margin: 5px 0;
     }
 
-    /*Home*/
-    .container-padding{
-        padding: 0 1rem !important;
-    }
-
-    .banner-header-text{
-        font-size: 5rem;
-        font-weight: 900;
-        line-height: 3.5rem;
-    }
-    
-    .button-container {
-        display: flex;
-      }
-      
-      .button {
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1.2rem !important;
-        cursor: pointer;
-        padding: .7rem 2rem !important;
-      }
-    
-      .header-para{
-        font-size: 1.5rem !important;
-      }
-    
-      .home-img{
-        border-radius: 1rem;
-        margin-top: 2rem;
-      }
-
-}
-  /* Small screens (phones) */
-  @media only screen and (max-width: 480px) {
-    .hamburger {
-        display: block;
-    }
-    header nav {
-        position: absolute;
-        width: 100%;
-        left: -100%;
-        top: 120px;
-        width: 100%;
-        background: #fff;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-    }
-    header #nav_check:checked ~ nav {
-        left: 0;
-    }
-    header nav ul {
-        display: block;
-    }
-    header nav ul li a {
-        margin: 5px 0;
-    }
-
-    .banner-header-text{
+    .banner-header-text {
         font-size: 3.5rem;
         font-weight: 900;
         line-height: 3rem;
     }
-  }
-  
-  /* Medium screens (tablets) */
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     /* Your styles for medium screens go here */
-  }
-  
-  /* Large screens (desktops) */
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     /*navbar*/
     header nav ul li a {
         display: inline-block;
@@ -244,11 +178,11 @@ header nav ul li a:hover {
         font-size: .8rem;
     }
     /*--Home--*/
-    .container-padding{
+    .container-padding {
         padding: 0 1rem !important;
     }
 
-    .banner-header-text{
+    .banner-header-text {
         font-size: 3rem;
         font-weight: 900;
         line-height: 2rem;
@@ -257,7 +191,7 @@ header nav ul li a:hover {
     .button-container {
         display: flex;
     }
-  
+
     .button {
         text-align: center;
         text-decoration: none;
@@ -267,28 +201,28 @@ header nav ul li a:hover {
         padding: .5rem 2rem !important;
     }
 
-    .button-container-margin{
+    .button-container-margin {
         margin-top: 1.5rem;
-      }
+    }
 
-    .header-para{
+    .header-para {
         font-size: .9rem !important;
     }
 
-    .home-img{
+    .home-img {
         border-radius: 1rem;
         width: 100%;
     }
-  }
-  
-  /* Extra-large screens (large desktops) */
-  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+}
+
+/* Extra-large screens (large desktops) */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
     /*--Home--*/
-    .container-padding{
+    .container-padding {
         padding: 0 2rem !important;
     }
 
-    .banner-header-text{
+    .banner-header-text {
         font-size: 4rem;
         font-weight: 900;
         line-height: 3rem;
@@ -297,7 +231,7 @@ header nav ul li a:hover {
     .button-container {
         display: flex;
     }
-  
+
     .button {
         text-align: center;
         text-decoration: none;
@@ -307,19 +241,19 @@ header nav ul li a:hover {
         padding: .7rem 2rem !important;
     }
 
-    .header-para{
+    .header-para {
         font-size: 1.1rem !important;
     }
 
-    .home-img{
+    .home-img {
         border-radius: 1rem;
         width: 100%;
     }
-  }
-  
-  /* 2K resolution screens */
-  @media only screen and (min-width: 2560px) {
-    header{
+}
+
+/* 2K resolution screens */
+@media only screen and (min-width: 2560px) {
+    header {
         margin-top: 2rem;
     }
 
@@ -339,10 +273,21 @@ header nav ul li a:hover {
         padding: .5rem .5rem;
         font-size: 2rem;
     }
-  }
-  
-  /* 4K resolution screens */
-  @media only screen and (min-width: 2561px) {
+}
+
+/* 4K resolution screens */
+@media only screen and (min-width: 2561px) {
     /* Your styles for 4K resolution screens go here */
-  }
-  
+}
+
+/*----- Screen Responsive -------*/
+@media only screen and (max-width: 991px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+/* Larger screens (fallback for very large desktops) */
+@media only screen and (min-width: 1441px) {
+    /* Your fallback styles for larger screens go here */
+}
