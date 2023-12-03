@@ -119,7 +119,7 @@ header nav ul li a:hover {
   }
 
   .header-para{
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
   }
 
   .home-img{
@@ -134,7 +134,7 @@ header nav ul li a:hover {
     }
 
     .about-us h5 {
-        font-size: 2.4rem !important;
+        font-size: 2.6rem !important;
     }
 
     .about-us hr {
@@ -142,8 +142,12 @@ header nav ul li a:hover {
         opacity: .5;
     }
 
-    .about-us .fonts-section1 {
-        font-size: 1.5rem !important;
+    .about-us .about-bold-text {
+        font-size: 2rem !important;
+    }
+
+    .about-us .about-light-text {
+        font-size: 1.2rem !important;
     }
 
 /* Small screens (phones) */
@@ -207,6 +211,42 @@ header nav ul li a:hover {
         border-radius: 1rem;
         width: 100%;
         margin-top: 2rem;
+    }
+
+    /* About Us */
+    .about-us {
+    background-color: #191E28;
+    border-radius: 1rem; 
+    padding: 15% 15% !important;
+    }
+
+    .about-us h5 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .about-us hr {
+        border: 0.05rem solid white; 
+        opacity: .5;
+    }
+
+    .about-us .about-bold-text {
+        font-size: 1.2rem !important;
+        text-align: start;
+    }
+
+    .about-us .about-light-text {
+        font-size: .9rem !important;
+        text-align: end;
+    }
+
+    .btn-about-us{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin-top: 2rem !important;
+        margin-left: 1rem;
     }
 }
 
