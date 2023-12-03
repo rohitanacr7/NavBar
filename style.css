@@ -179,7 +179,7 @@ header nav ul li a:hover {
     .banner-header-text {
         font-size: 3.5rem;
         font-weight: 900;
-        line-height: 3rem;
+        line-height: 2.2rem;
     }
 
     .button-container {
@@ -194,7 +194,7 @@ header nav ul li a:hover {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: .8rem !important;
+        font-size: 1rem !important;
         cursor: pointer;
         padding: .5rem 2rem !important;
     }
