@@ -252,7 +252,35 @@ header nav ul li a:hover {
 
 /* Medium screens (tablets) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* Your styles for medium screens go here */
+    /* About Us */
+    .about-us {
+        background-color: #191E28;
+        border-radius: 1rem; 
+        padding: 5% 10% !important;
+        }
+    
+        .about-us h5 {
+            font-size: 2rem !important;
+            text-align: center;
+        }
+    
+        .about-us hr {
+            border: 0.05rem solid white; 
+            opacity: .5;
+        }
+    
+        .about-us .about-bold-text {
+            font-size: 1.4rem !important;
+            text-align: start;
+        }
+    
+        .about-us .about-light-text {
+            font-size: .9rem !important;
+        }
+    
+        .btn-about-us{
+            font-size: .9rem !important;
+        }
 }
 
 /* Large screens (desktops) */
@@ -341,6 +369,7 @@ header nav ul li a:hover {
         border-radius: 1rem;
         width: 100%;
     }
+    
 }
 
 /* 2K resolution screens */
@@ -403,6 +432,40 @@ header nav ul li a:hover {
         border-radius: 1rem;
         width: 100%;
     }
+
+    /* About Us */
+  .about-us {
+    background-color: #191E28;
+    border-radius: 1rem; 
+    padding: 5% 10% !important;
+    }
+
+    .about-us h5 {
+        font-size: 5rem !important;
+    }
+
+    .about-us hr {
+        border: 0.05rem solid white; 
+        opacity: .5;
+    }
+
+    .about-us .about-bold-text {
+        font-size: 3.5rem !important;
+    }
+
+    .about-us .about-light-text {
+        font-size: 2.3rem !important;
+    }
+
+    .btn-about-us{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin-top: 5rem !important;
+        font-size: 2rem !important;
+    }
+    
 }
 
 /* 4K resolution screens */
