@@ -123,8 +123,45 @@ header nav ul li a:hover {
     border-radius: 1rem;
   }
 
+@media only screen and (max-width: 380px) {
+    /*--Home--*/
+    .container-padding {
+        padding: 0 1rem !important;
+    }
 
-  
+    .banner-header-text {
+        font-size: .8rem;
+        font-weight: 900;
+        line-height: 1.5rem;
+    }
+
+    .button-container {
+        display: flex;
+    }
+
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .7rem !important;
+        cursor: pointer;
+        padding: .5rem 2rem !important;
+    }
+
+    .button-container-margin {
+        margin-top: 1.5rem;
+    }
+
+    .header-para {
+        font-size: .9rem !important;
+    }
+
+    .home-img {
+        border-radius: 1rem;
+        width: 100%;
+    }
+}
+
 /* Small screens (phones) */
 @media only screen and (max-width: 480px) {
     .hamburger {
