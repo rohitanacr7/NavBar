@@ -1,0 +1,356 @@
+/* Small screens (phones) */
+@media only screen and (max-width: 321px) {
+    .logo {
+        height: 3rem;
+        width: 4.5rem;
+    }
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 120px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+
+    .banner-header-text {
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 1.6rem;
+    }
+
+    .button-container {
+        display: flex;
+    }
+
+    .container-padding {
+        padding: 0 1rem !important;
+    }
+
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .8rem !important;
+        cursor: pointer;
+        padding: .5rem 1rem !important;
+    }
+
+    .button-container-margin {
+        margin-top: 2rem;
+    }
+
+    .header-para {
+        font-size: 1rem !important;
+    }
+
+    .home-img {
+        border-radius: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* About Us */
+    .about-us {
+    background-color: #191E28;
+    border-radius: 1rem; 
+    padding: 15% 15% !important;
+    }
+
+    .about-us h5 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .about-us hr {
+        border: 0.05rem solid white; 
+        opacity: .5;
+    }
+
+    .about-us .about-bold-text {
+        font-size: 1rem !important;
+        text-align: start;
+    }
+
+    .about-us .about-light-text {
+        font-size: .9rem !important;
+        text-align: justify;
+    }
+
+    .btn-about-us{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin-top: 2rem !important;
+        width: 100%;
+    }
+
+    /*-Feautered Images-*/
+    .featured-work-img{
+        border-radius: 1rem !important;
+    }
+
+    .featured-section {
+        margin: 0 0rem !important;
+    }
+
+    .featured-section h1{
+        text-align: center;
+    }
+
+    .featured-all-projects button{
+        margin-top: 2rem !important;
+        font-size: 0.8rem !important;
+        padding: 0.5rem 0.8rem !important;
+        
+    }
+
+}
+/* Small screens (phones) */
+@media only screen and (min-width: 322px) and (max-width: 480px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 120px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+
+    .banner-header-text {
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 2.2rem;
+    }
+
+    .button-container {
+        display: flex;
+    }
+
+    .container-padding {
+        padding: 0 1rem !important;
+    }
+
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem !important;
+        cursor: pointer;
+        padding: .5rem 2rem !important;
+    }
+
+    .button-container-margin {
+        margin-top: 2rem;
+    }
+
+    .header-para {
+        font-size: 1rem !important;
+    }
+
+    .home-img {
+        border-radius: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* About Us */
+    .about-us {
+    background-color: #191E28;
+    border-radius: 1rem; 
+    padding: 15% 15% !important;
+    }
+
+    .about-us h5 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .about-us hr {
+        border: 0.05rem solid white; 
+        opacity: .5;
+    }
+
+    .about-us .about-bold-text {
+        font-size: 1.5rem !important;
+        text-align: start;
+    }
+
+    .about-us .about-light-text {
+        font-size: 1rem !important;
+        text-align: justify;
+    }
+
+    .btn-about-us{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin-top: 2rem !important;
+        width: 100%;
+    }
+
+    /*-Feautered Images-*/
+    .featured-work-img{
+        border-radius: 1rem !important;
+    }
+
+    .featured-section {
+        margin: 0 1rem !important;
+    }
+
+    .featured-section h1{
+        text-align: center;
+    }
+}
+
+/* Small screens (phones) */
+@media only screen and (min-width: 481px) and (max-width: 770px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 120px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+
+    .banner-header-text {
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 2.2rem;
+    }
+
+    .button-container {
+        display: flex;
+    }
+
+    .container-padding {
+        padding: 0 1rem !important;
+    }
+
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem !important;
+        cursor: pointer;
+        padding: .5rem 2rem !important;
+    }
+
+    .button-container-margin {
+        margin-top: 2rem;
+    }
+
+    .header-para {
+        font-size: 1rem !important;
+    }
+
+    .home-img {
+        border-radius: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* About Us */
+    .about-us {
+    background-color: #191E28;
+    border-radius: 1rem; 
+    padding: 15% 15% !important;
+    }
+
+    .about-us h5 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .about-us hr {
+        border: 0.05rem solid white; 
+        opacity: .5;
+    }
+
+    .about-us .about-bold-text {
+        font-size: 1.5rem !important;
+        text-align: start;
+    }
+
+    .about-us .about-light-text {
+        font-size: 1rem !important;
+        text-align: justify;
+    }
+
+    .btn-about-us{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin-top: 2rem !important;
+        width: 100%;
+    }
+
+    /*-Feautered Images-*/
+    .featured-work-img{
+        border-radius: 1rem !important;
+    }
+
+    .featured-section {
+        margin: 0 1rem !important;
+    }
+
+    .featured-section h1{
+        text-align: center;
+    }
+}
+
+/*----- Screen Responsive -------*/
+@media only screen and (max-width: 991px) {
+    header {
+        padding: 0 30px;
+    }
+}

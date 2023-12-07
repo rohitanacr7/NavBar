@@ -1,0 +1,37 @@
+/* Medium screens (tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* About Us */
+    .about-us {
+        background-color: #191E28;
+        border-radius: 1rem; 
+        padding: 5% 10% !important;
+        }
+    
+        .about-us h5 {
+            font-size: 2rem !important;
+            text-align: center;
+        }
+    
+        .about-us hr {
+            border: 0.05rem solid white; 
+            opacity: .5;
+        }
+    
+        .about-us .about-bold-text {
+            font-size: 1.4rem !important;
+            text-align: start;
+        }
+    
+        .about-us .about-light-text {
+            font-size: .9rem !important;
+        }
+    
+        .btn-about-us{
+            font-size: .9rem !important;
+        }
+
+        /*-Feautered Images-*/
+        .featured-work-img{
+            border-radius: 1rem !important;
+        }
+}
