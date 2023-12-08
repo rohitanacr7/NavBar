@@ -109,5 +109,27 @@
     .featured-work h1{
         font-size: 4.5rem !important;
     }
-    
+
+    /*-B2B and B2C Videos-*/
+    .about-us .B2B-bold-text {
+        font-size: 4rem !important;
+    }
+
+    .B2B-text{
+        font-size: 2rem !important;
+    }
+
+    .btn-know-more{
+        font-size: 2rem !important;
+    }
+
+    /*-Who We Helped Explain-*/
+
+    .container-padding-helped{
+        padding: 0 8rem !important;
+    }
+    .helped-margin{
+        margin-bottom: 5rem !important;
+    }
+
 }

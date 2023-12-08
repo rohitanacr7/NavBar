@@ -25,6 +25,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   </head>
   <body>
     <header>
@@ -121,7 +123,7 @@
       </div>
     </section>
     <!-- Featured Work -->
-    <section id="" class="featured-section container-top-space">
+    <section id="featured-work" class="featured-section container-top-space">
       <div
         class="container-fluid container-padding ps-5 pt-1 pe-5 container-top-space"
       >
@@ -175,5 +177,147 @@
         </div>
       </div>
     </section>
+    <!-- B2B and B2C Videos -->
+    <section id="about-us">
+      <div class="container-fluid container-top-space container-padding">
+        <div class="about-us">
+          <div class="row">
+            <div class="col-md-5 text-white B2B-margin-top">
+              <h5 class="B2B-bold-text fw-bold">B2B Videos</h5>
+              <p class="B2B-text">
+                Long presentations are boaring, Persuading them in a short is a
+                cool way. Makes you win the pitchs.
+              </p>
+            </div>
+            <div class="col-md-6 offset-md-1 text-white B2B-margin-top">
+              <h5 class="B2B-bold-text fw-bold">B2C Videos</h5>
+              <p class="B2B-text">
+                Big world, one mouth. Hard to explain your product. Video is the
+                best way to present you idea and product.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary rounded-pill ps-4 pe-4 pt-2 pb-2 mt-3 btn-know-more"
+              >
+                Know more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Who we helped explain -->
+    <div class="container-fluid container-padding-helped container-top-space">
+      <div class="featured-work">
+        <h1 class="text-md-start fw-bold helped-margin helped-text">
+          Who We Helped Explain
+        </h1>
+      </div>
+      <section class="customer-logos slider">
+        <div class="slide">
+          <img src="images/helped_images/logo1.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo2.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo3.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo4.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo5.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo6.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo7.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo8.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo9.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo10.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo11.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo12.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo13.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo14.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo15.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo16.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo17.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="images/helped_images/logo18.png" alt="logo" />
+        </div>
+      </section>
+    </div>
+    <!-- Learn -->
+    <section id="" class="container-top-space">
+      <h2>Learn</h2>
+    </section>
+    <script>
+      $(document).ready(function () {
+        $(".customer-logos").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 1920,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
+            {
+              breakpoint: 1440,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>

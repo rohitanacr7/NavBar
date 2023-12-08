@@ -34,4 +34,15 @@
         .featured-work-img{
             border-radius: 1rem !important;
         }
+
+        /*-Who We Helped Explain-*/
+
+    .helped-text{
+        font-size: 1.5rem !important;
+        text-align: center !important;
+    }
+
+    .container-padding-helped{
+        padding: 0 2rem !important;
+    }
 }

@@ -67,4 +67,31 @@
     .featured-work-img{
         border-radius: 1rem !important;
     }
+
+    /*-B2B and B2C Videos-*/
+    .about-us .B2B-bold-text {
+        font-size: 6rem !important;
+    }
+
+    .B2B-text{
+        font-size: 3.5rem !important;
+    }
+
+    .btn-know-more{
+        font-size: 2.5rem !important;
+    }
+
+    /*-Who We Helped Explain-*/
+    .container-padding-helped{
+        padding: 0 12rem !important;
+    }
+
+    .helped-margin{
+        margin-bottom: 8rem !important;
+    }
+
+    .helped-text{
+        font-size: 8rem !important;
+    }
+
 }

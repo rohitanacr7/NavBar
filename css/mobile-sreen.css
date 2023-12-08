@@ -118,9 +118,42 @@
         margin-top: 2rem !important;
         font-size: 0.8rem !important;
         padding: 0.5rem 0.8rem !important;
-        
     }
 
+    /*-B2B and B2C Videos-*/
+    .about-us .B2B-bold-text {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+
+    .B2B-text{
+        font-size: 1rem !important;
+        text-align: center !important;
+    }
+
+    .btn-know-more{
+        font-size: 1rem !important;
+        width: 100%;
+    }
+
+    .B2B-margin-top {
+        margin-top: 2rem !important; 
+    }
+
+    /*-Who We Helped Explain-*/
+    .helped-margin{
+        margin-bottom: 3rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .slick-slide{
+        margin: 0 .8rem;
+    }
+
+    .helped-text{
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
 }
 /* Small screens (phones) */
 @media only screen and (min-width: 322px) and (max-width: 480px) {
@@ -233,8 +266,47 @@
     .featured-section h1{
         text-align: center;
     }
-}
 
+    /*-B2B and B2C Videos-*/
+    .about-us .B2B-bold-text {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+
+    .B2B-text{
+        font-size: 1rem !important;
+        text-align: center !important;
+    }
+
+    .btn-know-more{
+        font-size: 1rem !important;
+        width: 100%;
+    }
+
+    .B2B-margin-top:nth-child(2) {
+        margin-top: 2rem !important; 
+    }
+
+    /*-Who We Helped Explain-*/
+    .helped-margin{
+        margin-bottom: 3rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .slick-slide{
+        margin: 0 1rem;
+    }
+
+    .helped-text{
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+
+    .container-padding-helped{
+        padding: 0 2rem !important;
+    }
+
+}
 /* Small screens (phones) */
 @media only screen and (min-width: 481px) and (max-width: 770px) {
     .hamburger {
@@ -346,11 +418,66 @@
     .featured-section h1{
         text-align: center;
     }
+
+    /*-B2B and B2C Videos-*/
+    .about-us .B2B-bold-text {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+
+    .B2B-text{
+        font-size: 1.3rem !important;
+        text-align: center !important;
+    }
+
+    .btn-know-more{
+        font-size: 1rem !important;
+        width: 100%;
+        margin-bottom: 2rem !important;
+    }
+
+    .B2B-margin-top {
+        margin-top: 2rem !important; 
+    }
+
+    /*-Who We Helped Explain-*/
+    .helped-margin{
+        margin-bottom: 3rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .slick-slide{
+        margin: 0 .8rem;
+    }
+
+    .helped-text{
+        font-size: 1.5rem !important;
+        text-align: center !important;
+    }
+
+    .container-padding-helped{
+        padding: 0 2rem !important;
+    }
 }
 
 /*----- Screen Responsive -------*/
 @media only screen and (max-width: 991px) {
     header {
         padding: 0 30px;
+    }
+
+    /*-Who We Helped Explain-*/
+    .helped-margin{
+        margin-bottom: 3rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .slick-slide{
+        margin: 0 1rem;
+    }
+
+    .helped-text{
+        font-size: 1.2rem !important;
+        text-align: center !important;
     }
 }
