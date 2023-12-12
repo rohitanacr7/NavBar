@@ -1,13 +1,13 @@
 /* 2K resolution screens */
 @media only screen and (min-width: 2560px) {
     header {
-        margin-top: 2rem;
-        margin-bottom: 4rem;
+        margin-top: 8rem !important;
+        margin-bottom: 10rem !important;
     }
 
     .logo {
-        height: 7rem;
-        width: 10rem;
+        height: 8rem;
+        width: 12rem;
     }
 
     header nav ul li a {
@@ -130,6 +130,58 @@
     }
     .helped-margin{
         margin-bottom: 5rem !important;
+    }
+
+    /*-Learn-*/
+    .learn-text{
+        margin-top: 1rem;
+        font-size: 1.2rem !important;
+        font-weight: 500;
+        margin-bottom: 3rem !important;
+    }
+
+    .learn-last{
+        margin-bottom: -1rem !important;
+    }
+
+    .learn-text-bold{
+        font-size: 2rem !important;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    /*-Learn-*/
+    .learn-text{
+        margin-top: 1rem;
+        font-size: 2.5rem !important;
+        font-weight: 500;
+    }
+
+    .btn-see-more{
+        font-size: 2rem !important;
+    }
+
+    /* What they say about us */
+    .comments-text-bold{
+        font-size: 3.5rem !important;
+        font-weight: 900;
+    }
+
+    .comments-text{
+        font-size: 3rem !important;
+    }
+
+    /* Social Media Styles */
+    .social-text {
+        font-size: 5rem !important; 
+        font-weight: 900 !important;
+        line-height: 6rem !important;
+        color: #FFF !important;
+        margin-bottom: 5rem !important;
+    }
+
+    .mobile-top-margin{
+        margin-top: 5rem;
     }
 
 }

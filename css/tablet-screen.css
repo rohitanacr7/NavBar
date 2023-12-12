@@ -35,8 +35,7 @@
             border-radius: 1rem !important;
         }
 
-        /*-Who We Helped Explain-*/
-
+    /*-Who We Helped Explain-*/
     .helped-text{
         font-size: 1.5rem !important;
         text-align: center !important;
@@ -45,4 +44,38 @@
     .container-padding-helped{
         padding: 0 2rem !important;
     }
+
+    /*-Learn-*/
+    .learn-text{
+        margin-top: 1rem;
+        font-size: .8rem !important;
+        font-weight: 500;
+    }
+
+    .learn-text-bold{
+        font-size: 2rem !important;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    /* What they say about us */
+
+    .btn-arrow{
+        display: none !important;
+    }
+    
+    /* Social Media Styles */
+    .social-text {
+        font-size: 1.5rem !important; 
+        font-weight: 900 !important;
+        line-height: 2.4rem !important;
+        color: #FFF !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .mobile-top-margin{
+        margin-top: 5rem;
+    }
 }
+
+

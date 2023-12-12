@@ -17,6 +17,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -29,7 +33,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   </head>
   <body>
-    <header>
+    <header class="container-fluid container-padding-helped">
       <img src="images/logo.jpg" alt="logo" class="logo" />
       <input type="checkbox" id="nav_check" hidden />
       <nav>
@@ -59,8 +63,8 @@
     </header>
     <!--Home Container-->
     <section id="home">
-      <div class="container-fluid container-padding mt-3">
-        <div class="row container-padding pt-3">
+      <div class="container-fluid container-padding-helped mt-5">
+        <div class="row pt-md-3">
           <div class="col-md-6 col-sm-12">
             <p class="banner-header-text mt-3">We do more</p>
             <p class="banner-header-text">than just tell</p>
@@ -69,7 +73,7 @@
               <button class="button btn btn-primary rounded-pill">
                 See Our Work
               </button>
-              <button class="button btn btn-dark rounded-pill ms-4">
+              <button class="button btn btn-sm btn-dark rounded-pill ms-4">
                 Let's Talk
               </button>
             </div>
@@ -94,7 +98,9 @@
     </section>
     <!-- About Us -->
     <section id="about-us">
-      <div class="container-fluid container-padding container-top-space">
+      <div
+        class="container-fluid container-padding mobile-top-margin container-top-space"
+      >
         <div class="about-us">
           <h5 class="text-white fs-3 fw-bold">About Us</h5>
           <hr />
@@ -125,7 +131,7 @@
     <!-- Featured Work -->
     <section id="featured-work" class="featured-section container-top-space">
       <div
-        class="container-fluid container-padding ps-5 pt-1 pe-5 container-top-space"
+        class="container-fluid container-padding ps-5 pt-1 pe-5 mobile-top-margin container-top-space"
       >
         <div class="featured-work">
           <h1 class="fw-bold">Featured Work</h1>
@@ -179,7 +185,9 @@
     </section>
     <!-- B2B and B2C Videos -->
     <section id="about-us">
-      <div class="container-fluid container-top-space container-padding">
+      <div
+        class="container-fluid container-top-space mobile-top-margin container-padding"
+      >
         <div class="about-us">
           <div class="row">
             <div class="col-md-5 text-white B2B-margin-top">
@@ -207,9 +215,11 @@
       </div>
     </section>
     <!-- Who we helped explain -->
-    <div class="container-fluid container-padding-helped container-top-space">
-      <div class="featured-work">
-        <h1 class="text-md-start fw-bold helped-margin helped-text">
+    <div
+      class="container-fluid container-padding-helped mobile-top-margin container-top-space"
+    >
+      <div class="featured-work container-padding">
+        <h1 class="text-md-start helped-margin helped-text">
           Who We Helped Explain
         </h1>
       </div>
@@ -271,9 +281,238 @@
       </section>
     </div>
     <!-- Learn -->
-    <section id="" class="container-top-space">
-      <h2>Learn</h2>
+    <section
+      id="learn"
+      class="container-fluid container-padding-helped container-top-space"
+    >
+      <div class="featured-work container-padding">
+        <h1 class="text-md-start helped-margin learn-text-bold">Learn</h1>
+      </div>
+      <div class="row container-padding">
+        <div class="col-md-4">
+          <img
+            src="images/work/Works-1.jpg"
+            alt="Works-1"
+            class="img-fluid learn-img"
+          />
+          <p class="learn-text">
+            How video is the best way to explain your product in all the other
+            media.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="images/work/Works-2.png"
+            alt="Works-1"
+            class="img-fluid learn-img"
+          />
+          <p class="learn-text">
+            Why do you remember most of old TV commercials but not print ads?
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="images/work/Works-3.jpg"
+            alt="Works-1"
+            class="img-fluid learn-img"
+          />
+          <p class="learn-text learn-last">
+            How world’s most big brands are marketed by videos.
+          </p>
+        </div>
+      </div>
+      <div
+        class="featured-all-projects d-flex align-items-end justify-content-end"
+      >
+        <button
+          class="btn btn-outline-dark rounded-pill pt-md-3 pb-md-3 ps-md-5 pe-md-5 btn-see-more"
+        >
+          See More
+        </button>
+      </div>
     </section>
+    <!-- What they say about us -->
+    <section id="about-us-slider">
+      <div
+        class="container-fluid container-padding-helped mobile-top-margin container-top-space"
+      >
+        <div class="about-us-slider container-padding">
+          <h1 class="comments-text-bold">What they say about us</h1>
+          <hr />
+          <p class="col-12 comments-text comments-margin" id="comment">
+            [Dynamic Comment]
+          </p>
+          <div class="row comments-margin">
+            <div
+              class="rounded-pill bg-primary text-white col-md-3 pt-2 pb-2 ps-4"
+            >
+              <p class="my-auto fw-bold comments-text" id="name">
+                [Dynamic Name]
+              </p>
+            </div>
+            <div
+              class="col-md-6 col-sm-6 offset-md-3 d-flex justify-content-end align-items-end"
+            >
+              <button
+                type="button"
+                class="btn btn-primary rounded-circle arrow-bg me-3 btn-arrow"
+              >
+                <i class="bi bi-arrow-left fs-4 text-white"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary rounded-circle arrow-bg btn-arrow"
+              >
+                <i class="bi bi-arrow-right fs-4 text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Behance and Instagram -->
+    <div
+      class="container-fluid container-top-space mobile-top-margin container-padding"
+    >
+      <section id="about-us-social">
+        <div class="about-us">
+          <div class="row">
+            <div class="col-md-9">
+              <h4 class="social-text">
+                If you want to see full case studies, click on our
+                <span class="bg-primary rounded-pill ps-3 pe-3 pt-1 pb-1"
+                  >Behance</span
+                >
+                account. And for cool animations we've made, check out
+                <span class="insta rounded-pill ps-3 pe-3 pt-1 pb-1"
+                  >Instagram</span
+                >.
+              </h4>
+            </div>
+            <div
+              class="col-md-3 text-white d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="images/StoryHumorLogoTrans.png"
+                alt="logo"
+                class="img-fluid w-75"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Contact Us-->
+    <section
+      id="ContactUs"
+      class="ContactUs mobile-top-margin container-top-space"
+    >
+      <div class="container contact">
+        <p class="fw-bold fs-3">Got an idea, Let’s Talk!</p>
+        <hr />
+        <div class="row" class="contactform">
+          <div class="col-md-6">
+            <input
+              type="text"
+              id="name"
+              name="Name"
+              class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
+              placeholder="Name"
+            /><br /><br />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              id="Email"
+              name="Email"
+              placeholder="Email"
+              class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
+            /><br /><br />
+          </div>
+        </div>
+        <div class="row" class="contactform">
+          <div class="col-md-6">
+            <input
+              type="text"
+              id="contact"
+              name="ContactUs"
+              class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
+              placeholder="Contact number"
+            /><br /><br />
+          </div>
+          <div class="col-md-6">
+            <select
+              name="dropdown1"
+              id="dropdown1"
+              class="col-12 ps-4 pt-3 pb-3 contact-gradient dropdown"
+            >
+              <option value="How did you hear about us" class="blue-bg">
+                How did you hear about us?
+              </option>
+              <option value="Friend or Business Referral" class="blue-bg">
+                Friend or Business Referral
+              </option>
+              <option value="Google" class="blue-bg">Google</option>
+              <option value="LinkedIn" class="blue-bg">LinkedIn</option>
+              <option value="Instagram" class="blue-bg">Instagram</option>
+              <option value="Other" class="blue-bg">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row" class="contactform">
+          <div class="col-md-12 col-sm-12">
+            <textarea
+              type="text"
+              id="txtarea"
+              class="col-md-12 col-sm-12 ps-4 pe-4 pt-2 pb-2 w-100 contact-textarea contact-gradient"
+              placeholder="Your Message"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end pe-2">
+            <button
+              class="btn btn-primary rounded-pill btn-dark pt-2 pb-2 ps-4 pe-4 mt-3"
+              type="button"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+        <div class="row mb-5 container-top-space">
+          <div class="col-md-4 mt-5">
+            <div>
+              <p class="footer-head">Reach Us</p>
+              <p class="mt-5 footer-para fs-6">+91 8800610267</p>
+              <p class="footer-para fs-6 mt-2">hello@sugartint.com</p>
+              <p class="footer-para fs-6 mt-2">
+                10 Floor, Summit, Vibhuti Khand,
+              </p>
+              <p class="footer-para fs-6">Gomtinagar, Lucknow,</p>
+              <p class="footer-para fs-6">Uttar Pradesh, India. -226501</p>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div>
+              <p class="footer-head">Social</p>
+              <p class="mt-5 footer-para fs-6">Vimeo</p>
+              <p class="mt-3 footer-para fs-6">Instagram</p>
+              <p class="mt-3 footer-para fs-6">Behance</p>
+              <p class="mt-3 footer-para fs-6">Linkedin</p>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div>
+              <p>&nbsp;</p>
+              <p class="mt-5 footer-para fs-6">Work</p>
+              <p class="mt-3 footer-para fs-6">About Us</p>
+              <p class="mt-3 footer-para fs-6">Blog</p>
+              <p class="mt-3 footer-para fs-6">Explore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/main.js"></script>
     <script>
       $(document).ready(function () {
         $(".customer-logos").slick({
@@ -282,19 +521,22 @@
           autoplay: true,
           autoplaySpeed: 1500,
           arrows: false,
-          dots: false,
+          infinite: true,
+          cssEase: "ease",
+          draggable: true,
+          swipeToSlide: true,
           pauseOnHover: false,
           responsive: [
             {
               breakpoint: 1920,
               settings: {
-                slidesToShow: 5,
+                slidesToShow: 6,
               },
             },
             {
               breakpoint: 1440,
               settings: {
-                slidesToShow: 4,
+                slidesToShow: 5,
               },
             },
             {

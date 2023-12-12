@@ -94,4 +94,42 @@
         font-size: 8rem !important;
     }
 
+    /*-Learn-*/
+    .learn-text{
+        margin-top: 4rem;
+        font-size: 4rem !important;
+        font-weight: 500;
+    }
+
+    .learn-text-bold{
+        font-size: 6rem !important;
+        font-weight: 900;
+    }
+
+    .btn-see-more{
+        font-size: 3rem !important;
+    }
+
+    /* What they say about us */
+    .comments-text-bold{
+        font-size: 6rem !important;
+        font-weight: 900;
+    }
+
+    .comments-text{
+        font-size: 5rem !important;
+    }
+
+    /* Social Media Styles */
+    .social-text {
+        font-size: 8rem !important; 
+        font-weight: 900 !important;
+        line-height: 10rem !important;
+        color: #FFF !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .mobile-top-margin{
+        margin-top: 15rem;
+    }
 }

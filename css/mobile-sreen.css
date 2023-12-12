@@ -154,6 +154,50 @@
         font-size: 1.2rem !important;
         text-align: center !important;
     }
+
+    .container-padding-helped{
+        padding: 0 2rem !important;
+    }
+
+    /*-Learn-*/
+    .learn-text{
+        margin-top: 1rem;
+        font-size: 1rem !important;
+        font-weight: 500;
+        margin-bottom: 3rem !important;
+    }
+
+    .learn-last{
+        margin-bottom: -1rem !important;
+    }
+
+    /* What they say about us */
+
+    .btn-arrow{
+        display: none !important;
+    }
+    
+    .comments-text-bold{
+        font-size: 1.2rem !important;
+        font-weight: 900;
+    }
+
+    .comments-text{
+        font-size: 1rem !important;
+    }
+
+    /* Social Media Styles */
+    .social-text {
+        font-size: 1.2rem !important; 
+        font-weight: 900 !important;
+        line-height: 2rem !important;
+        color: #FFF !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .mobile-top-margin{
+        margin-top: 5rem;
+    }
 }
 /* Small screens (phones) */
 @media only screen and (min-width: 322px) and (max-width: 480px) {
@@ -300,10 +344,57 @@
     .helped-text{
         font-size: 2rem !important;
         text-align: center !important;
+        font-weight: 900 !important;
     }
 
     .container-padding-helped{
         padding: 0 2rem !important;
+    }
+
+    /*-Learn-*/
+    .learn-text{
+        margin-top: 1rem;
+        font-size: 1.2rem !important;
+        font-weight: 500;
+        margin-bottom: 3rem !important;
+    }
+
+    .learn-last{
+        margin-bottom: -1rem !important;
+    }
+
+    .learn-text-bold{
+        font-size: 2rem !important;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    /* What they say about us */
+    .btn-arrow{
+        display: none !important;
+    }
+
+    .comments-text-bold{
+        font-size: 1.5rem !important;
+        font-weight: 900;
+    }
+
+    .comments-text{
+        font-size: 1rem !important;
+    }
+
+    /* Social Media Styles */
+    .social-text {
+        font-size: 2rem !important; 
+        font-weight: 900 !important;
+        line-height: 3rem !important;
+        color: #FFF !important;
+        margin-bottom: 2rem !important;
+        text-align: left;
+    }
+
+    .mobile-top-margin{
+        margin-top: 5rem;
     }
 
 }
@@ -372,9 +463,9 @@
 
     /* About Us */
     .about-us {
-    background-color: #191E28;
-    border-radius: 1rem; 
-    padding: 15% 15% !important;
+        background-color: #191E28;
+        border-radius: 1rem; 
+        padding: 15% 15% !important;
     }
 
     .about-us h5 {
@@ -458,10 +549,33 @@
     .container-padding-helped{
         padding: 0 2rem !important;
     }
-}
 
+    /*-Learn-*/
+    .learn-text{
+        margin-top: 1rem;
+        font-size: .8rem !important;
+        font-weight: 500;
+    }
+
+    .learn-text-bold{
+        font-size: 2rem !important;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    /* What they say about us */
+    .comments-text-bold{
+        font-size: 2rem !important;
+        font-weight: 900;
+    }
+
+    .comments-text{
+        font-size: 1.2rem !important;
+    }
+
+}
 /*----- Screen Responsive -------*/
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
     header {
         padding: 0 30px;
     }
@@ -479,5 +593,45 @@
     .helped-text{
         font-size: 1.2rem !important;
         text-align: center !important;
+    }
+
+    /*-Learn-*/
+    .learn-text{
+        margin-top: 1rem;
+        font-size: 1.2rem !important;
+        font-weight: 500;
+    }
+
+    .learn-text-bold{
+        font-size: 2rem !important;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .container-padding-helped{
+        padding: 0 2rem !important;
+    }
+
+    /* What they say about us */
+    .comments-text-bold{
+        font-size: 2rem !important;
+        font-weight: 900;
+    }
+
+    .comments-text{
+        font-size: 1.5rem !important;
+    }
+    
+    /* Social Media Styles */
+    .social-text {
+        font-size: 2rem !important; 
+        font-weight: 900 !important;
+        line-height: 3rem !important;
+        color: #FFF !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .mobile-top-margin{
+        margin-top: 5rem;
     }
 }
