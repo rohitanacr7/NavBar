@@ -259,6 +259,54 @@ header nav ul li a:hover {
         background: linear-gradient(to right, #FF312C, #FFB131);
     }
 
+    /* Contact Us */
+    .contact-textarea,
+    .contact-gradient{
+        border: none;
+        border-radius: 0.7rem; 
+        background-color: #E9F0FE !important;
+    }
+
+    #dropdown1 option {
+        border-radius: 0.7rem; 
+        background: #007BFF;
+        color: white;
+        border: none;
+    }
+
+    .btn-btnsubmit {
+        align-items: end;
+    }
+
+    .footer-para {
+        font-family: 'Urbanist', sans-serif !important;
+        font-size: 1.2rem !important;
+    }
+
+    .last-footer-section{
+        margin-top: 5rem !important;
+    }
+
+    .footer-link{
+        color: #000;
+    }
+
+    .footer-hr{
+        display: none;
+    }
+
+    ::placeholder {
+        color: black;
+        opacity: 1;
+    }
+
+    .contact.dropdown,
+    .blue-bg {
+        background-color: #2061F2;
+        color: white;
+    }
+
+
 /* Extra-large screens (large desktops) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     /*--Home--*/

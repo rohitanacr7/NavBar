@@ -198,6 +198,12 @@
     .mobile-top-margin{
         margin-top: 5rem;
     }
+
+    /* Contact Us */
+    .contact-textarea{
+        margin-top: 1.6rem !important;
+        margin-bottom: 2rem !important;
+    }
 }
 /* Small screens (phones) */
 @media only screen and (min-width: 322px) and (max-width: 480px) {
@@ -395,6 +401,28 @@
 
     .mobile-top-margin{
         margin-top: 5rem;
+    }
+
+    /* Contact Us */
+    .contact-textarea{
+        margin-top: 1.6rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    /*Footer*/
+    .footer{
+        text-align: center !important;
+        margin-top: 5rem !important;
+    }
+
+    .footer-hr{
+        display: block;
+        margin: 2rem 0;
+    }
+
+    .last-footer-section{
+        margin-top: 0 !important;
+        margin-bottom: -5rem !important;
     }
 
 }
