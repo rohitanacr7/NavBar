@@ -397,4 +397,22 @@
         opacity: 1;
     }
 
+    .service-section h5{
+        font-size: 2.5rem !important;
+    }
+
+    .service-section p{
+        font-size: 2rem !important;
+    }
+
+    .service-section {
+        flex: 1 0 calc(33.33% - 20px);
+        margin: 1rem .6rem;
+        padding: 3rem 2.5rem;
+        box-sizing: border-box;
+    }
+
+    .margin-head-create{
+        margin-top: 10rem;
+    }
 }
