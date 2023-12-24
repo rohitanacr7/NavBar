@@ -394,6 +394,19 @@ header nav ul li a:hover {
         margin-left: 3rem;
     }
 
+    .about-us {
+        background-color: #191E28;
+        border-radius: 1rem; 
+        padding: 3rem 7rem !important;
+    }
+
+    .chit-chat{
+        color: #FFF;
+        font-weight: 900;
+        font-size: 3rem !important;
+        line-height: 4.5rem;
+    }
+
     .accordion-margin{
         margin-top: 3rem !important;
     }
@@ -514,5 +527,98 @@ header nav ul li a:hover {
 
     .mobile-top-margin{
         margin-top: 5rem;
+    }
+
+    /* About Us Page  */
+    .banner-header-about-text{
+        font-size: 3.5rem !important;
+        font-weight: 900 !important;
+        line-height: 2.8rem !important;
+    }
+
+    .who-we-are-head{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .who-we-are-para-1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+
+    .who-we-are-para-2{
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .who-we-are-para-img{
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .what-motivates-our-actions-para-1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2rem;
+        margin-top: 2rem;
+    }
+
+    .what-motivates-our-actions-para-2{
+        margin-top: 2rem;
+        font-size: .98rem !important;
+        font-weight: 500;
+        line-height: 2rem;
+        margin-left: .5rem !important;
+    }
+
+    .about-us {
+        background-color: #191E28;
+        border-radius: 1rem; 
+        padding: 3rem 3rem !important;
+    }
+
+    .chit-chat{
+        color: #FFF;
+        font-weight: 900;
+        font-size: 2.5rem !important;
+        line-height: 3.2rem;
+    }
+
+    .accordion-margin{
+        margin-top: 3rem !important;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url(../images/minus.png) !important;
+        transform: rotate(-180deg);
+    }
+
+    .accordion-button::after {
+        flex-shrink: 0;
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: auto;
+        content: "";
+        background-image: url(../images/plus.png) !important;
+        background-repeat: no-repeat;
+        background-size: 1.3rem;
+        transition: transform .2s ease-in-out;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #000 !important;
+        font-weight: 600 !important;
+        background-color: hsl(0, 0%, 100%) !important; 
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
+    }
+    
+    .accordion-button{
+        font-weight: 600 !important;
+        font-size: 1rem !important;
     }
 }
