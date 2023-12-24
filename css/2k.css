@@ -6,8 +6,8 @@
     }
 
     .logo {
-        height: 8rem;
-        width: 12rem;
+        height: 10rem;
+        width: 15rem;
     }
 
     header nav ul li a {
@@ -18,7 +18,7 @@
         text-transform: uppercase;
         transition: 0.2s;
         font-weight: 600;
-        padding: .5rem .5rem;
+        padding: .5rem 1.5rem;
         font-size: 2rem;
     }
 
@@ -284,6 +284,117 @@
 
     .accordion-body{
         font-size: 2rem !important;
+    }
+
+    /*Learn Page*/
+    .banner-header-learn-text{
+        font-size: 7rem !important;
+        font-weight: 900 !important;
+        line-height: 9rem;
+    }
+
+    .learn-search{
+        padding: 2rem 3rem !important;
+        border: 1px solid #000 !important;
+        margin-bottom: 10rem !important;
+        font-size: 2rem !important;
+    }
+
+    .learn-search::placeholder{
+        color: #000 !important;
+    }
+
+    .pagination{
+        margin-top: 5rem !important;
+        margin-bottom: 5rem !important;
+        /* display: flex !important; */
+        display: none !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .learn-pagination{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        background-color: #FFF !important;
+        margin-right: .5rem !important;
+        font-weight: 600;
+    }
+
+    .learn-pagination:hover{
+        background-color: #007BFF !important;
+        color: #FFF !important;
+        border: none !important;
+    }
+
+    .GotIdea-text{
+        font-size: 5rem !important;
+        font-weight: 900 !important;
+        color: #FFF !important;
+    }
+
+    .GotIdea-button{
+        font-size: 2.5rem !important;
+        padding: 1rem 5rem !important;
+        margin-top: 1rem !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /*footer*/
+    .footer-head{
+        font-size: 4rem !important;
+        font-weight: 900 !important;
+        margin-bottom: 5rem !important;
+    }
+
+    .footer-address{
+        margin-bottom: 0 !important;
+    }
+
+    .footer-para {
+        font-family: 'Urbanist', sans-serif !important;
+        font-size: 2rem !important;
+        font-weight: 600 !important;
+    }
+
+    .footer-margin-section-2{
+        margin-bottom: 2rem !important;
+    }
+
+    .footer-margin-section-3{
+        margin-bottom: 2rem !important;
+    }
+
+    .footer-margin-section-3-first{
+        margin-top: 10rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .footer-link{
+        color: #000 !important;
+    }
+
+    .footer-link:hover{
+        color: #007BFF !important;
+    }
+
+    .last-footer-section{
+        margin-top: 5rem !important;
+    }
+
+    ul{
+        padding-left: 0 !important;
+    }
+
+
+    .footer-hr{
+        display: none;
+    }
+
+    ::placeholder {
+        color: black;
+        opacity: 1;
     }
 
 }

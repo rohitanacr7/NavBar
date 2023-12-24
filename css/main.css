@@ -278,18 +278,51 @@ header nav ul li a:hover {
         align-items: end;
     }
 
+    /*footer*/
+    .footer-head{
+        font-size: 2rem !important;
+        font-weight: 900 !important;
+    }
+
+    .footer-address{
+        margin-bottom: 0 !important;
+    }
+
     .footer-para {
         font-family: 'Urbanist', sans-serif !important;
-        font-size: 1.2rem !important;
+        font-size: 1.3rem !important;
+        font-weight: 600 !important;
+    }
+
+    .footer-margin-section-2{
+        margin-bottom: 1.4rem !important;
+    }
+
+    .footer-margin-section-3{
+        margin-bottom: 1.4rem !important;
+    }
+
+    .footer-margin-section-3-first{
+        margin-top: 2.5rem !important;
+        margin-bottom: 1.4rem !important;
+    }
+
+    .footer-link{
+        color: #000 !important;
+    }
+
+    .footer-link:hover{
+        color: #007BFF !important;
     }
 
     .last-footer-section{
         margin-top: 5rem !important;
     }
 
-    .footer-link{
-        color: #000;
+    ul{
+        padding-left: 0 !important;
     }
+
 
     .footer-hr{
         display: none;
@@ -305,48 +338,6 @@ header nav ul li a:hover {
         background-color: #2061F2;
         color: white;
     }
-
-    /*new footer*/
-    .footer-16371 {
-        padding: 7rem 0;
-        font-family: "Poppins", sans-serif; }
-        .footer-16371 .footer-site-logo {
-          text-align: center;
-          font-size: 2rem;
-          font-weight: 900; }
-          .footer-16371 .footer-site-logo a {
-            color: #4200ff; }
-        .footer-16371 .nav-links {
-          padding: 0;
-          margin: 0; }
-          .footer-16371 .nav-links li {
-            display: inline-block; }
-            .footer-16371 .nav-links li a {
-              padding: 10px;
-              color: #000; }
-              .footer-16371 .nav-links li a:hover {
-                color: #4200ff; }
-        .footer-16371 .social h3 {
-          font-weight: bold;
-          font-size: 18px;
-          color: #000; }
-        .footer-16371 .social ul li {
-          display: inline-block; }
-          .footer-16371 .social ul li a {
-            display: inline-block;
-            padding: 10px; }
-          .footer-16371 .social ul li.in a {
-            color: #df588a; }
-          .footer-16371 .social ul li.tw a {
-            color: #15b8ff; }
-          .footer-16371 .social ul li.fb a {
-            color: #3742d0; }
-          .footer-16371 .social ul li.dr a {
-            color: #fa38c1; }
-          .footer-16371 .social ul li.pin a {
-            color: #dd4d5a; }
-        .footer-16371 .copyright {
-          color: #999999; }
 
     /* About Us Page  */
     .banner-header-about-text{
@@ -438,6 +429,57 @@ header nav ul li a:hover {
     .accordion-button{
         font-weight: 600 !important;
         font-size: 1.5rem !important;
+    }
+
+    /*Learn Page*/
+    .banner-header-learn-text{
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 4rem;
+    }
+
+    .learn-search{
+        padding: 1rem 2rem !important;
+        border: 1px solid #000 !important;
+        margin-bottom: 5rem !important;
+    }
+
+    .learn-search::placeholder{
+        color: #000 !important;
+    }
+
+    .pagination{
+        margin-top: 5rem !important;
+        margin-bottom: 5rem !important;
+        /* display: flex !important; */
+        display: none !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .learn-pagination{
+        height: 3.5rem !important;
+        width: 3.5rem !important;
+        background-color: #FFF !important;
+        margin-right: 1rem !important;
+        font-weight: 600;
+    }
+
+    .learn-pagination:hover{
+        background-color: #007BFF !important;
+        color: #FFF !important;
+        border: none !important;
+    }
+
+    .GotIdea-text{
+        font-size: 5rem !important;
+        font-weight: 900 !important;
+        color: #FFF !important;
+    }
+
+    .GotIdea-button{
+        font-size: 2rem !important;
+        padding: 1rem 3rem !important;
     }
 
 /* Extra-large screens (large desktops) */
@@ -620,5 +662,107 @@ header nav ul li a:hover {
     .accordion-button{
         font-weight: 600 !important;
         font-size: 1rem !important;
+    }
+
+    /*footer*/
+    .footer-head{
+        font-size: 1.6rem !important;
+        font-weight: 900 !important;
+    }
+
+    .footer-address{
+        margin-bottom: 0 !important;
+    }
+
+    .footer-block-3{
+        display: block !important;
+    }
+    .footer-para {
+        font-family: 'Urbanist', sans-serif !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+    }
+
+    .footer-margin-section-2{
+        margin-bottom: 1.2rem !important;
+    }
+
+    .footer-margin-section-3{
+        margin-bottom: 1.2rem !important;
+    }
+
+    .footer-margin-section-3-first{
+        margin-top: 2.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .footer-link-hover:hover{
+        color: #007BFF;
+    }
+
+    .last-footer-section{
+        margin-top: 5rem !important;
+    }
+
+    .footer-link{
+        color: #000;
+    }
+
+    .footer-hr{
+        display: none;
+    }
+
+    /*Learn Page*/
+    .banner-header-learn-text{
+        font-size: 2.8rem !important;
+        font-weight: 900 !important;
+        line-height: 2.5rem;
+    }
+
+    .learn-search{
+        padding: .5rem 2rem !important;
+        border: 1px solid #000 !important;
+        margin-bottom: 5rem !important;
+    }
+
+    .learn-search::placeholder{
+        color: #000 !important;
+    }
+
+    .pagination{
+        margin-top: 5rem !important;
+        margin-bottom: 5rem !important;
+        /* display: flex !important; */
+        display: none;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .learn-pagination{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        background-color: #FFF !important;
+        margin-right: .5rem !important;
+        font-weight: 600;
+    }
+
+    .learn-pagination:hover{
+        background-color: #007BFF !important;
+        color: #FFF !important;
+        border: none !important;
+    }
+
+    .GotIdea-text{
+        font-size: 3rem !important;
+        font-weight: 900 !important;
+        color: #FFF !important;
+    }
+
+    .GotIdea-button{
+        font-size: 1.3rem !important;
+        padding: .5rem 2rem !important;
+        margin-top: 1rem !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }

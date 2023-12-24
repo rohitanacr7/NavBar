@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StoryHumor - Learn</title>
     <link rel="stylesheet" href="css/style.css" />
-    <title>StoryHumor - Contact</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -38,15 +38,17 @@
   </head>
   <body>
     <header class="container-fluid container-padding-helped">
-      <img src="images/logo.jpg" alt="logo" class="logo" />
+      <a href="index.html"
+        ><img src="images/logo.jpg" alt="logo" class="logo"
+      /></a>
       <input type="checkbox" id="nav_check" hidden />
       <nav>
         <ul>
           <li>
-            <a href="./work.html">Work</a>
+            <a href="">Work</a>
           </li>
           <li>
-            <a href="./service.html">Service</a>
+            <a href="">Service</a>
           </li>
           <li>
             <a href="./about.html">About</a>
@@ -68,13 +70,13 @@
       </label>
     </header>
     <!--Home Container-->
-    <section id="home">
+    <section id="home" class="home">
       <div class="container-fluid container-padding-helped mt-5">
-        <div class="row pt-md-3">
+        <div class="row">
           <div class="col-md-6 col-sm-12">
-            <p class="banner-header-text">Have a Story</p>
-            <p class="banner-header-text mt-4">Ready to</p>
-            <p class="banner-header-text mt-5">Talk?</p>
+            <p class="banner-header-learn-text">The world's most</p>
+            <p class="banner-header-learn-text">influential market is</p>
+            <p class="banner-header-learn-text">dominated by videos</p>
             <div class="button-container button-container-margin">
               <button class="button btn btn-primary rounded-pill">
                 See Our Work
@@ -84,9 +86,9 @@
               </button>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-12 mt-md-2">
             <img
-              src="images/Cover.jpg"
+              src="images/learn-banner.png"
               alt="header Image"
               class="col-12 home-img"
             />
@@ -94,132 +96,155 @@
         </div>
       </div>
     </section>
-    <!--Contact Us-->
-    <section id="ContactUs">
-      <div
-        class="container-fluid container-padding-helped mobile-top-margin container-top-space contact"
-      >
-        <h1 class="comments-text-bold">Let us know about your idea</h1>
-        <hr />
-        <br /><br />
-        <div class="row" class="contactform">
-          <div class="col-md-6">
+    <!--Learn-->
+    <section id="learn" class="learn">
+      <div class="container-fluid container-padding-helped container-top-space">
+        <div class="row">
+          <div class="offset-md-8 col-md-4">
             <input
               type="text"
-              id="name"
-              name="Name"
-              class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
-              placeholder="Name"
-            /><br /><br />
-          </div>
-          <div class="col-md-6">
-            <input
-              type="text"
-              id="Email"
-              name="Email"
-              placeholder="Email"
-              class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
-            /><br /><br />
+              class="form-control rounded-pill learn-search"
+              placeholder="Search"
+            />
           </div>
         </div>
-        <div class="row" class="contactform">
-          <div class="col-md-6">
-            <input
-              type="text"
-              id="contact"
-              name="ContactUs"
-              class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
-              placeholder="Contact number"
-            /><br /><br />
+        <div class="row container-padding">
+          <div class="col-md-4">
+            <img
+              src="images/work/Works-1.jpg"
+              alt="Works-1"
+              class="img-fluid learn-img"
+            />
+            <p class="learn-text">
+              How video is the best way to explain your product in all the other
+              media.
+            </p>
           </div>
-          <div class="col-md-6">
-            <select
-              name="dropdown1"
-              id="dropdown1"
-              class="col-12 ps-4 pt-3 pb-3 contact-gradient dropdown"
-            >
-              <option value="How did you hear about us" class="blue-bg">
-                How did you hear about us?
-              </option>
-              <option value="Friend or Business Referral" class="blue-bg">
-                Friend or Business Referral
-              </option>
-              <option value="Google" class="blue-bg">Google</option>
-              <option value="LinkedIn" class="blue-bg">LinkedIn</option>
-              <option value="Instagram" class="blue-bg">Instagram</option>
-              <option value="Other" class="blue-bg">Other</option>
-            </select>
+          <div class="col-md-4">
+            <img
+              src="images/work/Works-2.png"
+              alt="Works-1"
+              class="img-fluid learn-img"
+            />
+            <p class="learn-text">
+              Why do you remember most of old TV commercials but not print ads?
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="images/work/Works-3.jpg"
+              alt="Works-1"
+              class="img-fluid learn-img"
+            />
+            <p class="learn-text learn-last">
+              How world’s most big brands are marketed by videos.
+            </p>
           </div>
         </div>
-        <div class="row" class="contactform">
-          <div class="col-md-12 col-sm-12">
-            <textarea
-              type="text"
-              id="txtarea"
-              class="col-md-12 col-sm-12 ps-4 pe-4 pt-2 pb-2 w-100 contact-textarea contact-gradient"
-              placeholder="Your Message"
-              rows="5"
-            ></textarea>
+        <div class="row container-padding mt-5">
+          <div class="col-md-4">
+            <img
+              src="images/work/Works-4.jpg"
+              alt="Works-1"
+              class="img-fluid learn-img"
+            />
+            <p class="learn-text">
+              How video is the best way to explain your product in all the other
+              media.
+            </p>
           </div>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end pe-2">
-            <button
-              class="btn btn-primary rounded-pill btn-dark pt-2 pb-2 ps-4 pe-4 mt-3"
-              type="button"
-            >
-              Submit
-            </button>
+          <div class="col-md-4">
+            <img
+              src="images/work/Works-5.jpg"
+              alt="Works-1"
+              class="img-fluid learn-img"
+            />
+            <p class="learn-text">
+              Why do you remember most of old TV commercials but not print ads?
+            </p>
           </div>
+          <div class="col-md-4">
+            <img
+              src="images/work/Works-6.jpg"
+              alt="Works-1"
+              class="img-fluid learn-img"
+            />
+            <p class="learn-text learn-last">
+              How world’s most big brands are marketed by videos.
+            </p>
+          </div>
+        </div>
+        <div class="row container-padding mt-5">
+          <div class="col-md-4">
+            <img
+              src="images/work/Works-7.jpg"
+              alt="Works-1"
+              class="img-fluid learn-img"
+            />
+            <p class="learn-text">
+              How video is the best way to explain your product in all the other
+              media.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="images/work/Works-8.jpg"
+              alt="Works-1"
+              class="img-fluid learn-img"
+            />
+            <p class="learn-text">
+              Why do you remember most of old TV commercials but not print ads?
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="images/work/Works-9.jpg"
+              alt="Works-1"
+              class="img-fluid learn-img"
+            />
+            <p class="learn-text learn-last">
+              How world’s most big brands are marketed by videos.
+            </p>
+          </div>
+        </div>
+        <div class="pagination">
+          <button type="button" class="rounded-circle learn-pagination">
+            <i class="bi bi-chevron-compact-left"></i>
+          </button>
+          <button type="button" class="rounded-circle learn-pagination">
+            1
+          </button>
+          <button type="button" class="rounded-circle learn-pagination">
+            2
+          </button>
+          <button type="button" class="rounded-circle learn-pagination">
+            <i class="bi bi-chevron-compact-right"></i>
+          </button>
+          <button type="button" class="rounded-circle learn-pagination">
+            10
+          </button>
         </div>
       </div>
     </section>
-    <!-- Don’t have anything in mind,you can still message us,It’s awsome to make new friends -->
+    <!-- Got an Idea -->
     <div
-      class="container-fluid container-top-space mobile-top-margin container-padding"
-    >
-      <div class="container">
-        <hr />
-      </div>
-      <section id="about-us-social">
-        <div class="about-us bg-white">
-          <div class="row">
-            <div class="col-md-9">
-              <h4 class="social-text text-dark">
-                Don’t have anything in mind, you can still message us, It’s
-                awsome to make new friends
-              </h4>
-            </div>
-            <div
-              class="col-md-3 text-white d-flex justify-content-center align-items-center"
-            >
-              <img
-                src="images/white_bg_logo.png"
-                alt="logo"
-                class="img-fluid w-75"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- follow us on -->
-    <div
-      class="container-fluid container-top-space mobile-top-margin container-padding-helped"
+      class="container-fluid container-top-space mobile-top-margin container-padding-helped mb-5"
     >
       <section id="about-us-social">
         <div class="about-us bg-primary">
           <div class="row">
-            <div class="col-md-12">
-              <h4 class="social-text">
-                Or you can follow us on
-                <span class="insta rounded-pill ps-3 pe-3 pt-1 pb-1"
-                  >Instagram</span
-                >
-                or
-                <span class="bg-dark rounded-pill ps-3 pe-3 pt-1 pb-1"
-                  >Behance</span
-                >
-                for latest updates. .
-              </h4>
+            <div class="col-md-9">
+              <h4 class="GotIdea-text">Got an idea?</h4>
+            </div>
+            <div
+              class="col-md-3 text-white d-flex justify-content-end align-items-center"
+            >
+              <button
+                type="button"
+                class="btn btn-dark rounded-pill GotIdea-button"
+              >
+                Let's Talk
+              </button>
             </div>
           </div>
         </div>
@@ -237,7 +262,7 @@
             <p class="footer-para footer-margin-section-1">
               hello@storyhumor.com
             </p>
-            <p class="footer-para footer-margin-section-1 footer-address">
+            <p class="footer-para footer-address">
               10 Floor, Summit, Vibhuti Khand,
             </p>
             <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
