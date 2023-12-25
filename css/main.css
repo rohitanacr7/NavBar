@@ -494,7 +494,7 @@ header nav ul li a:hover {
       }
 
       .image-size{
-        width: 30% !important;
+        width: 10rem !important;
       }
     
       .service-section {
@@ -502,6 +502,14 @@ header nav ul li a:hover {
         margin: 1rem .6rem;
         padding: 1.8rem 1.3rem;
         box-sizing: border-box;
+      }
+
+      .learn-image-section .service-section:first-child{
+        padding: 0 !important;
+      }
+
+      .search-col{
+        display: none !important;
       }
 
     .verticle-padding{
