@@ -524,6 +524,8 @@ header nav ul li a:hover {
         border-radius: 1rem !important;
     }
 
+    
+
 /* Extra-large screens (large desktops) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     /*--Home--*/
