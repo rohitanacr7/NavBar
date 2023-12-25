@@ -516,6 +516,14 @@ header nav ul li a:hover {
         display: none !important;
     }
 
+    .home-video{
+        padding: 1rem !important;
+    }
+
+    .home-video iframe{
+        border-radius: 1rem !important;
+    }
+
 /* Extra-large screens (large desktops) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     /*--Home--*/
