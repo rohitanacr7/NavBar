@@ -265,6 +265,7 @@ header nav ul li a:hover {
         border: none;
         border-radius: 0.7rem; 
         background-color: #E9F0FE !important;
+        margin-top: 1rem !important;
     }
 
     #dropdown1 option {
@@ -532,7 +533,18 @@ header nav ul li a:hover {
         border-radius: 1rem !important;
     }
 
+    .modal-title i {
+        margin-right: 8px;
+        font-size: 1.5rem;
+      }
     
+      .modal-header {
+        border-bottom: 2px solid #d9d9d9;
+      }
+    
+      .modal-body {
+        padding: 20px;
+      }
 
 /* Extra-large screens (large desktops) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
