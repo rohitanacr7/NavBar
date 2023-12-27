@@ -43,6 +43,41 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      // Initialize EmailJS with your correct service ID
+      (function () {
+        emailjs.init("rkHbLB0zEG8yrILt5");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        // Attach a submit event listener to the form
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Generate a random contact number
+            this.contact_number.value = (Math.random() * 100000) | 0;
+
+            // Send the form using EmailJS
+            emailjs.sendForm("service_fs6v6lc", "template_wydf3r5", this).then(
+              function () {
+                console.log("SUCCESS!");
+                $("#successModal").modal("show");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                $("#errorModal").modal("show");
+              }
+            );
+          });
+      };
+    </script>
   </head>
   <body>
     <header class="container-fluid container-padding-helped">
@@ -431,127 +466,83 @@
       <div
         class="container-fluid container-padding-helped mobile-top-margin container-top-space contact"
       >
-        <h1 class="comments-text-bold">Got an idea, Let’s Talk!</h1>
+        <h1 class="comments-text-bold">Let us know about your idea</h1>
         <hr />
         <br /><br />
-        <div class="row" class="contactform">
-          <div class="col-md-6">
-            <input
-              type="text"
-              id="name"
-              name="Name"
-              class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
-              placeholder="Name"
-            /><br /><br />
-          </div>
-          <div class="col-md-6">
-            <input
-              type="text"
-              id="Email"
-              name="Email"
-              placeholder="Email"
-              class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
-            /><br /><br />
-          </div>
-        </div>
-        <div class="row" class="contactform">
-          <div class="col-md-6">
-            <input
-              type="text"
-              id="contact"
-              name="ContactUs"
-              class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
-              placeholder="Contact number"
-            /><br /><br />
-          </div>
-          <div class="col-md-6">
-            <select
-              name="dropdown1"
-              id="dropdown1"
-              class="col-12 ps-4 pt-3 pb-3 contact-gradient dropdown"
-            >
-              <option value="How did you hear about us" class="blue-bg">
-                How did you hear about us?
-              </option>
-              <option value="Friend or Business Referral" class="blue-bg">
-                Friend or Business Referral
-              </option>
-              <option value="Google" class="blue-bg">Google</option>
-              <option value="LinkedIn" class="blue-bg">LinkedIn</option>
-              <option value="Instagram" class="blue-bg">Instagram</option>
-              <option value="Other" class="blue-bg">Other</option>
-            </select>
-          </div>
-        </div>
-        <div class="row" class="contactform">
-          <div class="col-md-12 col-sm-12">
-            <textarea
-              type="text"
-              id="txtarea"
-              class="col-md-12 col-sm-12 ps-4 pe-4 pt-2 pb-2 w-100 contact-textarea contact-gradient"
-              placeholder="Your Message"
-              rows="5"
-            ></textarea>
-          </div>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end pe-2">
-            <button
-              class="btn btn-primary rounded-pill btn-dark pt-2 pb-2 ps-4 pe-4 mt-3"
-              type="button"
-            >
-              Submit
-            </button>
-          </div>
-        </div>
-        <!-- <div
-          class="row container-fluid mobile-top-margin container-top-space footer mb-5"
-        >
-          <div class="col-md-4 mt-5">
-            <div>
-              <p class="comments-text-bold">Reach Us</p>
-              <p class="mt-5 footer-para">+91 7525853573</p>
-              <p class="footer-para mt-2">hello@storyhumor.com</p>
-              <p class="footer-para mt-2">10 Floor, Summit, Vibhuti Khand,</p>
-              <p class="footer-para">Gomtinagar, Lucknow,</p>
-              <p class="footer-para">Uttar Pradesh, India. -226501</p>
+
+        <!-- Updated form with EmailJS integration -->
+        <form id="contact-form">
+          <input type="hidden" name="contact_number" />
+
+          <div class="row contactform">
+            <div class="col-md-6">
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
+                placeholder="Name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                id="Email"
+                name="user_email"
+                placeholder="Email"
+                class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
+              />
             </div>
           </div>
-          <div class="col-md-4 mt-md-5">
-            <hr class="footer-hr" />
-            <div>
-              <p class="comments-text-bold">Social</p>
-              <p class="mt-5 footer-para">
-                <a class="footer-link" href="#">Vimeo</a>
-              </p>
-              <p class="mt-3 footer-para">
-                <a class="footer-link" href="#">Instagram</a>
-              </p>
-              <p class="mt-3 footer-para">
-                <a class="footer-link" href="#">Behance</a>
-              </p>
-              <p class="mt-3 footer-para">
-                <a class="footer-link" href="#">Linkedin</a>
-              </p>
+
+          <div class="row contactform">
+            <div class="col-md-6">
+              <input
+                type="text"
+                id="contact"
+                name="user_contact"
+                class="col-12 ps-4 pe-4 pt-3 pb-3 contact-gradient"
+                placeholder="Contact number"
+              />
+            </div>
+            <div class="col-md-6">
+              <select
+                name="dropdown1"
+                id="dropdown1"
+                class="col-12 ps-4 pt-3 pb-3 contact-gradient dropdown"
+              >
+                <option value="Friend or Business Referral" class="blue-bg">
+                  Friend or Business Referral
+                </option>
+                <option value="Google" class="blue-bg">Google</option>
+                <option value="LinkedIn" class="blue-bg">LinkedIn</option>
+                <option value="Instagram" class="blue-bg">Instagram</option>
+                <option value="Other" class="blue-bg">Other</option>
+              </select>
             </div>
           </div>
-          <div class="col-md-4 last-footer-section">
-            <hr class="footer-hr" />
-            <div>
-              <p class="emptyElement">&nbsp;</p>
-              <p class="mt-5 footer-para">
-                <a class="footer-link" href="#">Work</a>
-              </p>
-              <p class="mt-3 footer-para">
-                <a class="footer-link" href="#">About Us</a>
-              </p>
-              <p class="mt-3 footer-para">
-                <a class="footer-link" href="#">Blog</a>
-              </p>
-              <p class="mt-3 footer-para">
-                <a class="footer-link" href="#">Explore</a>
-              </p>
+
+          <div class="row contactform">
+            <div class="col-md-12 col-sm-12">
+              <textarea
+                type="text"
+                id="txtarea"
+                name="message"
+                class="col-md-12 col-sm-12 ps-4 pe-4 pt-2 pb-2 w-100 contact-textarea contact-gradient"
+                placeholder="Your Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end pe-2">
+              <button
+                class="btn btn-primary rounded-pill btn-dark pt-2 pb-2 ps-4 pe-4 mt-3"
+                type="submit"
+              >
+                Submit
+              </button>
             </div>
           </div>
-        </div> -->
+        </form>
       </div>
     </section>
     <!--Footer-->
@@ -651,6 +642,64 @@
         </div>
       </div>
     </footer>
+    <!-- Success Modal -->
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="successModalLabel">
+              <i class="bi bi-check-circle-fill"></i> Thank You!
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Your message was sent successfully.</p>
+            <p>
+              We appreciate your interest and will get back to you as soon as
+              possible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Error Modal -->
+    <div
+      class="modal fade"
+      id="errorModal"
+      tabindex="-1"
+      aria-labelledby="errorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="errorModalLabel">
+              <i class="bi bi-exclamation-triangle-fill text-danger"></i> Error
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Oops! Something went wrong. Please try again later.
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="js/main.js"></script>
     <script>
       $(document).ready(function () {
