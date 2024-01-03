@@ -28,42 +28,71 @@
         margin: 5px 0;
     }
 
-    .banner-header-text {
-        font-size: 2.5rem;
+    .banner-header-text{
+        font-size: 2rem !important;
         font-weight: 900;
-        line-height: 1.6rem;
-    }
-
-    .button-container {
-        display: flex;
-    }
-
-    .container-padding {
-        padding: 0 1rem !important;
-    }
-
-    .button {
+        line-height: 1.3rem !important;
         text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: .8rem !important;
-        cursor: pointer;
-        padding: .5rem 1rem !important;
     }
 
-    .button-container-margin {
-        margin-top: 2rem;
+    .home .mt-3{
+        margin-top: 2rem !important;    
     }
 
-    .header-para {
-        font-size: 1rem !important;
-    }
+  .header-para{
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+  }
 
-    .home-img {
-        border-radius: 1rem;
-        width: 100%;
-        margin-top: 2rem;
-    }
+  .hero-video{
+    width: 265px;
+    height: 150px;
+    margin-top: 2rem !important;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem !important;
+    cursor: pointer;
+    padding: .5rem .7rem !important;
+  }
+
+  .button-container-margin{
+    margin-top: 2rem !important;
+  }
+
+  .btn-group-sm>.btn, .btn-sm{
+    width: 120px !important;
+  }
+
+  .btn-primary{
+    width: 120px !important;
+  }
+
+  .volume-toggle {
+    position: absolute;
+    top: 45px; /* Adjust the top position as needed */
+    right: 15px; /* Adjust the right position as needed */
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    background-color: #000000; /* Background color of the toggle button */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px; /* Adjust the font size as needed */
+    z-index: 1; /* Ensure the icon is above the iframe */
+  }
 
     /* About Us */
     .about-us {
@@ -432,7 +461,7 @@
     }
 }
 /* Small screens (phones) */
-@media only screen and (min-width: 322px) and (max-width: 480px) {
+@media only screen and (min-width: 322px) and (max-width: 479px) {
     .hamburger {
         display: block;
     }
@@ -457,42 +486,71 @@
         margin: 5px 0;
     }
 
-    .banner-header-text {
-        font-size: 3.5rem;
+    .banner-header-text{
+        font-size: 2.7rem !important;
         font-weight: 900;
-        line-height: 2.2rem;
-    }
-
-    .button-container {
-        display: flex;
-    }
-
-    .container-padding {
-        padding: 0 1rem !important;
-    }
-
-    .button {
+        line-height: 1.5rem !important;
         text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1rem !important;
-        cursor: pointer;
-        padding: .5rem 2rem !important;
     }
 
-    .button-container-margin {
-        margin-top: 2rem;
+    .home .mt-3{
+        margin-top: 2rem !important;    
     }
 
-    .header-para {
-        font-size: 1rem !important;
-    }
+  .header-para{
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+  }
 
-    .home-img {
-        border-radius: 1rem;
-        width: 100%;
-        margin-top: 2rem;
-    }
+  .hero-video{
+    width: 350px;
+    height: 200px;
+    margin-top: 2rem !important;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem !important;
+    cursor: pointer;
+    padding: .5rem .7rem !important;
+  }
+
+  .button-container-margin{
+    margin-top: 3rem !important;
+  }
+
+  .btn-group-sm>.btn, .btn-sm{
+    width: 120px !important;
+  }
+
+  .btn-primary{
+    width: 120px !important;
+  }
+
+  .volume-toggle {
+    position: absolute;
+    top: 45px; /* Adjust the top position as needed */
+    right: 25px; /* Adjust the right position as needed */
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    background-color: #000000; /* Background color of the toggle button */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px; /* Adjust the font size as needed */
+    z-index: 1; /* Ensure the icon is above the iframe */
+  }
 
     /* About Us */
     .about-us {
@@ -881,7 +939,7 @@
 
 }
 /* Small screens (phones) */
-@media only screen and (min-width: 481px) and (max-width: 770px) {
+@media only screen and (min-width: 480px) and (max-width: 599px) {
     .hamburger {
         display: block;
     }
@@ -906,42 +964,484 @@
         margin: 5px 0;
     }
 
-    .banner-header-text {
-        font-size: 3.5rem;
+    .banner-header-text{
+        font-size: 2.7rem !important;
         font-weight: 900;
-        line-height: 2.2rem;
-    }
-
-    .button-container {
-        display: flex;
-    }
-
-    .container-padding {
-        padding: 0 1rem !important;
-    }
-
-    .button {
+        line-height: 1.5rem !important;
         text-align: center;
-        text-decoration: none;
-        display: inline-block;
+    }
+
+    .home .mt-3{
+        margin-top: 2rem !important;    
+    }
+
+  .header-para{
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+  }
+
+  .hero-video{
+    width: 400px;
+    height: 230px;
+    margin-top: 2rem !important;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem !important;
+    cursor: pointer;
+    padding: .5rem .7rem !important;
+  }
+
+  .button-container-margin{
+    margin-top: 3rem !important;
+  }
+
+  .btn-group-sm>.btn, .btn-sm{
+    width: 120px !important;
+  }
+
+  .btn-primary{
+    width: 120px !important;
+  }
+
+  .volume-toggle {
+    position: absolute;
+    top: 45px; /* Adjust the top position as needed */
+    right: 15px; /* Adjust the right position as needed */
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    background-color: #000000; /* Background color of the toggle button */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px; /* Adjust the font size as needed */
+    z-index: 1; /* Ensure the icon is above the iframe */
+  }
+
+    /* About Us */
+    .about-us {
+        background-color: #191E28;
+        border-radius: 1rem; 
+        padding: 15% 15% !important;
+    }
+
+    .about-us h5 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .about-us hr {
+        border: 0.05rem solid white; 
+        opacity: .5;
+    }
+
+    .about-us .about-bold-text {
+        font-size: 1.5rem !important;
+        text-align: start;
+    }
+
+    .about-us .about-light-text {
         font-size: 1rem !important;
-        cursor: pointer;
-        padding: .5rem 2rem !important;
+        text-align: justify;
     }
 
-    .button-container-margin {
-        margin-top: 2rem;
-    }
-
-    .header-para {
-        font-size: 1rem !important;
-    }
-
-    .home-img {
-        border-radius: 1rem;
+    .btn-about-us{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin-top: 2rem !important;
         width: 100%;
+    }
+
+    /*-Feautered Images-*/
+    .featured-work-img{
+        border-radius: 1rem !important;
+    }
+
+    .featured-section {
+        margin: 0 1rem !important;
+    }
+
+    .featured-section h1{
+        text-align: center;
+    }
+
+    /*-B2B and B2C Videos-*/
+    .about-us .B2B-bold-text {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+
+    .B2B-text{
+        font-size: 1.3rem !important;
+        text-align: center !important;
+    }
+
+    .btn-know-more{
+        font-size: 1rem !important;
+        width: 100%;
+        margin-bottom: 2rem !important;
+    }
+
+    .B2B-margin-top {
+        margin-top: 2rem !important; 
+    }
+
+    /*-Who We Helped Explain-*/
+    .helped-margin{
+        margin-bottom: 3rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .slick-slide{
+        margin: 0 .8rem;
+    }
+
+    .helped-text{
+        font-size: 1.5rem !important;
+        text-align: center !important;
+    }
+
+    .container-padding-helped{
+        padding: 0 2rem !important;
+    }
+
+    /*-Learn-*/
+    .learn-text{
+        margin-top: 1rem;
+        font-size: .8rem !important;
+        font-weight: 500;
+    }
+
+    .learn-text-bold{
+        font-size: 2rem !important;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    /* What they say about us */
+    .comments-text-bold{
+        font-size: 2rem !important;
+        font-weight: 900;
+    }
+
+    .comments-text{
+        font-size: 1.2rem !important;
+    }
+
+    /*footer*/
+    .footer-head{
+        font-size: 1.6rem !important;
+        font-weight: 900 !important;
+    }
+
+    .footer-address{
+        margin-bottom: 0 !important;
+    }
+
+    .footer-para {
+        font-family: 'Urbanist', sans-serif !important;
+        font-size: .9rem !important;
+        font-weight: 600 !important;
+    }
+
+    .footer-margin-section-2{
+        margin-bottom: 1rem !important;
+    }
+
+    .footer-margin-section-3{
+        margin-bottom: 1rem !important;
+    }
+
+    .footer-margin-section-3-first{
+        margin-top: 2.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .footer-link-hover:hover{
+        color: #007BFF;
+    }
+
+    .last-footer-section{
+        margin-top: 5rem !important;
+    }
+
+    .footer-link{
+        color: #000;
+    }
+
+    .footer-hr{
+        display: none;
+    }
+
+    /* About Us Page  */
+    .banner-header-about-text{
+        font-size: 2.7rem !important;
+        font-weight: 900 !important;
+        line-height: 2rem !important;
+    }
+
+    .who-we-are-head{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .who-we-are-para-1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+
+    .who-we-are-para-2{
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .who-we-are-para-img{
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .what-motivates-our-actions-para-1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2rem;
         margin-top: 2rem;
     }
+
+    .what-motivates-our-actions-para-2{
+        margin-top: 2rem;
+        font-size: .98rem !important;
+        font-weight: 500;
+        line-height: 2rem;
+        margin-left: .5rem !important;
+    }
+
+    .about-us {
+        background-color: #191E28;
+        border-radius: 1rem; 
+        padding: 3rem 3rem !important;
+    }
+
+    .chit-chat{
+        color: #FFF;
+        font-weight: 900;
+        font-size: 2rem !important;
+        line-height: 3rem;
+    }
+
+    .accordion-margin{
+        margin-top: 3rem !important;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url(../images/minus.png) !important;
+        transform: rotate(-180deg);
+    }
+
+    .accordion-button::after {
+        flex-shrink: 0;
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: auto;
+        content: "";
+        background-image: url(../images/plus.png) !important;
+        background-repeat: no-repeat;
+        background-size: 1.3rem;
+        transition: transform .2s ease-in-out;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #000 !important;
+        font-weight: 600 !important;
+        background-color: hsl(0, 0%, 100%) !important; 
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
+    }
+    
+    .accordion-button{
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+    }
+
+    /*Learn Page*/
+    .banner-header-learn-text{
+        font-size: 2rem !important;
+        font-weight: 900 !important;
+        line-height: 1.5rem;
+    }
+
+    .banner-header-learn-text:first-child{
+        margin-top: 4rem !important;
+    }
+
+    .learn-search{
+        padding: .5rem 2rem !important;
+        border: 1px solid #000 !important;
+        margin-bottom: 5rem !important;
+        margin-top: 1rem !important;
+    }
+
+    .learn-search::placeholder{
+        color: #000 !important;
+    }
+
+    .pagination{
+        margin-top: 5rem !important;
+        margin-bottom: 5rem !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .learn-pagination{
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        background-color: #FFF !important;
+        margin-right: .5rem !important;
+        font-weight: 600;
+    }
+
+    .learn-pagination:hover{
+        background-color: #007BFF !important;
+        color: #FFF !important;
+        border: none !important;
+    }
+
+    .GotIdea-text{
+        font-size: 3rem !important;
+        font-weight: 900 !important;
+        color: #FFF !important;
+    }
+
+    .GotIdea-button{
+        font-size: 1rem !important;
+        padding: .5rem 1.5rem !important;
+        margin-top: 1rem !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+    }
+
+    .image-size{
+        width: 10rem !important;
+    }
+
+    .home-video{
+        padding: 1rem !important;
+    }
+
+
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 120px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+
+    .banner-header-text{
+        font-size: 2.7rem !important;
+        font-weight: 900;
+        line-height: 1.5rem !important;
+        text-align: center;
+    }
+
+    .home .mt-3{
+        margin-top: 2rem !important;    
+    }
+
+  .header-para{
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+  }
+
+  .hero-video{
+    width: 400px;
+    height: 230px;
+    margin-top: 2rem !important;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem !important;
+    cursor: pointer;
+    padding: .5rem .7rem !important;
+  }
+
+  .button-container-margin{
+    margin-top: 3rem !important;
+  }
+
+  .btn-group-sm>.btn, .btn-sm{
+    width: 120px !important;
+  }
+
+  .btn-primary{
+    width: 120px !important;
+  }
+
+  .volume-toggle {
+    position: absolute;
+    top: 45px; /* Adjust the top position as needed */
+    right: 15px; /* Adjust the right position as needed */
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    background-color: #000000; /* Background color of the toggle button */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px; /* Adjust the font size as needed */
+    z-index: 1; /* Ensure the icon is above the iframe */
+  }
 
     /* About Us */
     .about-us {
@@ -1266,7 +1766,7 @@
 
 }
 /*----- Screen Responsive -------*/
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 991px) and (max-width: 1023px) {
     header {
         padding: 0 30px;
     }
@@ -1279,7 +1779,7 @@
     border: 3px solid transparent;
     transition: 0.2s;
     font-weight: 600;
-    font-size: .9rem !important;
+    font-size: .8rem !important;
     padding: .5rem .5rem;
     }
 
@@ -1287,17 +1787,17 @@
     .banner-header-text{
         font-size: 3rem !important;
         font-weight: 900;
-        line-height: 3rem !important;
+        line-height: 2rem !important;
     }
 
     .header-para{
-        font-size: 2rem !important;
+        font-size: 2.5rem !important;
         font-weight: 600 !important;
     }
 
   .hero-video{
-    width: 530px !important;
-    height: 305px !important;
+    width: 520px !important;
+    height: 300px !important;
   }
 
   .button-container {
@@ -1324,7 +1824,7 @@
   .volume-toggle {
     position: absolute;
     top: 25px; /* Adjust the top position as needed */
-    right: 25px; /* Adjust the right position as needed */
+    right: 25px !important; /* Adjust the right position as needed */
     width: 30px;
     height: 30px;
     color: #ffffff;

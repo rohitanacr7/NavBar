@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width:1023px) {
     /*navbar*/
     header nav ul li a {
         display: inline-block;
@@ -17,9 +17,10 @@
     }
         
     .banner-header-text{
-        font-size: 2rem;
+        font-size: 2.2rem !important;
         font-weight: 900;
         line-height: 1.5rem !important;
+        text-align: start !important;
     }
 
   .header-para{
@@ -28,7 +29,7 @@
   }
 
   .hero-video{
-    width: 400px;
+    width: 410px;
     height: 230px;
   }
 
@@ -59,8 +60,8 @@
 
   .volume-toggle {
     position: absolute;
-    top: 15px; /* Adjust the top position as needed */
-    right: 5px; /* Adjust the right position as needed */
+    top: 45px !important; /* Adjust the top position as needed */
+    right: 5px !important; /* Adjust the right position as needed */
     width: 25px;
     height: 25px;
     color: #ffffff;
@@ -84,7 +85,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width:1278px) {
   /*navbar*/
   header nav ul li a {
       display: inline-block;
@@ -170,7 +171,7 @@
   }
 }
 
-@media only screen and (min-width: 1279px) {
+@media only screen and (min-width: 1279px) and (max-width:1365px) {
     /*NavBar*/
     header nav ul li a {
         display: inline-block;
@@ -248,7 +249,7 @@
     }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1366px) and (max-width:1439px) {
     /*NavBar*/
     header nav ul li a {
         display: inline-block;
@@ -317,7 +318,7 @@
       }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) and (max-width:1679px) {
     /*NavBar*/
     header nav ul li a {
         display: inline-block;
@@ -508,6 +509,23 @@
   
     .btn-group-sm>.btn, .btn-sm{
       width: 200px !important;
+    }
+
+    .volume-toggle {
+      position: absolute;
+      top: 25px; /* Adjust the top position as needed */
+      right: 45px; /* Adjust the right position as needed */
+      width: 30px;
+      height: 30px;
+      color: #ffffff;
+      background-color: #000000; /* Background color of the toggle button */
+      border-radius: 50%; /* Make it circular */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 20px; /* Adjust the font size as needed */
+      z-index: 1; /* Ensure the icon is above the iframe */
     }
 
     /* Feature Section */
