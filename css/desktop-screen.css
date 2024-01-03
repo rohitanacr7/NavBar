@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
     /*navbar*/
     header nav ul li a {
         display: inline-block;
@@ -84,6 +84,92 @@
     }
 }
 
+@media only screen and (min-width: 1024px) {
+  /*navbar*/
+  header nav ul li a {
+      display: inline-block;
+      color: #000;
+      margin: 0 10px;
+      border: 3px solid transparent;
+      text-transform: uppercase;
+      transition: 0.2s;
+      font-weight: 600;
+      padding: .3rem .5rem;
+      font-size: .8rem;
+  }
+  /*--Home--*/
+  .container-padding {
+      padding: 0 1rem !important;
+  }
+      
+  .banner-header-text{
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.5rem !important;
+  }
+
+.header-para{
+  font-size: .9rem !important;
+  font-weight: 600 !important;
+}
+
+.hero-video{
+  width: 490px;
+  height: 270px;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: .8rem !important;
+  cursor: pointer;
+  padding: .5rem .7rem !important;
+}
+
+.button-container-margin{
+  margin-top: 2rem !important;
+}
+
+.btn-group-sm>.btn, .btn-sm{
+  width: 120px !important;
+}
+
+.btn-primary{
+  width: 120px !important;
+}
+
+.volume-toggle {
+  position: absolute;
+  top: 15px; /* Adjust the top position as needed */
+  right: 5px; /* Adjust the right position as needed */
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+  background-color: #000000; /* Background color of the toggle button */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px; /* Adjust the font size as needed */
+  z-index: 1; /* Ensure the icon is above the iframe */
+}
+
+  /*-Feautered Images-*/
+  .featured-work-img{
+      border-radius: 1rem !important;
+  }
+
+  .featured-section {
+      margin: 0 2rem !important;
+  }
+}
+
 @media only screen and (min-width: 1279px) {
     /*NavBar*/
     header nav ul li a {
@@ -99,9 +185,9 @@
 
     /*Home*/
     .banner-header-text{
-        font-size: 3rem !important;
+        font-size: 3.4rem !important;
         font-weight: 900;
-        line-height: 3rem;
+        line-height: 2.5rem !important;
     }
 
     .header-para{
@@ -124,15 +210,15 @@
         display: inline-block;
         font-size: 1rem !important;
         cursor: pointer;
-        padding: .7rem 2rem !important;
+        padding: .9rem 2rem !important;
       }
     
       .button-container-margin{
         margin-top: 3rem !important;
       }
     
-      .btn-group-sm>.btn, .btn-sm{
-        width: 140px !important;
+      .btn-group-sm>.btn, .btn-sm, .btn-primary{
+        width: 165px !important;
       }
 
       .volume-toggle {
