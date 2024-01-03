@@ -13,54 +13,83 @@
     header nav ul li a {
         display: inline-block;
         color: #000;
-        margin: 0 10px;
+        margin: 0 50px;
         border: 3px solid transparent;
-        text-transform: uppercase;
         transition: 0.2s;
         font-weight: 600;
-        padding: 1rem 3rem !important;
-        font-size: 3rem;
+        font-size: 3rem !important;
+        padding: .5rem .5rem;
     }
-
-    /*--Home--*/
-    .container-padding {
-        padding: 0 2rem !important;
-    }
-
-    .banner-header-text {
-        font-size: 15rem;
+    
+    /*Home*/
+    .banner-header-text{
+        font-size: 10rem !important;
         font-weight: 900;
-        line-height: 13rem;
+        line-height: 12rem;
     }
-
-    .button-container {
+    
+    .header-para{
+        font-size: 3.8rem !important;
+        font-weight: 600 !important;
+      }
+    
+      .hero-video{
+        width: 1980px;
+        height: 1120px;
+      }
+    
+      .button-container {
         display: flex;
-    }
-
-    .button {
+      }
+      
+      .button {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 3.5rem !important;
+        font-size: 3rem !important;
         cursor: pointer;
-        padding: 1.5rem 6rem !important;
-    }
+        padding: 1.5rem 2rem !important;
+      }
+    
+      .button-container-margin{
+        margin-top: 7rem !important;
+      }
 
-    .button-container-margin {
-        margin-top: 7rem;
-    }
-
-    .header-para {
-        font-size: 5rem !important;
-    }
+      .btn-primary{
+        width: 450px !important;
+      }
+    
+      .btn-group-sm>.btn, .btn-sm{
+        width: 450px !important;
+      }
+    
+      .volume-toggle {
+        position: absolute;
+        top: 35px; /* Adjust the top position as needed */
+        right: 35px; /* Adjust the right position as needed */
+        width: 80px;
+        height: 80px;
+        color: #ffffff;
+        background-color: #000000; /* Background color of the toggle button */
+        border-radius: 50%; /* Make it circular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 45px; /* Adjust the font size as needed */
+        z-index: 1; /* Ensure the icon is above the iframe */
+      }
+    
+      .home-video iframe{
+        border-radius: 2.5rem !important;
+      }
 
     .mt-5{
-        margin-top: 10rem !important;
+        margin-top: 8rem !important;
     }
 
-    .home-img {
-        border-radius: 1rem;
-        width: 100%;
+    .high-res .mt-5{
+        margin-top: 7rem !important;
     }
 
     /*-Feautered Images-*/

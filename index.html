@@ -114,12 +114,12 @@
     </header>
     <!--Home Container-->
     <section id="home">
-      <div class="container-fluid container-padding-helped mt-5">
+      <div class="container-fluid container-padding-helped mt-3">
         <div class="row pt-md-3">
-          <div class="col-md-6 col-sm-12">
-            <p class="banner-header-text mt-3">We do more</p>
-            <p class="banner-header-text">than just tell</p>
-            <p class="banner-header-text">stories.</p>
+          <div class="col-md-5 col-sm-12 mt-md-5">
+            <p class="banner-header-text mt-3">Let's make your</p>
+            <p class="banner-header-text">success story</p>
+            <p class="banner-header-text">animated.</p>
             <div class="button-container button-container-margin">
               <a href="./work.html" class="button btn btn-primary rounded-pill">
                 See Our Work
@@ -132,16 +132,25 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 home-video">
-            <iframe
-              title="storyhumor-home-video"
-              src="https://player.vimeo.com/video/885907143?h=d4cf241e02&autoplay=1&loop=1&muted=0&controls=0"
-              allow="autoplay"
-              style="width: 100%; height: 100%"
-            ></iframe>
+          <div class="col-md-7 col-sm-12 home-video" style="position: relative">
+            <!-- Vimeo video iframe -->
+            <div class="video-container">
+              <iframe
+                title="storyhumor-home-video"
+                src="https://player.vimeo.com/video/885907143?h=d4cf241e02&autoplay=1&loop=1&controls=0"
+                allow="autoplay"
+                class="shadow hero-video"
+                id="videoIframe"
+              ></iframe>
+
+              <!-- Volume toggle icon -->
+              <div class="volume-toggle" onclick="toggleVolume()">
+                <i id="volumeIcon" class="bi bi-volume-up-fill"></i>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 high-res">
           <p class="text-center mt-5 container-padding header-para">
             We are a Boutique Design & Animation Studio specialization in
             crafting engaging video content for startups and agencies. Our
@@ -701,5 +710,25 @@
       </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      var player = new Vimeo.Player(document.getElementById("videoIframe"));
+      var isMuted = false;
+
+      function toggleVolume() {
+        isMuted = !isMuted;
+        var volumeIcon = document.getElementById("volumeIcon");
+
+        if (isMuted) {
+          player.setVolume(0); // Mute the video
+          volumeIcon.classList.remove("bi-volume-up-fill");
+          volumeIcon.classList.add("bi-volume-mute-fill");
+        } else {
+          player.setVolume(1); // Unmute the video
+          volumeIcon.classList.remove("bi-volume-mute-fill");
+          volumeIcon.classList.add("bi-volume-up-fill");
+        }
+      }
+    </script>
   </body>
 </html>
