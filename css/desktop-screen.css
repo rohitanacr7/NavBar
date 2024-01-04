@@ -471,7 +471,7 @@
 
   /*Home*/
   .banner-header-text{
-      font-size: 5rem;
+      font-size: 5rem !important;
       font-weight: 900;
       line-height: 4.5rem;
   }

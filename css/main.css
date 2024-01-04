@@ -290,6 +290,18 @@ header nav ul li a:hover {
     .insta {
         background: linear-gradient(to right, #FF312C, #FFB131);
     }
+    
+    .insta:hover {
+        background: linear-gradient(to right, #FFB131, #FF312C);
+    }
+
+    .behance{
+        background-color: #2061F2 !important;
+    }
+
+    .behance:hover{
+        background-color: #11009E !important;
+    }
 
     /* Contact Us */
     .contact-textarea,
@@ -298,6 +310,12 @@ header nav ul li a:hover {
         border-radius: 0.7rem; 
         background-color: #E9F0FE !important;
         margin-top: 1rem !important;
+        color: #000 !important;
+    }
+
+    .contact-textarea::placeholder,.contact-gradient::placeholder, select{
+        color: #000 !important;
+        font-weight: 600 !important;
     }
 
     #dropdown1 option {
@@ -685,6 +703,7 @@ header nav ul li a:hover {
     .comments-text{
         font-size: 1.5rem !important;
     }
+    
 
     /* Social Media Styles */
     .social-text {

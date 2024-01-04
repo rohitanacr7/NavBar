@@ -69,12 +69,12 @@
     </header>
     <!-- Home -->
     <section id="home">
-      <div class="container-fluid container-padding-helped mt-5">
+      <div class="container-fluid container-padding-helped mt-3">
         <div class="row pt-md-3">
-          <div class="col-md-6 col-sm-12">
-            <p class="banner-header-text mt-3">We do more</p>
-            <p class="banner-header-text">than just tell</p>
-            <p class="banner-header-text">stories.</p>
+          <div class="col-md-5 col-sm-12 mt-md-5 work-page">
+            <p class="banner-header-about-text mt-3">We do more</p>
+            <p class="banner-header-about-text">than just tell</p>
+            <p class="banner-header-about-text">stories.</p>
             <div class="button-container button-container-margin">
               <a href="./work.html" class="button btn btn-primary rounded-pill">
                 See Our Work
@@ -87,13 +87,22 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 home-video">
-            <iframe
-              title="storyhumor-home-video"
-              src="https://player.vimeo.com/video/885900681?h=9cc39221f0&autoplay=1&loop=1&muted=0&controls=0"
-              allow="autoplay"
-              style="width: 100%; height: 100%"
-            ></iframe>
+          <div class="col-md-7 col-sm-12 home-video" style="position: relative">
+            <!-- Vimeo video iframe -->
+            <div class="video-container">
+              <iframe
+                title="storyhumor-home-video"
+                src="https://player.vimeo.com/video/885900681?h=9cc39221f0&autoplay=1&loop=1&muted=0&controls=0"
+                allow="autoplay"
+                class="shadow hero-video"
+                id="videoIframe"
+              ></iframe>
+
+              <!-- Volume toggle icon -->
+              <div class="volume-toggle" onclick="toggleVolume()">
+                <i id="volumeIcon" class="bi bi-volume-up-fill"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -139,208 +148,194 @@
               <p class="mt-2 featured-work-text">Peanut Butter</p>
             </div>
           </div>
-          <div class="hidden">
-            <div class="row mt-4 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-5.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-6.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
+          <div class="row mt-4 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-5.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
             </div>
-            <div class="row mt-4 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-7.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Peanut Butter</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-8.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
-            </div>
-            <div class="row mt-4 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-9.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-10.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
-            </div>
-            <div class="row mt-4 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-11.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Puma Shoes Animation</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-12.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Puma Shoes Animation</p>
-              </div>
-            </div>
-            <div class="row mt-4 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-13.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video Provident</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-14.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">
-                  Explainer Video Orthoservice
-                </p>
-              </div>
-            </div>
-            <div class="row mt-4 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-15.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-16.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
-            </div>
-            <div class="row mt-3 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-17.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-18.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
-            </div>
-            <div class="row mt-3 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-19.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video B2Play</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-20.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video</p>
-              </div>
-            </div>
-            <div class="row mt-3 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-21.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">The Meg Effect</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-22.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video B2Play</p>
-              </div>
-            </div>
-            <div class="row mt-3 mb-5">
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-23.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">The Meg Effect</p>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="images/work/Works-24.jpg"
-                  alt="storyhumor-home-featured-work-img"
-                  class="img-fluid featured-work-img"
-                />
-                <p class="mt-2 featured-work-text">Explainer Video Pifss</p>
-              </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-6.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
             </div>
           </div>
-        </div>
-        <div
-          class="featured-all-projects d-flex align-items-end justify-content-end"
-          id="seeMoreButtonContainer"
-        >
-          <button
-            id="seeMoreButton"
-            class="btn btn-outline-dark rounded-pill pt-md-3 pb-md-3 ps-md-5 pe-md-5 mb-5"
-            onclick="toggleImages()"
-          >
-            See More
-          </button>
+          <div class="row mt-4 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-7.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Peanut Butter</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-8.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
+            </div>
+          </div>
+          <div class="row mt-4 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-9.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-10.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
+            </div>
+          </div>
+          <div class="row mt-4 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-11.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Puma Shoes Animation</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-12.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Puma Shoes Animation</p>
+            </div>
+          </div>
+          <div class="row mt-4 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-13.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video Provident</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-14.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">
+                Explainer Video Orthoservice
+              </p>
+            </div>
+          </div>
+          <div class="row mt-4 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-15.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-16.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
+            </div>
+          </div>
+          <div class="row mt-3 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-17.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-18.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
+            </div>
+          </div>
+          <div class="row mt-3 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-19.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video B2Play</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-20.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video</p>
+            </div>
+          </div>
+          <div class="row mt-3 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-21.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">The Meg Effect</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-22.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video B2Play</p>
+            </div>
+          </div>
+          <div class="row mt-3 mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-23.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">The Meg Effect</p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="images/work/Works-24.jpg"
+                alt="storyhumor-home-featured-work-img"
+                class="img-fluid featured-work-img"
+              />
+              <p class="mt-2 featured-work-text">Explainer Video Pifss</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- Got an Idea -->
     <div
-      class="container-fluid container-top-space mobile-top-margin container-padding-helped mb-5"
+      class="container-fluid container-top-space mobile-top-margin container-padding mb-5"
     >
       <section id="about-us-social">
         <div class="about-us bg-primary">
@@ -368,12 +363,12 @@
       class="container-fluid container-padding-helped mobile-top-margin container-top-space bg-light pb-5"
     >
       <div class="row mb-5 container-top-space">
-        <div class="col-md-4 mt-5 footer-block-1">
+        <div class="col-md-6 mt-5 footer-block-1">
           <div>
             <p class="footer-head">Reach Us</p>
             <p class="footer-para footer-margin-section-1">+91 7525853573</p>
             <p class="footer-para footer-margin-section-1">
-              hello@storyhumor.com
+              mailto:hello@storyhumor.com
             </p>
             <p class="footer-para footer-address">
               10 Floor, Summit, Vibhuti Khand,
@@ -385,7 +380,7 @@
           </div>
         </div>
         <hr class="footer-hr" />
-        <div class="col-md-4 mt-5">
+        <div class="col-md-3 mt-5">
           <div>
             <p class="footer-head">Social</p>
             <ul class="footer-ul">
@@ -433,7 +428,7 @@
           </div>
         </div>
         <hr class="footer-hr" />
-        <div class="col-md-4 mt-5">
+        <div class="col-md-3 mt-5">
           <div class="footer-block-3">
             <p>&nbsp;</p>
             <ul class="footer-ul-3">
@@ -460,33 +455,5 @@
         </div>
       </div>
     </footer>
-    <!-- Show More -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var isExpanded = false;
-        var imagesContainer = document.querySelector(".row.mt-5");
-        var initialImages = imagesContainer.innerHTML;
-        var hiddenImagesContainer = document.querySelector(".hidden");
-        var hiddenImages = hiddenImagesContainer.innerHTML;
-
-        function toggleImages() {
-          if (isExpanded) {
-            // Show only the first 4 images
-            imagesContainer.innerHTML = initialImages;
-            isExpanded = false;
-            document.getElementById("seeMoreButton").innerText = "See More";
-          } else {
-            // Show all images
-            imagesContainer.innerHTML = initialImages + hiddenImages;
-            isExpanded = true;
-            document.getElementById("seeMoreButton").innerText = "See Less";
-          }
-        }
-
-        document
-          .getElementById("seeMoreButton")
-          .addEventListener("click", toggleImages);
-      });
-    </script>
   </body>
 </html>
