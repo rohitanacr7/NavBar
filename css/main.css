@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body {
-    background: #FFF;
+    background: #FFFFFF !important;
     padding-top: 3rem;
 }
 
@@ -593,6 +593,16 @@ header nav ul li a:hover {
         width: 100%;
         height: 325px;
         border-radius: 1rem;
+      }
+
+      .image_margin{
+        margin-top: 2rem !important;
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .image_margin:hover {
+        transform: scale(1.2);
       }
 
 /* Extra-large screens (large desktops) */

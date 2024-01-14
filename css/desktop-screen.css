@@ -387,7 +387,7 @@
       }
 }
 
-@media only screen and (min-width: 1680px) {
+@media only screen and (min-width: 1680px) and (max-width:1918px) {
   /*NavBar*/
   header nav ul li a {
       display: inline-block;
@@ -456,7 +456,7 @@
     }
 }
 
-@media only screen and (min-width: 1920px){
+@media only screen and (min-width: 1919px){
   /*NavBar*/
   header nav ul li a {
       display: inline-block;
@@ -477,7 +477,7 @@
   }
 
   .header-para{
-      font-size: 1.7rem !important;
+      font-size: 2rem !important;
       font-weight: 600 !important;
     }
   

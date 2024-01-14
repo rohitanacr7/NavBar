@@ -436,4 +436,14 @@
     .margin-head-create{
         margin-top: 10rem;
     }
+
+    .image_margin{
+        margin-top: 2.5rem !important;
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .image_margin:hover {
+        transform: scale(1.2);
+      }
 }
