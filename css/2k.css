@@ -1,8 +1,8 @@
 /* 2K resolution screens */
 @media only screen and (min-width: 2560px) {
     header {
-        margin-top: 8rem !important;
-        margin-bottom: 10rem !important;
+        margin-top: 3rem !important;
+        margin-bottom: 4rem !important;
     }
 
     .logo {
@@ -28,14 +28,23 @@
     line-height: 7rem;
 }
 
+.high-res .mt-5{
+    margin-top: 5.5rem !important;
+}
+
+.home-section .mt-md-5{
+    margin-top:7rem !important;
+}
+
 .header-para{
     font-size: 2.5rem !important;
     font-weight: 600 !important;
+    margin-bottom: 12rem !important;
   }
 
   .hero-video{
     width: 1320px;
-    height: 750px;
+    height: 740px;
   }
 
   .button-container {
@@ -105,9 +114,6 @@
     }
 
     .btn-about-us{
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
         text-align: center !important;
         margin-top: 5rem !important;
         font-size: 2rem !important;
@@ -134,10 +140,21 @@
     /*-B2B and B2C Videos-*/
     .about-us .B2B-bold-text {
         font-size: 4rem !important;
+        margin-top: 2rem !important;
+    }
+
+    .about-us .B2B-text{
+        margin-top: 2rem !important;
+        font-size: 2.6rem !important;
     }
 
     .B2B-text{
         font-size: 2rem !important;
+    }
+
+    .B2B-margin-top a{
+        margin-top: 3rem !important;
+        padding: 1rem 3rem 1rem 3rem !important;
     }
 
     .btn-know-more{
@@ -150,6 +167,7 @@
         padding: 0 8rem !important;
     }
     .helped-margin{
+        margin-top: 5rem !important;
         margin-bottom: 5rem !important;
     }
 
@@ -183,8 +201,13 @@
     }
 
     /* What they say about us */
+    .what_they_say_about_us{
+        padding-top: 6rem !important;
+        margin-bottom: 13rem !important;
+    }
+
     .comments-text-bold{
-        font-size: 3.5rem !important;
+        font-size: 4rem !important;
         font-weight: 900;
     }
 
@@ -193,10 +216,19 @@
     }
 
     /* Social Media Styles */
+    .social-container-padding .about-us{
+        padding: 15rem 8rem !important;
+    }
+
+    .social-text span {
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+    }
+    
     .social-text {
         font-size: 5rem !important; 
         font-weight: 900 !important;
-        line-height: 6rem !important;
+        line-height: 7rem !important;
         color: #FFF !important;
         margin-bottom: 5rem !important;
     }
@@ -439,6 +471,7 @@
 
     .image_margin{
         margin-top: 2.5rem !important;
+        padding: 2.8rem !important;
         transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
               opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       }
@@ -446,4 +479,69 @@
       .image_margin:hover {
         transform: scale(1.2);
       }
+
+      .featured-work-videos-padding{
+        padding: 0rem 1rem 2.5rem 1rem !important;
+      }
+
+      .hero-featured-video{
+        width: 100%;
+        height: 590px;
+        border-radius: 1rem;
+      }
+
+      .featured-all-projects .btn{
+        font-size: 1.8rem !important;
+      }
+
+      .B2B-margin-top-head{
+        margin-top: 9rem !important;
+        margin-bottom: 10rem !important;
+      }
+
+      .learn-container-top-space {
+        margin-top: 9rem !important;
+      }
+
+      .btn-arrow .fs-4{
+        font-size:2.5rem !important;
+      }
+
+      .arrow-btns .btn{
+        padding: .5rem 1.3rem !important;
+      }
+
+      .ContactUsSection{
+        margin-top: 12rem !important;
+      }
+
+      .contact-textarea,
+      .contact-gradient{
+        border: none;
+        border-radius: 0.7rem; 
+        background-color: #E9F0FE !important;
+        margin-top: 1rem !important;
+        color: #000 !important;
+    }
+
+    .contact-textarea::placeholder,.contact-gradient::placeholder, select{
+        color: #000 !important;
+        font-weight: 600 !important;
+        font-size: 1.5rem !important;
+    }
+
+    #dropdown1 option {
+        border-radius: 0.7rem; 
+        background: #007BFF;
+        color: white;
+        border: none;
+    }
+
+    .btn-btnsubmit {
+        align-items: end;
+    }
+
+    .btn-submit{
+        font-size: 1.5rem !important;
+    }
 }
