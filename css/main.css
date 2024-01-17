@@ -522,15 +522,21 @@ header nav ul li a:hover {
         border: none !important;
     }
 
+    .GotIdea{
+        padding: 2rem 5rem !important;
+        border-radius: 2rem;
+        margin: 0rem 3rem !important;
+    }
+
     .GotIdea-text{
-        font-size: 5rem !important;
+        font-size: 3rem !important;
         font-weight: 900 !important;
         color: #FFF !important;
     }
 
     .GotIdea-button{
-        font-size: 2rem !important;
-        padding: 1rem 3rem !important;
+        font-size: 1.5rem !important;
+        padding: .6rem 2rem !important;
     }
 
     .service-gradient {
@@ -549,10 +555,25 @@ header nav ul li a:hover {
       }
     
       .service-section {
-        flex: 1 0 calc(33.33% - 20px);
-        margin: 1rem .6rem;
-        padding: 1.8rem 1.3rem;
+        flex: 1 0 calc(33% - 20px);
+        margin: 1rem .7rem;
+        padding: 2rem 2rem;
         box-sizing: border-box;
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .service-section:hover{
+        transform: scale(1.04);
+        box-shadow: .3rem .3rem #454F6B !important;
+      }
+
+      .service-section h5{
+        font-size: 1.7rem !important;
+      }
+
+      .service-section p{
+        font-size: 1.2rem !important;
       }
 
       .learn-image-section .service-section:first-child{
@@ -917,14 +938,14 @@ header nav ul li a:hover {
     }
 
     .GotIdea-text{
-        font-size: 3rem !important;
+        font-size: 2rem !important;
         font-weight: 900 !important;
         color: #FFF !important;
     }
 
     .GotIdea-button{
-        font-size: 1.3rem !important;
-        padding: .5rem 2rem !important;
+        font-size: 1rem !important;
+        padding: .5rem 1rem !important;
         margin-top: 1rem !important;
         margin-left: auto !important;
         margin-right: auto !important;
