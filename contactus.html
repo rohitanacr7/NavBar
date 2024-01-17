@@ -105,13 +105,13 @@
       </label>
     </header>
     <!--Home Container-->
-    <section id="home">
-      <div class="container-fluid container-padding-helped mt-5">
-        <div class="row pt-md-3">
-          <div class="col-md-6 col-sm-12">
-            <p class="banner-header-text">Have a Story</p>
-            <p class="banner-header-text mt-4">Ready to</p>
-            <p class="banner-header-text mt-5">Talk?</p>
+    <section id="home" class="home-section">
+      <div class="container-fluid container-padding-helped mt-3">
+        <div class="row pt-md-3 pt-xl-5 pt-xxl-5">
+          <div class="col-md-5 col-sm-12 mt-md-5 ">
+            <p class="banner-header-text mt-3">Have a Story</p>
+            <p class="banner-header-text">Ready to</p>
+            <p class="banner-header-text">Talk?</p>
             <div class="button-container button-container-margin">
               <a href="./work.html" class="button btn btn-primary rounded-pill">
                 See Our Work
@@ -124,13 +124,22 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 home-video">
-            <iframe
-              title="storyhumor-home-video"
-              src="https://player.vimeo.com/video/880797569?h=ef6a67ee4a&autoplay=1&loop=1&muted=0&controls=0"
-              allow="autoplay"
-              style="width: 100%; height: 100%"
-            ></iframe>
+          <div class="col-md-7 col-sm-12 home-video" style="position: relative">
+            <!-- Vimeo video iframe -->
+            <div class="video-container">
+              <iframe
+                title="storyhumor-home-video"
+                src="https://player.vimeo.com/video/880797569?h=ef6a67ee4a&autoplay=1&loop=1&muted=0&controls=0"
+                allow="autoplay"
+                class="shadow hero-video"
+                id="videoIframe"
+              ></iframe>
+
+              <!-- Volume toggle icon -->
+              <div class="volume-toggle" onclick="toggleVolume()">
+                <i id="volumeIcon" class="bi bi-volume-up-fill"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -379,7 +388,7 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header bg-success text-white">
+          <div class="modal-header bg-primary text-white">
             <h5 class="modal-title" id="successModalLabel">
               <i class="bi bi-check-circle-fill"></i> Thank You!
             </h5>

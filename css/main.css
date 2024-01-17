@@ -484,9 +484,9 @@ header nav ul li a:hover {
 
     /*Learn Page*/
     .banner-header-learn-text{
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 900;
-        line-height: 4rem;
+        line-height: 3rem;
     }
 
     .learn-search{
