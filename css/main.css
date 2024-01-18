@@ -626,6 +626,10 @@ header nav ul li a:hover {
         transform: scale(1.2);
       }
 
+      .accordion-item{
+        border: none !important;
+      }
+
 /* Extra-large screens (large desktops) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     /*--Home--*/
