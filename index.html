@@ -137,9 +137,9 @@
             <div class="vidoe-responsive">
               <iframe
                   title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/885907143?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=0"
+                  src="https://player.vimeo.com/video/880447747?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=0"
                   class="shadow video-iframe"
-                  id="videoIframe3"
+                  id="videoIframe0"
                 ></iframe>
               </div>
           </div>
@@ -763,6 +763,9 @@
             // On hover, update the src attribute with a new link
             var videoId = $(this).attr('id');
             switch (videoId) {
+              case 'videoIframe0':
+                $(this).attr('src', 'https://player.vimeo.com/video/880447747?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+                break;
               case 'videoIframe1':
                 $(this).attr('src', 'https://player.vimeo.com/video/880927523?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
                 break;
