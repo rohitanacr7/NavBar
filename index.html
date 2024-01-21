@@ -134,20 +134,14 @@
           </div>
           <div class="col-md-7 col-sm-12 home-video" style="position: relative">
             <!-- Vimeo video iframe -->
-            <div class="video-container">
+            <div class="vidoe-responsive">
               <iframe
-                title="storyhumor-home-video"
-                src="https://player.vimeo.com/video/885907143?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=0"
-                allow="autoplay"
-                class="shadow hero-video"
-                id="videoIframe"
-              ></iframe>
-
-              <!-- Volume toggle icon -->
-              <div class="volume-toggle" onclick="toggleVolume()">
-                <i id="volumeIcon" class="bi bi-volume-up-fill"></i>
+                  title="storyhumor-home-video"
+                  src="https://player.vimeo.com/video/885907143?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=0"
+                  class="shadow video-iframe"
+                  id="videoIframe3"
+                ></iframe>
               </div>
-            </div>
           </div>
         </div>
         <div class="col-12 high-res">
@@ -165,7 +159,7 @@
       <div
         class="container-fluid container-padding mobile-top-margin container-top-space"
       >
-        <div class="about-us">
+        <div class="about-us about-us-sm ">
           <h5 class="text-white fs-3 fw-bold">About Us</h5>
           <hr />
           <div class="row">
@@ -202,25 +196,23 @@
           <h1 class="text-md-start helped-margin learn-text-bold">Featured Work</h1>
           <div class="row mt-5">
             <div class="col-md-6 featured-work-videos-padding">
-              <div class="video-container">
-                <iframe
+              <div class="vidoe-responsive">
+              <iframe
                   title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/880927523?h=743be9eade&autoplay=1&loop=1&muted=1&controls=0"
-                  allow="autoplay"
-                  class="shadow hero-featured-video"
-                  id="videoIframe"
+                  src="https://player.vimeo.com/video/880927523?h=743be9eade&loop=1&muted=1&controls=0"
+                  class="shadow video-iframe"
+                  id="videoIframe1"
                 ></iframe>
               </div>
               <p class="mt-2 fw-bold featured-work-text">PebbleBae</p>
             </div>
             <div class="col-md-6 featured-work-videos-padding">
-              <div class="video-container">
-                <iframe
+              <div class="vidoe-responsive">
+              <iframe
                   title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/880446093?h=fc0fe55a7a&autoplay=1&loop=1&muted=1&controls=0"
-                  allow="autoplay"
-                  class="shadow hero-featured-video"
-                  id="videoIframe"
+                  src="https://player.vimeo.com/video/880446093?h=fc0fe55a7a&loop=1&muted=1&controls=0"
+                  class="shadow video-iframe"
+                  id="videoIframe2"
                 ></iframe>
               </div>
               <p class="mt-2 fw-bold featured-work-text">Boat Watchface</p>
@@ -228,27 +220,25 @@
           </div>
           <div class="row mt-4 mb-5">
             <div class="col-md-6 featured-work-videos-padding">
-              <div class="video-container">
-                <iframe
+              <div class="vidoe-responsive">
+              <iframe
                   title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/885907143?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=0"
-                  allow="autoplay"
-                  class="shadow hero-featured-video"
-                  id="videoIframe"
+                  src="https://player.vimeo.com/video/885907143?h=d4cf241e02&loop=1&muted=1&controls=0"
+                  class="shadow video-iframe"
+                  id="videoIframe3"
                 ></iframe>
               </div>
               <p class="mt-2 fw-bold featured-work-text">National Epilepsy Day</p>
             </div>
             <div class="col-md-6 featured-work-videos-padding">
-              <div class="video-container">
-                <iframe
+              <div class="vidoe-responsive">
+              <iframe
                   title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/880817248?h=32baa1ae03&autoplay=1&loop=1&muted=1&controls=0"
-                  allow="autoplay"
-                  class="shadow hero-featured-video"
-                  id="videoIframe"
+                  src="https://player.vimeo.com/video/880817248?h=32baa1ae03&loop=1&muted=1&controls=0"
+                  class="shadow video-iframe"
+                  id="videoIframe4"
                 ></iframe>
-              </div>
+                </div>
               <p class="mt-2 fw-bold featured-work-text">Puma Shoes</p>
             </div>
             <div
@@ -762,5 +752,39 @@
         }
       }
     </script>
+    <script>
+      $(document).ready(function () {
+        // Get all the video iframes
+        var videoIframes = $('.video-iframe');
+    
+        // Attach hover event handler to each iframe
+        videoIframes.hover(
+          function () {
+            // On hover, update the src attribute with a new link
+            var videoId = $(this).attr('id');
+            switch (videoId) {
+              case 'videoIframe1':
+                $(this).attr('src', 'https://player.vimeo.com/video/880927523?h=743be9eade&muted=1&loop=1&controls=1');
+                break;
+              case 'videoIframe2':
+                $(this).attr('src', 'https://player.vimeo.com/video/880446093?h=fc0fe55a7a&muted=1&loop=1&controls=1');
+                break;
+              case 'videoIframe3':
+                $(this).attr('src', 'https://player.vimeo.com/video/885907143?h=d4cf241e02&muted=1&loop=1&controls=1');
+                break;
+              case 'videoIframe4':
+                $(this).attr('src', 'https://player.vimeo.com/video/880817248?h=32baa1ae03&muted=1&loop=1&controls=1');
+                break;
+            }
+          },
+          function () {
+            // On mouseout, revert to the original src attribute
+            var originalSrc = $(this).attr('data-original-src');
+            $(this).attr('src', originalSrc);
+          }
+        );
+      });
+    </script>
+    
   </body>
 </html>
