@@ -1956,24 +1956,18 @@
     .volume-toggle {
         position: absolute;
         top: 25px;
-        /* Adjust the top position as needed */
         right: 25px !important;
-        /* Adjust the right position as needed */
         width: 30px;
         height: 30px;
         color: #ffffff;
         background-color: #000000;
-        /* Background color of the toggle button */
         border-radius: 50%;
-        /* Make it circular */
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         font-size: 20px;
-        /* Adjust the font size as needed */
         z-index: 1;
-        /* Ensure the icon is above the iframe */
     }
 
     /*-Who We Helped Explain-*/
@@ -2227,5 +2221,9 @@
 
     .image-size {
         width: 9rem !important;
+    }
+
+    .arrow-btns .btn-primary{
+        width: 55px !important;
     }
 }
