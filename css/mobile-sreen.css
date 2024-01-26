@@ -542,6 +542,11 @@
         margin-top: 2rem !important;
     }
 
+    .home-section .high-res .header-para{
+        padding: 0 !important;
+        margin: 2.5rem 0 0 0 !important;
+    }
+
     .header-para {
         font-size: .9rem !important;
         font-weight: 600 !important;
@@ -584,24 +589,18 @@
     .volume-toggle {
         position: absolute;
         top: 45px;
-        /* Adjust the top position as needed */
         right: 25px;
-        /* Adjust the right position as needed */
         width: 25px;
         height: 25px;
         color: #ffffff;
         background-color: #000000;
-        /* Background color of the toggle button */
         border-radius: 50%;
-        /* Make it circular */
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         font-size: 15px;
-        /* Adjust the font size as needed */
         z-index: 1;
-        /* Ensure the icon is above the iframe */
     }
 
     /* About Us */
@@ -637,7 +636,7 @@
         justify-content: center !important;
         text-align: center !important;
         margin-top: 2rem !important;
-        width: 100%;
+        width: 100% !important;
     }
 
     /*-Feautered Images-*/
@@ -666,7 +665,7 @@
 
     .btn-know-more {
         font-size: 1rem !important;
-        width: 100%;
+        width: 100% !important;
     }
 
     .B2B-margin-top:nth-child(2) {
@@ -727,11 +726,10 @@
 
     /* Social Media Styles */
     .social-text {
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
         font-weight: 900 !important;
         line-height: 3rem !important;
         color: #FFF !important;
-        margin-bottom: 2rem !important;
         text-align: left;
     }
 
@@ -1001,6 +999,15 @@
 
     .image_margin:hover {
         transform: scale(1.2);
+    }
+
+    .GotIdea {
+        padding: 2rem !important;
+        margin: 0 !important;
+    }
+
+    .pagination{
+        display: none !important;
     }
 
 }
