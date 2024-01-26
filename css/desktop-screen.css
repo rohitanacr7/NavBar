@@ -24,7 +24,7 @@
     }
 
   .header-para{
-    font-size: .7rem !important;
+    font-size: .78rem !important;
     font-weight: 600 !important;
   }
 
@@ -58,21 +58,25 @@
     width: 120px !important;
   }
 
+  .about-light-text .btn-primary{
+    width: 190px !important;
+  }
+
   .volume-toggle {
     position: absolute;
-    top: 45px !important; /* Adjust the top position as needed */
-    right: 5px !important; /* Adjust the right position as needed */
+    top: 45px !important; 
+    right: 5px !important; 
     width: 25px;
     height: 25px;
     color: #ffffff;
-    background-color: #000000; /* Background color of the toggle button */
-    border-radius: 50%; /* Make it circular */
+    background-color: #000000; 
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 15px; /* Adjust the font size as needed */
-    z-index: 1; /* Ensure the icon is above the iframe */
+    font-size: 15px; 
+    z-index: 1; 
   }
 
     /*-Feautered Images-*/

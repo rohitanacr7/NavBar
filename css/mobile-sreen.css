@@ -1539,24 +1539,18 @@
     .volume-toggle {
         position: absolute;
         top: 45px;
-        /* Adjust the top position as needed */
         right: 15px;
-        /* Adjust the right position as needed */
         width: 25px;
         height: 25px;
         color: #ffffff;
         background-color: #000000;
-        /* Background color of the toggle button */
         border-radius: 50%;
-        /* Make it circular */
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         font-size: 15px;
-        /* Adjust the font size as needed */
         z-index: 1;
-        /* Ensure the icon is above the iframe */
     }
 
     /* About Us */
@@ -1592,7 +1586,6 @@
         justify-content: center !important;
         text-align: center !important;
         margin-top: 2rem !important;
-        width: 100%;
     }
 
     /*-Feautered Images-*/
@@ -1608,25 +1601,35 @@
         text-align: center;
     }
 
+    .featured-section .featured-all-projects a{
+        font-size: .8rem !important;
+    }
+
     /*-B2B and B2C Videos-*/
     .about-us .B2B-bold-text {
         font-size: 2rem !important;
-        text-align: center !important;
+        text-align: start !important;
     }
 
     .B2B-text {
         font-size: 1.3rem !important;
-        text-align: center !important;
     }
 
     .btn-know-more {
         font-size: 1rem !important;
-        width: 100%;
         margin-bottom: 2rem !important;
+    }
+
+    .B2B-margin-top .btn-primary{
+        width: 190px !important;
     }
 
     .B2B-margin-top {
         margin-top: 2rem !important;
+    }
+
+    .btn-see-more{
+        font-size: .8rem !important;
     }
 
     /*-Who We Helped Explain-*/
@@ -1669,6 +1672,18 @@
 
     .comments-text {
         font-size: 1.2rem !important;
+    }
+
+    .arrow-btns .btn-primary{
+        width: 50px !important;
+    }
+
+    .B-I-img .col-md-9{
+        width: 100% !important;
+    }
+
+    .B-I-img .col-md-3{
+        display: none !important;
     }
 
     /*footer*/

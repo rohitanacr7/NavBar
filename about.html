@@ -1,470 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StoryHumor - About</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="author" content="StoryHunt" />
-    <link rel="icon" href="./images/Favicon.svg" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  </head>
-  <body>
-    <header class="container-fluid container-padding-helped">
-      <a href="./index.html"><img src="images/logo.jpg" alt="logo" class="logo" /></a>
-      <input type="checkbox" id="nav_check" hidden />
-      <nav>
-        <ul>
-          <li>
-            <a href="./work.html">Work</a>
-          </li>
-          <li>
-            <a href="./service.html">Service</a>
-          </li>
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <li>
-            <a href="./learn.html">Learn</a>
-          </li>
-          <li>
-            <a href="./contactus.html" class="link-contact rounded-pill"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <label for="nav_check" class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-    </header>
-    <!--Home Container-->
-    <section id="home" class="home-section">
-      <div class="container-fluid container-padding-helped mt-3">
-        <div class="row pt-md-3 pt-xl-5 pt-xxl-5">
-          <div class="col-md-5 col-sm-12 mt-md-5 ">
-            <p class="banner-header-text mt-3">We conjure up</p>
-            <p class="banner-header-text">more than just</p>
-            <p class="banner-header-text">animated.</p>
-            <div class="button-container button-container-margin">
-              <a href="./work.html" class="button btn btn-primary rounded-pill">
-                See Our Work
-              </a>
-              <a
-                href="./contactus.html"
-                class="button btn btn-sm btn-dark rounded-pill ms-4"
-              >
-                Let's Talk
-              </a>
-            </div>
-          </div>
-          <div class="col-md-7 col-sm-12 home-video" style="position: relative">
-            <!-- Vimeo video iframe -->
-            <div class="video-container">
-              <iframe
-                title="storyhumor-home-video"
-                src="https://player.vimeo.com/video/880927523?h=743be9eade&autoplay=1&loop=1&muted=1&controls=0"
-                allow="autoplay"
-                class="shadow hero-video"
-                id="videoIframe"
-              ></iframe>
 
-              <!-- Volume toggle icon -->
-              <div class="volume-toggle" onclick="toggleVolume()">
-                <i id="volumeIcon" class="bi bi-volume-up-fill"></i>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StoryHumor - About</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="author" content="StoryHunt" />
+  <link rel="icon" href="./images/Favicon.svg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <header class="container-fluid container-padding-helped">
+    <a href="./index.html"><img src="images/logo.jpg" alt="logo" class="logo" /></a>
+    <input type="checkbox" id="nav_check" hidden />
+    <nav>
+      <ul>
+        <li>
+          <a href="./work.html">Work</a>
+        </li>
+        <li>
+          <a href="./service.html">Service</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="./learn.html">Learn</a>
+        </li>
+        <li>
+          <a href="./contactus.html" class="link-contact rounded-pill">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <label for="nav_check" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+  </header>
+  <!--Home Container-->
+  <section id="home" class="home-section">
+    <div class="container-fluid container-padding-helped mt-3">
+      <div class="row pt-md-3 pt-xl-5 pt-xxl-5">
+        <div class="col-md-5 col-sm-12 mt-md-5 ">
+          <p class="banner-header-text mt-3">We conjure up</p>
+          <p class="banner-header-text">more than just</p>
+          <p class="banner-header-text">animated.</p>
+          <div class="button-container button-container-margin">
+            <a href="./work.html" class="button btn btn-primary rounded-pill">
+              See Our Work
+            </a>
+            <a href="./contactus.html" class="button btn btn-sm btn-dark rounded-pill ms-4">
+              Let's Talk
+            </a>
+          </div>
+        </div>
+        <div class="col-md-7 col-sm-12 home-video" style="position: relative">
+          <!-- Vimeo video iframe -->
+          <div class="video-container">
+            <iframe title="storyhumor-home-video"
+              src="https://player.vimeo.com/video/880927523?h=743be9eade&autoplay=1&loop=1&muted=1&controls=0"
+              allow="autoplay" class="shadow hero-video" id="videoIframe"></iframe>
+
+            <!-- Volume toggle icon -->
+            <div class="volume-toggle" onclick="toggleVolume()">
+              <i id="volumeIcon" class="bi bi-volume-up-fill"></i>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Who we are? -->
-    <section id="who-we-are">
-      <div
-        class="container-fluid container-padding-helped mobile-top-margin container-top-space"
-      >
-        <div class="who-we-are">
-          <h1 class="who-we-are-head">Who we are?</h1>
-          <hr />
+    </div>
+  </section>
+  <!-- Who we are? -->
+  <section id="who-we-are">
+    <div class="container-fluid container-padding-helped mobile-top-margin container-top-space">
+      <div class="who-we-are">
+        <h1 class="who-we-are-head">Who we are?</h1>
+        <hr />
+        <div class="row">
+          <div class="col-md-9">
+            <p class="who-we-are-para-1">
+              We are a boutique design and animation studio, specializes in
+              crafting video content for a diverse range of clients, including
+              agencies, studios, and production houses operating within the
+              advertising and entertainment sectors.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img src="./images/white_bg_logo.png" alt="white bg logo" class="img-fluid w-75 who-we-are-para-img" />
+          </div>
           <div class="row">
             <div class="col-md-9">
-              <p class="who-we-are-para-1">
-                We are a boutique design and animation studio, specializes in
-                crafting video content for a diverse range of clients, including
-                agencies, studios, and production houses operating within the
-                advertising and entertainment sectors.
+              <p class="who-we-are-para-2">
+                In 2020, the way we work, transformed, With remote work taking places, We started as
+                small team to deliver excellence to studios and agencies. Our driving force is the satisfaction
+                of our clients, motivating us to exceed expectations. Beyond work, we savor burgers at our
+                cherished café, nurturing our camaraderie
               </p>
             </div>
-            <div class="col-md-3">
-                <img src="./images/white_bg_logo.png" alt="white bg logo" class="img-fluid w-75 who-we-are-para-img" />
+            <div class="col-md-9">
+
             </div>
-            <div class="row">
-                <div class="col-md-9">
-                  <p class="who-we-are-para-2">
-                    In 2020, the way we work, transformed, With remote work taking places, We started as
-                    small team to deliver excellence to studios and agencies. Our driving force is the satisfaction
-                    of our clients, motivating us to exceed expectations. Beyond work, we savor burgers at our
-                    cherished café, nurturing our camaraderie
-                  </p>
-                </div>
-                <div class="col-md-9">
-    
-                </div>
-            </div>    
           </div>
-          <!-- Gallery -->
-            <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img
-                    src="./images/office/Office-2.JPG"
-                    class="w-100 shadow-1-strong rounded mb-4"
-                    alt="storyhumor-about-office-images"
-                />
-            
-                <img
-                    src="./images/office/Office-3.JPG"
-                    class="w-100 shadow-1-strong rounded mb-4"
-                    alt="storyhumor-about-office-images"
-                />
-                </div>
-            
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                <img
-                    src="./images/office/Office-4.JPG"
-                    class="w-100 shadow-1-strong rounded mb-4"
-                    alt="storyhumor-about-office-images"
-                />
-            
-                
-                </div>
-            
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                <img
-                    src="./images/office/Office-1.JPG"
-                    class="w-100 shadow-1-strong rounded mb-4"
-                    alt="Wstoryhumor-about-office-images"
-                />
-                <img
-                    src="./images/office/Office-5.JPG"
-                    class="w-100 shadow-1-strong rounded mb-4"
-                    alt="storyhumor-about-office-images"
-                />
-                </div>
-            </div>
+        </div>
+        <!-- Gallery -->
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img src="./images/office/Office-2.JPG" class="w-100 shadow-1-strong rounded mb-4"
+              alt="storyhumor-about-office-images" />
+
+            <img src="./images/office/Office-3.JPG" class="w-100 shadow-1-strong rounded mb-4"
+              alt="storyhumor-about-office-images" />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="./images/office/Office-4.JPG" class="w-100 shadow-1-strong rounded mb-4"
+              alt="storyhumor-about-office-images" />
+
+
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="./images/office/Office-1.JPG" class="w-100 shadow-1-strong rounded mb-4"
+              alt="Wstoryhumor-about-office-images" />
+            <img src="./images/office/Office-5.JPG" class="w-100 shadow-1-strong rounded mb-4"
+              alt="storyhumor-about-office-images" />
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- What motivates our actions? -->
-    <section id="what-motivates-our-actions">
-        <div
-        class="container-fluid container-padding-helped mobile-top-margin container-top-space"
-      >
-            <div class="who-we-are">
-                <h1 class="who-we-are-head">What motivates our actions?</h1>
-                <hr />
-                <div class="row">
-                    <div class="col-md-5">
-                        <p class="what-motivates-our-actions-para-1">
-                            We believe that effective visual
-                            communication is essential to
-                            amplifying the impact of a
-                            message. And we are good at it.
-                        </p>
-                    </div>
-                    <div class="col-md-7">
-                        <p class="what-motivates-our-actions-para-2">
-                            A message is greatly heightened through effective visual
-                            communication. It serves as a potent tool capturing
-                            attention to convey and reinforce the essence of the
-                            message, making it more memorable and compelling to
-                            the intended audience. We thrive at it.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Experiments -->
-    <section id="what-motivates-our-actions">
-        <div
-        class="container-fluid container-padding-helped mobile-top-margin container-top-space"
-      >
-            <div class="who-we-are">
-                <h1 class="who-we-are-head">Experiments</h1>
-                <hr />
-                <div class="row">
-                    <div class="col-md-9">
-                      <p class="who-we-are-para-1">
-                        When we’re not working for our clients, we like to experiment. It
-                        helps us think new thoughts, meet new people, create new
-                        things, discover beautiful objects, and challenge ourselves.
-                      </p>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="./images/white_bg_logo.png" alt="storyhumor-img" class="img-fluid w-75 who-we-are-para-img" />
-                    </div>   
-                  </div>
-            </div>
-        </div>
-    </section>
-    <!-- chit-chat -->
-    <div
-      class="container-fluid container-top-space mobile-top-margin container-padding-helped"
-    >
-      <section id="about-us-social">
-        <div class="about-us bg-primary">
-          <div class="row">
-            <div class="col-md-12">
-              <h4 class="chit-chat">
-                That was our honest story, what's yours?
-                Hit us up and let's get on a call to
-                <span class="bg-dark rounded-pill ps-3 pe-3 pt-1 pb-1"
-                  >chit-chat</span
-                > 
-              </h4>
-            </div>
+  </section>
+  <!-- What motivates our actions? -->
+  <section id="what-motivates-our-actions">
+    <div class="container-fluid container-padding-helped mobile-top-margin container-top-space">
+      <div class="who-we-are">
+        <h1 class="who-we-are-head">What motivates our actions?</h1>
+        <hr />
+        <div class="row">
+          <div class="col-md-5">
+            <p class="what-motivates-our-actions-para-1">
+              We believe that effective visual
+              communication is essential to
+              amplifying the impact of a
+              message. And we are good at it.
+            </p>
+          </div>
+          <div class="col-md-7">
+            <p class="what-motivates-our-actions-para-2">
+              A message is greatly heightened through effective visual
+              communication. It serves as a potent tool capturing
+              attention to convey and reinforce the essence of the
+              message, making it more memorable and compelling to
+              the intended audience. We thrive at it.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
     </div>
-    <!-- FAQs -->
-    <section id="what-motivates-our-actions">
-        <div
-        class="container-fluid container-padding-helped mobile-top-margin container-top-space"
-      >
-            <div class="who-we-are">
-                <h1 class="who-we-are-head">FAQs</h1>
-                <hr />
-                <div class="accordion accordion-flush accordion-margin" id="accordionFlushExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Why work with StoryHumor?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Beyond a mere video, you need a collaborative partner. we engage directly with you, crafting ideas, video concepts customize to your
-                        requirements. We will navigate your needs. Being a boutique studio saves you a lot of timeby working closely, simplifying complexity every
-                        minute, adding human touch to the brand. While we cherish ideas, we grasp the video's demands. From initial discussion to final product our
-                        dedication spans around your bossiness objectives. ensuring your content yields impactful results.Beyond a mere video, you need a collaborative partner. we engage directly with you, crafting ideas, video concepts customize to your
-                        requirements. We will navigate your needs. Being a boutique studio saves you a lot of timeby working closely, simplifying complexity every
-                        minute, adding human touch to the brand. While we cherish ideas, we grasp the video's demands. From initial discussion to final product our
-                        dedication spans around your bossiness objectives. ensuring your content yields impactful results.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        How long does it take?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">The vitality of your video springs from its creative concept. Selecting the appropriate creative direction stands as a pivotal aspect in crafting
-                        a compelling video. This process might span a few days or, ideally, an entire week in an optimal scenario. However, this timeframe shortens
-                        when the video hinges on interviews.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        What types of videos do we offer?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">When we think of animation, our initial association often leans towards children's cartoons. Yet, its scope extends beyond that perception. We
-                        create Motion Graphic Videos, Mix media, Stop Motion, Demo Video, Whiteboard, Social media ads, Videographic and etc. More than that
-                        you think of anything, we can create.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        What’s involved in getting started?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">To initiate the process, reach out and share your requirements. Upon confirming compatibility, we'll present a detailed proposal showcasing
-                        our capabilities. Once approved, we'll send a Video Services Agreement along with an initial invoice accounting for 50% of the total project
-                        cost. Additionally, we'll furnish a creative brief for your input and schedule our kick-off call.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        How much does a typical video cost?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">The pricing is determined by several factors such as video duration, style, and intricacy. For instance, a tailored 2D animated video generally
-                        falls within the range of $1,000 to $5,000. Interested in a series of videos? Fantastic! We're open to exploring package pricing options to
-                        streamline expenses. Nevertheless, don't be daunted by the figures. Reach out to us, share details about your project, and we'll provide clarity
-                        on the expenses involved.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSix">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                        How long should my video be?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">As audience attention spans remain limited, we aim to craft concise videos, typically spanning 30 to 120 seconds. Despite this brevity, we
-                        ensure essential information is conveyed. While we might not cover every marketing detail, our videos are designed to intrigue viewers and
-                        prompt them to consider the next steps, offering just enough information to captivate interest.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSeven">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                        What’s the typical production process?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">We streamline the process, making it simple and straightforward. Initially, we discuss the project's objectives through a creative brief call,
-                        craft a storyline, present concepts until they align with your goals, develop storyboards and illustrations, seek approvals, proceed to the
-                        animation and voice-over phase, and finally, make refinements based on feedback. That's it—your video is ready!</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingEight">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                        Who owns the rights to the video?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">It's all yours! The ultimate video belongs solely to you.</div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Footer-->
-    <footer
-      class="container-fluid container-padding-helped mobile-top-margin container-top-space pb-5"
-    >
-      <div class="row mb-5 container-top-space">
-        <div class="col-md-6 mt-5 footer-block-1">
-          <div>
-            <p class="footer-head">Reach Us</p>
-            <p class="footer-para footer-margin-section-1">+91 7525853573</p>
-            <p class="footer-para footer-margin-section-1">
-              hello@storyhumor.com
-            </p>
-            <p class="footer-para footer-margin-section-1 footer-address">
-              10 Floor, Summit, Vibhuti Khand,
-            </p>
-            <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
-            <p class="footer-para footer-address">
-              Uttar Pradesh, India. - 226501
+  </section>
+  <!-- Experiments -->
+  <section id="what-motivates-our-actions">
+    <div class="container-fluid container-padding-helped mobile-top-margin container-top-space">
+      <div class="who-we-are">
+        <h1 class="who-we-are-head">Experiments</h1>
+        <hr />
+        <div class="row">
+          <div class="col-md-9">
+            <p class="who-we-are-para-1">
+              When we’re not working for our clients, we like to experiment. It
+              helps us think new thoughts, meet new people, create new
+              things, discover beautiful objects, and challenge ourselves.
             </p>
           </div>
-        </div>
-        <hr class="footer-hr" />
-        <div class="col-md-3 mt-5">
-          <div>
-            <p class="footer-head">Social</p>
-            <ul class="footer-ul">
-              <li class="footer-margin-section-2">
-                <a
-                  href="https://vimeo.com/storyhumor"
-                  class="footer-para footer-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Vimeo
-                </a>
-              </li>
-              <li class="footer-margin-section-2">
-                <a
-                  href="https://www.instagram.com/storyhumorstudio/"
-                  class="footer-para footer-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li class="footer-margin-section-2">
-                <a
-                  href="https://www.behance.net/storyhumor"
-                  class="footer-para footer-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Behance
-                </a>
-              </li>
-              <li class="footer-margin-section-2">
-                <a
-                  href="https://www.linkedin.com/company/storyhumor/"
-                  class="footer-para footer-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Linkedin
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr class="footer-hr" />
-        <div class="col-md-3 mt-5">
-          <div class="footer-block-3">
-            <p>&nbsp;</p>
-            <ul class="footer-ul-3">
-              <li class="footer-margin-section-3-first">
-                <a href="./work.html" class="footer-para footer-link"> Work </a>
-              </li>
-              <li class="footer-margin-section-3">
-                <a href="./about.html" class="footer-para footer-link">
-                  About Us
-                </a>
-              </li>
-              <li class="footer-margin-section-3">
-                <a href="./learn.html" class="footer-para footer-link">
-                  Blog
-                </a>
-              </li>
-              <li class="footer-margin-section-3">
-                <a href="./service.html" class="footer-para footer-link">
-                  Explore
-                </a>
-              </li>
-            </ul>
+          <div class="col-md-3">
+            <img src="./images/white_bg_logo.png" alt="storyhumor-img" class="img-fluid w-75 who-we-are-para-img" />
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+  <!-- chit-chat -->
+  <div class="container-fluid container-top-space mobile-top-margin container-padding-helped">
+    <section id="about-us-social">
+      <div class="about-us bg-primary">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="chit-chat">
+              That was our honest story, what's yours?
+              Hit us up and let's get on a call to
+              <span class="bg-dark rounded-pill ps-3 pe-3 pt-1 pb-1">chit-chat</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- FAQs -->
+  <section id="what-motivates-our-actions">
+    <div class="container-fluid container-padding-helped mobile-top-margin container-top-space">
+      <div class="who-we-are">
+        <h1 class="who-we-are-head">FAQs</h1>
+        <hr />
+        <div class="accordion accordion-flush accordion-margin" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Why work with StoryHumor?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Beyond a mere video, you need a collaborative partner. we engage directly with
+                you, crafting ideas, video concepts customize to your
+                requirements. We will navigate your needs. Being a boutique studio saves you a lot of timeby working
+                closely, simplifying complexity every
+                minute, adding human touch to the brand. While we cherish ideas, we grasp the video's demands. From
+                initial discussion to final product our
+                dedication spans around your bossiness objectives. ensuring your content yields impactful results.Beyond
+                a mere video, you need a collaborative partner. we engage directly with you, crafting ideas, video
+                concepts customize to your
+                requirements. We will navigate your needs. Being a boutique studio saves you a lot of timeby working
+                closely, simplifying complexity every
+                minute, adding human touch to the brand. While we cherish ideas, we grasp the video's demands. From
+                initial discussion to final product our
+                dedication spans around your bossiness objectives. ensuring your content yields impactful results.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How long does it take?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The vitality of your video springs from its creative concept. Selecting the
+                appropriate creative direction stands as a pivotal aspect in crafting
+                a compelling video. This process might span a few days or, ideally, an entire week in an optimal
+                scenario. However, this timeframe shortens
+                when the video hinges on interviews.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What types of videos do we offer?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">When we think of animation, our initial association often leans towards
+                children's cartoons. Yet, its scope extends beyond that perception. We
+                create Motion Graphic Videos, Mix media, Stop Motion, Demo Video, Whiteboard, Social media ads,
+                Videographic and etc. More than that
+                you think of anything, we can create.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                What’s involved in getting started?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">To initiate the process, reach out and share your requirements. Upon
+                confirming compatibility, we'll present a detailed proposal showcasing
+                our capabilities. Once approved, we'll send a Video Services Agreement along with an initial invoice
+                accounting for 50% of the total project
+                cost. Additionally, we'll furnish a creative brief for your input and schedule our kick-off call.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                How much does a typical video cost?
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The pricing is determined by several factors such as video duration, style,
+                and intricacy. For instance, a tailored 2D animated video generally
+                falls within the range of $1,000 to $5,000. Interested in a series of videos? Fantastic! We're open to
+                exploring package pricing options to
+                streamline expenses. Nevertheless, don't be daunted by the figures. Reach out to us, share details about
+                your project, and we'll provide clarity
+                on the expenses involved.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                How long should my video be?
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">As audience attention spans remain limited, we aim to craft concise videos,
+                typically spanning 30 to 120 seconds. Despite this brevity, we
+                ensure essential information is conveyed. While we might not cover every marketing detail, our videos
+                are designed to intrigue viewers and
+                prompt them to consider the next steps, offering just enough information to captivate interest.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                What’s the typical production process?
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">We streamline the process, making it simple and straightforward. Initially, we
+                discuss the project's objectives through a creative brief call,
+                craft a storyline, present concepts until they align with your goals, develop storyboards and
+                illustrations, seek approvals, proceed to the
+                animation and voice-over phase, and finally, make refinements based on feedback. That's it—your video is
+                ready!</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                Who owns the rights to the video?
+              </button>
+            </h2>
+            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">It's all yours! The ultimate video belongs solely to you.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer class="container-fluid container-padding-helped mobile-top-margin container-top-space pb-5">
+    <div class="row mb-5 container-top-space">
+      <div class="col-md-6 mt-5 footer-block-1">
+        <div>
+          <p class="footer-head">Reach Us</p>
+          <p class="footer-para footer-margin-section-1">+91 7525853573</p>
+          <p class="footer-para footer-margin-section-1">
+            hello@storyhumor.com
+          </p>
+          <p class="footer-para footer-margin-section-1 footer-address">
+            10 Floor, Summit, Vibhuti Khand,
+          </p>
+          <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
+          <p class="footer-para footer-address">
+            Uttar Pradesh, India. - 226501
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="col-md-3 mt-5">
+        <div>
+          <p class="footer-head">Social</p>
+          <ul class="footer-ul">
+            <li class="footer-margin-section-2">
+              <a href="https://vimeo.com/storyhumor" class="footer-para footer-link" target="_blank"
+                rel="noopener noreferrer">
+                Vimeo
+              </a>
+            </li>
+            <li class="footer-margin-section-2">
+              <a href="https://www.instagram.com/storyhumorstudio/" class="footer-para footer-link" target="_blank"
+                rel="noopener noreferrer">
+                Instagram
+              </a>
+            </li>
+            <li class="footer-margin-section-2">
+              <a href="https://www.behance.net/storyhumor" class="footer-para footer-link" target="_blank"
+                rel="noopener noreferrer">
+                Behance
+              </a>
+            </li>
+            <li class="footer-margin-section-2">
+              <a href="https://www.linkedin.com/company/storyhumor/" class="footer-para footer-link" target="_blank"
+                rel="noopener noreferrer">
+                Linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="col-md-3 mt-5">
+        <div class="footer-block-3">
+          <p>&nbsp;</p>
+          <ul class="footer-ul-3">
+            <li class="footer-margin-section-3-first">
+              <a href="./work.html" class="footer-para footer-link"> Work </a>
+            </li>
+            <li class="footer-margin-section-3">
+              <a href="./about.html" class="footer-para footer-link">
+                About Us
+              </a>
+            </li>
+            <li class="footer-margin-section-3">
+              <a href="./learn.html" class="footer-para footer-link">
+                Blog
+              </a>
+            </li>
+            <li class="footer-margin-section-3">
+              <a href="./service.html" class="footer-para footer-link">
+                Explore
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

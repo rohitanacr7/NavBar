@@ -1,792 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StoryHumor - Home</title>
-    <meta
-      name="description"
-      content="A brief description of your website content."
-    />
-    <meta name="keywords" content="keyword1, keyword2, keyword3" />
-    <meta name="author" content="StoryHunt" />
-    <link rel="icon" href="./images/Favicon.svg" type="image/x-icon" />
-    <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      // Initialize EmailJS with your correct service ID
-      (function () {
-        emailjs.init("rkHbLB0zEG8yrILt5");
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        // Attach a submit event listener to the form
-        document
-          .getElementById("contact-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
 
-            // Generate a random contact number
-            this.contact_number.value = (Math.random() * 100000) | 0;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StoryHumor - Home</title>
+  <meta name="description" content="A brief description of your website content." />
+  <meta name="keywords" content="keyword1, keyword2, keyword3" />
+  <meta name="author" content="StoryHunt" />
+  <link rel="icon" href="./images/Favicon.svg" type="image/x-icon" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    // Initialize EmailJS with your correct service ID
+    (function () {
+      emailjs.init("rkHbLB0zEG8yrILt5");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      // Attach a submit event listener to the form
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
 
-            // Send the form using EmailJS
-            emailjs.sendForm("service_fs6v6lc", "template_wydf3r5", this).then(
-              function () {
-                console.log("SUCCESS!");
-                $("#successModal").modal("show");
-              },
-              function (error) {
-                console.log("FAILED...", error);
-                $("#errorModal").modal("show");
-              }
-            );
-          });
-      };
-    </script>
-  </head>
-  <body>
-    <header class="container-fluid container-padding-helped">
-      <a href="./index.html"
-        ><img src="images/logo.jpg" alt="logo" class="logo"
-      /></a>
-      <input type="checkbox" id="nav_check" hidden />
-      <nav>
-        <ul>
-          <li>
-            <a href="./work.html">Work</a>
-          </li>
-          <li>
-            <a href="./service.html">Service</a>
-          </li>
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <li>
-            <a href="./learn.html">Learn</a>
-          </li>
-          <li>
-            <a href="./contactus.html" class="link-contact rounded-pill"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <label for="nav_check" class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-    </header>
-    <!--Home Container-->
-    <section id="home" class="home-section">
-      <div class="container-fluid container-padding-helped mt-3">
-        <div class="row pt-md-3 pt-xl-5 pt-xxl-5">
-          <div class="col-md-5 col-sm-12 mt-md-5 ">
-            <p class="banner-header-text mt-3">Let's make your</p>
-            <p class="banner-header-text">success story</p>
-            <p class="banner-header-text">animated.</p>
-            <div class="button-container button-container-margin">
-              <a href="./work.html" class="button btn btn-primary rounded-pill">
-                See Our Work
-              </a>
-              <a
-                href="./contactus.html"
-                class="button btn btn-sm btn-dark rounded-pill ms-4"
-              >
-                Let's Talk
-              </a>
-            </div>
+          // Generate a random contact number
+          this.contact_number.value = (Math.random() * 100000) | 0;
+
+          // Send the form using EmailJS
+          emailjs.sendForm("service_fs6v6lc", "template_wydf3r5", this).then(
+            function () {
+              console.log("SUCCESS!");
+              $("#successModal").modal("show");
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              $("#errorModal").modal("show");
+            }
+          );
+        });
+    };
+  </script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <header class="container-fluid container-padding-helped">
+    <a href="./index.html"><img src="images/logo.jpg" alt="logo" class="logo" /></a>
+    <input type="checkbox" id="nav_check" hidden />
+    <nav>
+      <ul>
+        <li>
+          <a href="./work.html">Work</a>
+        </li>
+        <li>
+          <a href="./service.html">Service</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="./learn.html">Learn</a>
+        </li>
+        <li>
+          <a href="./contactus.html" class="link-contact rounded-pill">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <label for="nav_check" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+  </header>
+  <!--Home Container-->
+  <section id="home" class="home-section">
+    <div class="container-fluid container-padding-helped mt-3">
+      <div class="row pt-md-3 pt-xl-5 pt-xxl-5">
+        <div class="col-md-5 col-sm-12 mt-md-5 ">
+          <p class="banner-header-text mt-3">Let's make your</p>
+          <p class="banner-header-text">success story</p>
+          <p class="banner-header-text">animated.</p>
+          <div class="button-container button-container-margin">
+            <a href="./work.html" class="button btn btn-primary rounded-pill">
+              See Our Work
+            </a>
+            <a href="./contactus.html" class="button btn btn-sm btn-dark rounded-pill ms-4">
+              Let's Talk
+            </a>
           </div>
-          <div class="col-md-7 col-sm-12 home-video" style="position: relative">
-            <!-- Vimeo video iframe -->
+        </div>
+        <div class="col-md-7 col-sm-12 home-video" style="position: relative">
+          <!-- Vimeo video iframe -->
+          <div class="vidoe-responsive">
+            <iframe title="storyhumor-home-video"
+              src="https://player.vimeo.com/video/880447747?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=0"
+              class="shadow video-iframe" id="videoIframe0"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 high-res">
+        <p class="text-center mt-5 container-padding header-para">
+          We are a Boutique Design & Animation Studio specialization in
+          crafting engaging video content for startups and agencies. Our
+          expertise lies in bringing captivating stories to life through
+          animation, catering to all stages of production.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- About Us -->
+  <section id="about-us">
+    <div class="container-fluid container-padding mobile-top-margin container-top-space">
+      <div class="about-us about-us-sm ">
+        <h5 class="text-white fs-3 fw-bold">About Us</h5>
+        <hr />
+        <div class="row">
+          <div class="col-md-5 text-white fw-bold about-bold-text">
+            <p>
+              We are a B2B design & animation studio, help agencies keep thier
+              work flow.
+            </p>
+          </div>
+          <div class="col-md-6 offset-md-1 text-white about-light-text">
+            <p>
+              We partner with agencies and help them grow more by being the
+              helping hands. We help them from understanding the client and
+              project to the final production.
+            </p>
+            <a href="about.html" type="button"
+              class="btn btn-primary rounded-pill ps-md-5 pe-md-5 pt-2 pb-2 mt-md-3 btn-about-us">
+              See Process
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Work -->
+  <section id="featured-work" class="featured-section container-top-space">
+    <div class="container-fluid container-padding ps-3 pe-3 ps-md-5 pt-1 pe-md-5 container-top-space">
+      <div class="featured-work">
+        <h1 class="text-md-start helped-margin learn-text-bold">Featured Work</h1>
+        <div class="row mt-5">
+          <div class="col-md-6 featured-work-videos-padding">
             <div class="vidoe-responsive">
-              <iframe
-                  title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/880447747?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=0"
-                  class="shadow video-iframe"
-                  id="videoIframe0"
-                ></iframe>
-              </div>
+              <iframe title="storyhumor-home-video"
+                src="https://player.vimeo.com/video/880927523?h=743be9eade&loop=1&muted=1&controls=0&background=1"
+                class="shadow video-iframe" id="videoIframe1"></iframe>
+            </div>
+            <p class="mt-2 fw-bold featured-work-text">PebbleBae</p>
+          </div>
+          <div class="col-md-6 featured-work-videos-padding">
+            <div class="vidoe-responsive">
+              <iframe title="storyhumor-home-video"
+                src="https://player.vimeo.com/video/880446093?h=fc0fe55a7a&loop=1&muted=1&controls=0&background=1"
+                class="shadow video-iframe" id="videoIframe2"></iframe>
+            </div>
+            <p class="mt-2 fw-bold featured-work-text">Boat Watchface</p>
           </div>
         </div>
-        <div class="col-12 high-res">
-          <p class="text-center mt-5 container-padding header-para">
-            We are a Boutique Design & Animation Studio specialization in
-            crafting engaging video content for startups and agencies. Our
-            expertise lies in bringing captivating stories to life through
-            animation, catering to all stages of production.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- About Us -->
-    <section id="about-us">
-      <div
-        class="container-fluid container-padding mobile-top-margin container-top-space"
-      >
-        <div class="about-us about-us-sm ">
-          <h5 class="text-white fs-3 fw-bold">About Us</h5>
-          <hr />
-          <div class="row">
-            <div class="col-md-5 text-white fw-bold about-bold-text">
-              <p>
-                We are a B2B design & animation studio, help agencies keep thier
-                work flow.
-              </p>
+        <div class="row mt-4 mb-5">
+          <div class="col-md-6 featured-work-videos-padding">
+            <div class="vidoe-responsive">
+              <iframe title="storyhumor-home-video"
+                src="https://player.vimeo.com/video/885907143?h=d4cf241e02&loop=1&muted=1&controls=0&background=1"
+                class="shadow video-iframe" id="videoIframe3"></iframe>
             </div>
-            <div class="col-md-6 offset-md-1 text-white about-light-text">
-              <p>
-                We partner with agencies and help them grow more by being the
-                helping hands. We help them from understanding the client and
-                project to the final production.
-              </p>
-              <a
-                href="about.html"
-                type="button"
-                class="btn btn-primary rounded-pill ps-md-5 pe-md-5 pt-2 pb-2 mt-md-3 btn-about-us"
-              >
-                See Process
-              </a>
+            <p class="mt-2 fw-bold featured-work-text">National Epilepsy Day</p>
+          </div>
+          <div class="col-md-6 featured-work-videos-padding">
+            <div class="vidoe-responsive">
+              <iframe title="storyhumor-home-video"
+                src="https://player.vimeo.com/video/880817248?h=32baa1ae03&loop=1&muted=1&controls=0&background=1"
+                class="shadow video-iframe" id="videoIframe4"></iframe>
             </div>
+            <p class="mt-2 fw-bold featured-work-text">Puma Shoes</p>
+          </div>
+          <div class="featured-all-projects d-flex align-items-end justify-content-end">
+            <a href="./work.html" class="btn btn-outline-dark rounded-pill mt-5 pt-md-3 pb-md-3 ps-md-5 pe-md-5">
+              Check all the projects
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Featured Work -->
-    <section id="featured-work" class="featured-section container-top-space">
-      <div
-        class="container-fluid container-padding ps-3 pe-3 ps-md-5 pt-1 pe-md-5 container-top-space"
-      >
-        <div class="featured-work">
-          <h1 class="text-md-start helped-margin learn-text-bold">Featured Work</h1>
-          <div class="row mt-5">
-            <div class="col-md-6 featured-work-videos-padding">
-              <div class="vidoe-responsive">
-              <iframe
-                  title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/880927523?h=743be9eade&loop=1&muted=1&controls=0&background=1"
-                  class="shadow video-iframe"
-                  id="videoIframe1"
-                ></iframe>
-              </div>
-              <p class="mt-2 fw-bold featured-work-text">PebbleBae</p>
-            </div>
-            <div class="col-md-6 featured-work-videos-padding">
-              <div class="vidoe-responsive">
-              <iframe
-                  title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/880446093?h=fc0fe55a7a&loop=1&muted=1&controls=0&background=1"
-                  class="shadow video-iframe"
-                  id="videoIframe2"
-                ></iframe>
-              </div>
-              <p class="mt-2 fw-bold featured-work-text">Boat Watchface</p>
-            </div>
+    </div>
+  </section>
+  <!-- B2B and B2C Videos -->
+  <section id="about-us">
+    <div class="container-fluid B2B-margin-top-head mobile-top-margin container-padding">
+      <div class="about-us">
+        <div class="row">
+          <div class="col-md-5 text-white B2B-margin-top">
+            <h5 class="B2B-bold-text fw-bold">B2B Videos</h5>
+            <p class="B2B-text">
+              Long presentations are boaring, Persuading them in a short is a
+              cool way. Makes you win the pitchs.
+            </p>
           </div>
-          <div class="row mt-4 mb-5">
-            <div class="col-md-6 featured-work-videos-padding">
-              <div class="vidoe-responsive">
-              <iframe
-                  title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/885907143?h=d4cf241e02&loop=1&muted=1&controls=0&background=1"
-                  class="shadow video-iframe"
-                  id="videoIframe3"
-                ></iframe>
-              </div>
-              <p class="mt-2 fw-bold featured-work-text">National Epilepsy Day</p>
-            </div>
-            <div class="col-md-6 featured-work-videos-padding">
-              <div class="vidoe-responsive">
-              <iframe
-                  title="storyhumor-home-video"
-                  src="https://player.vimeo.com/video/880817248?h=32baa1ae03&loop=1&muted=1&controls=0&background=1"
-                  class="shadow video-iframe"
-                  id="videoIframe4"
-                ></iframe>
-                </div>
-              <p class="mt-2 fw-bold featured-work-text">Puma Shoes</p>
-            </div>
-            <div
-              class="featured-all-projects d-flex align-items-end justify-content-end"
-            >
-              <a
-                href="./work.html"
-                class="btn btn-outline-dark rounded-pill pt-md-3 pb-md-3 ps-md-5 pe-md-5"
-              >
-                Check all the projects
-              </a>
-            </div>
+          <div class="col-md-6 offset-md-1 text-white B2B-margin-top">
+            <h5 class="B2B-bold-text fw-bold">B2C Videos</h5>
+            <p class="B2B-text">
+              Big world, one mouth. Hard to explain your product. Video is the
+              best way to present you idea and product.
+            </p>
+            <a href="./service.html" type="button"
+              class="btn btn-primary rounded-pill ps-4 pe-4 pt-2 pb-2 mt-3 btn-know-more">
+              Know more
+            </a>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- Who we helped explain -->
+  <div class="container-fluid container-padding-helped mobile-top-margin container-top-space">
+    <div class="featured-work container-padding">
+      <h1 class="text-md-start helped-text">
+        Who we helped explain
+      </h1>
+    </div>
+    <section>
+      <div class="row mt-5 mt-lg3">
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo1.png" alt="logo" class="img-fluid image_margin" />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo2.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo3.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo4.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo5.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo6.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo7.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo8.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo9.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo10.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo11.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo12.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo13.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo14.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo15.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo16.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo17.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <img src="images/helped_images/logo18.png" alt="logo" class="img-fluid image_margin " />
+        </div>
+      </div>
     </section>
-    <!-- B2B and B2C Videos -->
-    <section id="about-us">
-      <div
-        class="container-fluid B2B-margin-top-head mobile-top-margin container-padding"
-      >
+  </div>
+  <!-- Learn -->
+  <section id="learn" class="container-fluid container-padding-helped learn-container-top-space">
+    <div class="featured-work container-padding">
+      <h1 class="text-md-start helped-margin learn-text-bold">Learn</h1>
+    </div>
+    <div class="row container-padding">
+      <div class="col-md-4">
+        <img src="images/Home-01.jpg" alt="storyhumor-home-learn-img" class="img-fluid learn-img" />
+        <p class="learn-text">
+          How video is the best way to explain your product in all the other
+          media.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/Home-02.jpg" alt="storyhumor-home-learn-img" class="img-fluid learn-img" />
+        <p class="learn-text">
+          Why do you remember most of old TV commercials but not print ads?
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/Home-03.jpg" alt="storyhumor-home-learn-img" class="img-fluid learn-img" />
+        <p class="learn-text learn-last">
+          How world’s most big brands are marketed by videos.
+        </p>
+      </div>
+    </div>
+    <div class="featured-all-projects d-flex align-items-end justify-content-end">
+      <a href="./learn.html"
+        class="btn btn-outline-dark rounded-pill mt-5 pt-md-3 pb-md-3 ps-md-5 pe-md-5 btn-see-more">
+        See More
+      </a>
+    </div>
+  </section>
+  <!-- What they say about us -->
+  <section id="about-us-slider" class="what_they_say_about_us">
+    <div class="container-fluid container-padding-helped mobile-top-margin container-top-space">
+      <div class="about-us-slider container-padding">
+        <h1 class="comments-text-bold">What they say about us</h1>
+        <hr />
+        <p class="col-12 comments-text comments-margin" id="comment">
+          [Dynamic Comment]
+        </p>
+        <div class="row comments-margin">
+          <div class="rounded-pill bg-primary text-white col-md-3 pt-2 pb-2 ps-4">
+            <p class="my-auto fw-bold comments-text ps-lg-4" id="name">
+              [Dynamic Name]
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-6 offset-md-3 d-flex justify-content-end align-items-center arrow-btns">
+            <button type="button" class="btn btn-primary rounded-circle arrow-bg me-3 btn-arrow">
+              <i class="bi bi-arrow-left fs-4 text-white"></i>
+            </button>
+            <button type="button" class="btn btn-primary rounded-circle arrow-bg btn-arrow">
+              <i class="bi bi-arrow-right fs-4 text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Behance and Instagram -->
+  <section class="social-section">
+    <div class="container-fluid container-top-space mobile-top-margin container-padding">
+      <section id="about-us-social social-container-padding">
         <div class="about-us">
-          <div class="row">
-            <div class="col-md-5 text-white B2B-margin-top">
-              <h5 class="B2B-bold-text fw-bold">B2B Videos</h5>
-              <p class="B2B-text">
-                Long presentations are boaring, Persuading them in a short is a
-                cool way. Makes you win the pitchs.
-              </p>
+          <div class="row B-I-img">
+            <div class="col-md-9">
+              <h4 class="social-text">
+                If you want to see full case studies, click on our
+                <span class="behance rounded-pill ps-3 pe-3 pt-1 pb-1"><a class="text-decoration-none text-white"
+                    href="https://www.behance.net/storyhumor" target="_blank"
+                    rel="noopener noreferrer">Behance</a></span>
+                account. And for cool animations we've made, check out
+                <span class="insta rounded-pill ps-3 pe-3 pt-1 pb-1"><a class="text-decoration-none text-white"
+                    href="https://www.instagram.com/storyhumorstudio/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a></span>.
+              </h4>
             </div>
-            <div class="col-md-6 offset-md-1 text-white B2B-margin-top">
-              <h5 class="B2B-bold-text fw-bold">B2C Videos</h5>
-              <p class="B2B-text">
-                Big world, one mouth. Hard to explain your product. Video is the
-                best way to present you idea and product.
-              </p>
-              <a
-                href="./service.html"
-                type="button"
-                class="btn btn-primary rounded-pill ps-4 pe-4 pt-2 pb-2 mt-3 btn-know-more"
-              >
-                Know more
-              </a>
+            <div class="col-md-3 text-white d-flex justify-content-center align-items-center">
+              <img src="images/StoryHumorLogoTrans.png" alt="logo" class="img-fluid w-75" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Who we helped explain -->
-    <div
-      class="container-fluid container-padding-helped mobile-top-margin container-top-space"
-    >
-      <div class="featured-work container-padding">
-        <h1 class="text-md-start helped-text">
-          Who we helped explain
-        </h1>
-      </div>
-      <section>
-        <div class="row mt-5 mt-lg3">        
-       <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo1.png" alt="logo" class="img-fluid image_margin"/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo2.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo3.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo4.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo5.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo6.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-          <div class="col-md-2 col-sm-4 col-4">
-            <img src="images/helped_images/logo7.png" alt="logo" class="img-fluid image_margin " />
-          </div>
-          <div class="col-md-2 col-sm-4 col-4">
-            <img src="images/helped_images/logo8.png" alt="logo" class="img-fluid image_margin " />
-          </div>
-          <div class="col-md-2 col-sm-4 col-4">
-            <img src="images/helped_images/logo9.png" alt="logo" class="img-fluid image_margin "/>
-          </div>
-          <div class="col-md-2 col-sm-4 col-4">
-            <img src="images/helped_images/logo10.png" alt="logo" class="img-fluid image_margin "/>
-          </div>
-          <div class="col-md-2 col-sm-4 col-4">
-            <img src="images/helped_images/logo11.png" alt="logo" class="img-fluid image_margin "/>
-          </div>
-          <div class="col-md-2 col-sm-4 col-4">
-            <img src="images/helped_images/logo12.png" alt="logo" class="img-fluid image_margin "/>
-          </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo13.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo14.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo15.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo16.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo17.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-        <div class="col-md-2 col-sm-4 col-4">
-          <img src="images/helped_images/logo18.png" alt="logo" class="img-fluid image_margin "/>
-        </div>
-      </div>
       </section>
     </div>
-    <!-- Learn -->
-    <section
-      id="learn"
-      class="container-fluid container-padding-helped learn-container-top-space"
-    >
-      <div class="featured-work container-padding">
-        <h1 class="text-md-start helped-margin learn-text-bold">Learn</h1>
-      </div>
-      <div class="row container-padding">
-        <div class="col-md-4">
-          <img
-            src="images/Home-01.jpg"
-            alt="storyhumor-home-learn-img"
-            class="img-fluid learn-img"
-          />
-          <p class="learn-text">
-            How video is the best way to explain your product in all the other
-            media.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img
-            src="images/Home-02.jpg"
-            alt="storyhumor-home-learn-img"
-            class="img-fluid learn-img"
-          />
-          <p class="learn-text">
-            Why do you remember most of old TV commercials but not print ads?
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img
-            src="images/Home-03.jpg"
-            alt="storyhumor-home-learn-img"
-            class="img-fluid learn-img"
-          />
-          <p class="learn-text learn-last">
-            How world’s most big brands are marketed by videos.
-          </p>
-        </div>
-      </div>
-      <div
-        class="featured-all-projects d-flex align-items-end justify-content-end"
-      >
-        <a
-          href="./learn.html"
-          class="btn btn-outline-dark rounded-pill mt-5 pt-md-3 pb-md-3 ps-md-5 pe-md-5 btn-see-more"
-        >
-          See More
-        </a>
-      </div>
-    </section>
-    <!-- What they say about us -->
-    <section id="about-us-slider" class="what_they_say_about_us">
-      <div
-        class="container-fluid container-padding-helped mobile-top-margin container-top-space"
-      >
-        <div class="about-us-slider container-padding">
-          <h1 class="comments-text-bold">What they say about us</h1>
-          <hr />
-          <p class="col-12 comments-text comments-margin" id="comment">
-            [Dynamic Comment]
-          </p>
-          <div class="row comments-margin">
-            <div
-              class="rounded-pill bg-primary text-white col-md-3 pt-2 pb-2 ps-4"
-            >
-              <p class="my-auto fw-bold comments-text ps-lg-4" id="name">
-                [Dynamic Name]
-              </p>
-            </div>
-            <div
-              class="col-md-6 col-sm-6 offset-md-3 d-flex justify-content-end align-items-center arrow-btns"
-            >
-              <button
-                type="button"
-                class="btn btn-primary rounded-circle arrow-bg me-3 btn-arrow"
-              >
-                <i class="bi bi-arrow-left fs-4 text-white"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-primary rounded-circle arrow-bg btn-arrow"
-              >
-                <i class="bi bi-arrow-right fs-4 text-white"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Behance and Instagram -->
-    <section class="social-section">
-      <div
-        class="container-fluid container-top-space mobile-top-margin container-padding"
-      >
-        <section id="about-us-social social-container-padding">
-          <div class="about-us">
-            <div class="row">
-              <div class="col-md-9">
-                <h4 class="social-text">
-                  If you want to see full case studies, click on our
-                  <span class="behance rounded-pill ps-3 pe-3 pt-1 pb-1"
-                    ><a
-                      class="text-decoration-none text-white"
-                      href="https://www.behance.net/storyhumor"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Behance</a
-                    ></span
-                  >
-                  account. And for cool animations we've made, check out
-                  <span class="insta rounded-pill ps-3 pe-3 pt-1 pb-1"
-                    ><a
-                      class="text-decoration-none text-white"
-                      href="https://www.instagram.com/storyhumorstudio/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Instagram</a
-                    ></span
-                  >.
-                </h4>
-              </div>
-              <div
-                class="col-md-3 text-white d-flex justify-content-center align-items-center"
-              >
-                <img
-                  src="images/StoryHumorLogoTrans.png"
-                  alt="logo"
-                  class="img-fluid w-75"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-    <!--Contact Us-->
-    <section id="ContactUs" class="ContactUsSection">
-      <div
-        class="container-fluid container-padding-helped mobile-top-margin container-top-space contact"
-      >
-        <h1 class="comments-text-bold">Let us know about your idea</h1>
-        <hr />
-        <br /><br />
+  </section>
+  <!--Contact Us-->
+  <section id="ContactUs" class="ContactUsSection">
+    <div class="container-fluid container-padding-helped mobile-top-margin container-top-space contact">
+      <h1 class="comments-text-bold">Let us know about your idea</h1>
+      <hr />
+      <br /><br />
 
-        <!-- Updated form with EmailJS integration -->
-        <form id="contact-form">
-          <input type="hidden" name="contact_number" />
+      <!-- Updated form with EmailJS integration -->
+      <form id="contact-form">
+        <input type="hidden" name="contact_number" />
 
-          <div class="row contactform">
-            <div class="col-md-6">
-              <input
-                type="text"
-                id="name"
-                name="user_name"
-                class="col-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 contact-gradient"
-                placeholder="Name"
-              />
-            </div>
-            <div class="col-md-6">
-              <input
-                type="email"
-                id="Email"
-                name="user_email"
-                placeholder="Email"
-                class="col-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 contact-gradient"
-              />
-            </div>
+        <div class="row contactform">
+          <div class="col-md-6">
+            <input type="text" id="name" name="user_name"
+              class="col-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 contact-gradient" placeholder="Name" />
           </div>
-
-          <div class="row contactform">
-            <div class="col-md-6">
-              <input
-                type="text"
-                id="contact"
-                name="user_contact"
-                class="col-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 contact-gradient"
-                placeholder="Contact number"
-              />
-            </div>
-            <div class="col-md-6">
-              <select
-                name="dropdown1"
-                id="dropdown1"
-                class="col-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 contact-gradient dropdown"
-              >
-                <option value="Friend or Business Referral" class="blue-bg">
-                  Friend or Business Referral
-                </option>
-                <option value="Google" class="blue-bg">Google</option>
-                <option value="LinkedIn" class="blue-bg">LinkedIn</option>
-                <option value="Instagram" class="blue-bg">Instagram</option>
-                <option value="Other" class="blue-bg">Other</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="row contactform">
-            <div class="col-md-12 col-sm-12">
-              <textarea
-                type="text"
-                id="txtarea"
-                name="message"
-                class="col-md-12 col-sm-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 w-100 contact-textarea contact-gradient"
-                placeholder="Your Message"
-                rows="5"
-              ></textarea>
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end pe-2">
-              <button
-                class="btn btn-primary rounded-pill btn-dark pt-2 pt-lg-3 pb-2 pb-lg-3 ps-4 ps-lg-5 pe-4 pe-lg-5 mt-3 mt-lg-5 btn-submit"
-                type="submit"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!--Footer-->
-    <footer
-      class="container-fluid container-padding-helped mobile-top-margin container-top-space pb-5"
-    >
-      <div class="row mb-5 container-top-space">
-        <div class="col-md-6 mt-5 footer-block-1">
-          <div>
-            <p class="footer-head">Reach Us</p>
-            <p class="footer-para footer-margin-section-1">+91 7525853573</p>
-            <p class="footer-para footer-margin-section-1">
-              hello@storyhumor.com
-            </p>
-            <p class="footer-para footer-margin-section-1 footer-address">
-              10 Floor, Summit, Vibhuti Khand,
-            </p>
-            <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
-            <p class="footer-para footer-address">
-              Uttar Pradesh, India. - 226501
-            </p>
+          <div class="col-md-6">
+            <input type="email" id="Email" name="user_email" placeholder="Email"
+              class="col-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 contact-gradient" />
           </div>
         </div>
-        <hr class="footer-hr" />
-        <div class="col-md-3 mt-5">
-          <div>
-            <p class="footer-head">Social</p>
-            <ul class="footer-ul">
-              <li class="footer-margin-section-2">
-                <a
-                  href="https://vimeo.com/storyhumor"
-                  class="footer-para footer-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Vimeo
-                </a>
-              </li>
-              <li class="footer-margin-section-2">
-                <a
-                  href="https://www.instagram.com/storyhumorstudio/"
-                  class="footer-para footer-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li class="footer-margin-section-2">
-                <a
-                  href="https://www.behance.net/storyhumor"
-                  class="footer-para footer-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Behance
-                </a>
-              </li>
-              <li class="footer-margin-section-2">
-                <a
-                  href="https://www.linkedin.com/company/storyhumor/"
-                  class="footer-para footer-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Linkedin
-                </a>
-              </li>
-            </ul>
+
+        <div class="row contactform">
+          <div class="col-md-6">
+            <input type="text" id="contact" name="user_contact"
+              class="col-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 contact-gradient"
+              placeholder="Contact number" />
+          </div>
+          <div class="col-md-6">
+            <select name="dropdown1" id="dropdown1"
+              class="col-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 contact-gradient dropdown">
+              <option value="Friend or Business Referral" class="blue-bg">
+                Friend or Business Referral
+              </option>
+              <option value="Google" class="blue-bg">Google</option>
+              <option value="LinkedIn" class="blue-bg">LinkedIn</option>
+              <option value="Instagram" class="blue-bg">Instagram</option>
+              <option value="Other" class="blue-bg">Other</option>
+            </select>
           </div>
         </div>
-        <hr class="footer-hr" />
-        <div class="col-md-3 mt-5">
-          <div class="footer-block-3">
-            <p>&nbsp;</p>
-            <ul class="footer-ul-3">
-              <li class="footer-margin-section-3-first">
-                <a href="./work.html" class="footer-para footer-link"> Work </a>
-              </li>
-              <li class="footer-margin-section-3">
-                <a href="./about.html" class="footer-para footer-link">
-                  About Us
-                </a>
-              </li>
-              <li class="footer-margin-section-3">
-                <a href="./learn.html" class="footer-para footer-link">
-                  Blog
-                </a>
-              </li>
-              <li class="footer-margin-section-3">
-                <a href="./service.html" class="footer-para footer-link">
-                  Explore
-                </a>
-              </li>
-            </ul>
+
+        <div class="row contactform">
+          <div class="col-md-12 col-sm-12">
+            <textarea type="text" id="txtarea" name="message"
+              class="col-md-12 col-sm-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 w-100 contact-textarea contact-gradient"
+              placeholder="Your Message" rows="5"></textarea>
           </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Success Modal -->
-    <div
-      class="modal fade"
-      id="successModal"
-      tabindex="-1"
-      aria-labelledby="successModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header bg-primary text-white">
-            <h5 class="modal-title" id="successModalLabel">
-              <i class="bi bi-check-circle-fill"></i> Thank You!
-            </h5>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end pe-2">
             <button
-              type="button"
-              class="btn-close text-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+              class="btn btn-primary rounded-pill btn-dark pt-2 pt-lg-3 pb-2 pb-lg-3 ps-4 ps-lg-5 pe-4 pe-lg-5 mt-3 mt-lg-5 btn-submit"
+              type="submit">
+              Submit
+            </button>
           </div>
-          <div class="modal-body">
-            <p class="lead">Your message was sent successfully.</p>
-            <p>
-              We appreciate your interest and will get back to you as soon as
-              possible.
-            </p>
-          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer class="container-fluid container-padding-helped mobile-top-margin container-top-space pb-5">
+    <div class="row mb-5 container-top-space">
+      <div class="col-md-6 mt-5 footer-block-1">
+        <div>
+          <p class="footer-head">Reach Us</p>
+          <p class="footer-para footer-margin-section-1">+91 7525853573</p>
+          <p class="footer-para footer-margin-section-1">
+            hello@storyhumor.com
+          </p>
+          <p class="footer-para footer-margin-section-1 footer-address">
+            10 Floor, Summit, Vibhuti Khand,
+          </p>
+          <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
+          <p class="footer-para footer-address">
+            Uttar Pradesh, India. - 226501
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="col-md-3 mt-5">
+        <div>
+          <p class="footer-head">Social</p>
+          <ul class="footer-ul">
+            <li class="footer-margin-section-2">
+              <a href="https://vimeo.com/storyhumor" class="footer-para footer-link" target="_blank"
+                rel="noopener noreferrer">
+                Vimeo
+              </a>
+            </li>
+            <li class="footer-margin-section-2">
+              <a href="https://www.instagram.com/storyhumorstudio/" class="footer-para footer-link" target="_blank"
+                rel="noopener noreferrer">
+                Instagram
+              </a>
+            </li>
+            <li class="footer-margin-section-2">
+              <a href="https://www.behance.net/storyhumor" class="footer-para footer-link" target="_blank"
+                rel="noopener noreferrer">
+                Behance
+              </a>
+            </li>
+            <li class="footer-margin-section-2">
+              <a href="https://www.linkedin.com/company/storyhumor/" class="footer-para footer-link" target="_blank"
+                rel="noopener noreferrer">
+                Linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="col-md-3 mt-5">
+        <div class="footer-block-3">
+          <p>&nbsp;</p>
+          <ul class="footer-ul-3">
+            <li class="footer-margin-section-3-first">
+              <a href="./work.html" class="footer-para footer-link"> Work </a>
+            </li>
+            <li class="footer-margin-section-3">
+              <a href="./about.html" class="footer-para footer-link">
+                About Us
+              </a>
+            </li>
+            <li class="footer-margin-section-3">
+              <a href="./learn.html" class="footer-para footer-link">
+                Blog
+              </a>
+            </li>
+            <li class="footer-margin-section-3">
+              <a href="./service.html" class="footer-para footer-link">
+                Explore
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- Error Modal -->
-    <div
-      class="modal fade"
-      id="errorModal"
-      tabindex="-1"
-      aria-labelledby="errorModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="errorModalLabel">
-              <i class="bi bi-exclamation-triangle-fill text-danger"></i> Error
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            Oops! Something went wrong. Please try again later.
-          </div>
+  </footer>
+  <!-- Success Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="successModalLabel">
+            <i class="bi bi-check-circle-fill"></i> Thank You!
+          </h5>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Your message was sent successfully.</p>
+          <p>
+            We appreciate your interest and will get back to you as soon as
+            possible.
+          </p>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script>
-      var player = new Vimeo.Player(document.getElementById("videoIframe"));
-      var isMuted = false;
+  </div>
+  <!-- Error Modal -->
+  <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="errorModalLabel">
+            <i class="bi bi-exclamation-triangle-fill text-danger"></i> Error
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Oops! Something went wrong. Please try again later.
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script>
+    var player = new Vimeo.Player(document.getElementById("videoIframe"));
+    var isMuted = false;
 
-      function toggleVolume() {
-        isMuted = !isMuted;
-        var volumeIcon = document.getElementById("volumeIcon");
+    function toggleVolume() {
+      isMuted = !isMuted;
+      var volumeIcon = document.getElementById("volumeIcon");
 
-        if (isMuted) {
-          player.setVolume(0); // Mute the video
-          volumeIcon.classList.remove("bi-volume-up-fill");
-          volumeIcon.classList.add("bi-volume-mute-fill");
-        } else {
-          player.setVolume(1); // Unmute the video
-          volumeIcon.classList.remove("bi-volume-mute-fill");
-          volumeIcon.classList.add("bi-volume-up-fill");
-        }
+      if (isMuted) {
+        player.setVolume(0); // Mute the video
+        volumeIcon.classList.remove("bi-volume-up-fill");
+        volumeIcon.classList.add("bi-volume-mute-fill");
+      } else {
+        player.setVolume(1); // Unmute the video
+        volumeIcon.classList.remove("bi-volume-mute-fill");
+        volumeIcon.classList.add("bi-volume-up-fill");
       }
-    </script>
-    <script>
-      $(document).ready(function () {
-        // Get all the video iframes
-        var videoIframes = $('.video-iframe');
-    
-        // Attach hover event handler to each iframe
-        videoIframes.hover(
-          function () {
-            // On hover, update the src attribute with a new link
-            var videoId = $(this).attr('id');
-            switch (videoId) {
-              case 'videoIframe0':
-                $(this).attr('src', 'https://player.vimeo.com/video/880447747?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-                break;
-              case 'videoIframe1':
-                $(this).attr('src', 'https://player.vimeo.com/video/880927523?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-                break;
-              case 'videoIframe2':
-                $(this).attr('src', 'https://player.vimeo.com/video/880446093?h=fc0fe55a7a&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-                break;
-              case 'videoIframe3':
-                $(this).attr('src', 'https://player.vimeo.com/video/885907143?h=d4cf241e02&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-                break;
-              case 'videoIframe4':
-                $(this).attr('src', 'https://player.vimeo.com/video/880817248?h=32baa1ae03&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-                break;
-            }
-          },
-          function () {
-            // On mouseout, revert to the original src attribute
-            var originalSrc = $(this).attr('data-original-src');
-            $(this).attr('src', originalSrc);
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      // Get all the video iframes
+      var videoIframes = $('.video-iframe');
+
+      // Attach hover event handler to each iframe
+      videoIframes.hover(
+        function () {
+          // On hover, update the src attribute with a new link
+          var videoId = $(this).attr('id');
+          switch (videoId) {
+            case 'videoIframe0':
+              $(this).attr('src', 'https://player.vimeo.com/video/880447747?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+            case 'videoIframe1':
+              $(this).attr('src', 'https://player.vimeo.com/video/880927523?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+            case 'videoIframe2':
+              $(this).attr('src', 'https://player.vimeo.com/video/880446093?h=fc0fe55a7a&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+            case 'videoIframe3':
+              $(this).attr('src', 'https://player.vimeo.com/video/885907143?h=d4cf241e02&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+            case 'videoIframe4':
+              $(this).attr('src', 'https://player.vimeo.com/video/880817248?h=32baa1ae03&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
           }
-        );
-      });
-    </script>
-  </body>
+        },
+        function () {
+          // On mouseout, revert to the original src attribute
+          var originalSrc = $(this).attr('data-original-src');
+          $(this).attr('src', originalSrc);
+        }
+      );
+    });
+  </script>
+</body>
+
 </html>
