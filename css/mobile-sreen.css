@@ -4,9 +4,11 @@
         height: 3rem;
         width: 4.5rem;
     }
+
     .hamburger {
         display: block;
     }
+
     header nav {
         position: absolute;
         width: 100%;
@@ -18,87 +20,100 @@
         transition: 0.3s;
         text-align: center;
     }
-    header #nav_check:checked ~ nav {
+
+    header #nav_check:checked~nav {
         left: 0;
     }
+
     header nav ul {
         display: block;
     }
+
     header nav ul li a {
         margin: 5px 0;
+        font-size: 1rem !important;
     }
 
-    .banner-header-text{
+    .banner-header-text {
         font-size: 2rem !important;
         font-weight: 900;
         line-height: 1.3rem !important;
     }
 
-    .home .mt-3{
-        margin-top: 2rem !important;    
+    .home .mt-3 {
+        margin-top: 2rem !important;
     }
 
-  .header-para{
-    font-size: .9rem !important;
-    font-weight: 600 !important;
-  }
+    .header-para {
+        font-size: .9rem !important;
+        font-weight: 600 !important;
+    }
 
-  .hero-video{
-    width: 265px;
-    height: 150px;
-    margin-top: 2rem !important;
-  }
+    .hero-video {
+        width: 265px;
+        height: 150px;
+        margin-top: 2rem !important;
+    }
 
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .button {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .8rem !important;
-    cursor: pointer;
-    padding: .5rem .7rem !important;
-  }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .button-container-margin{
-    margin-top: 2rem !important;
-  }
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .8rem !important;
+        cursor: pointer;
+        padding: .5rem .7rem !important;
+    }
 
-  .btn-group-sm>.btn, .btn-sm{
-    width: 120px !important;
-  }
+    .button-container-margin {
+        margin-top: 2rem !important;
+    }
 
-  .btn-primary{
-    width: 120px !important;
-  }
+    .btn-group-sm>.btn,
+    .btn-sm {
+        width: 120px !important;
+    }
 
-  .volume-toggle {
-    position: absolute;
-    top: 45px; /* Adjust the top position as needed */
-    right: 15px; /* Adjust the right position as needed */
-    width: 25px;
-    height: 25px;
-    color: #ffffff;
-    background-color: #000000; /* Background color of the toggle button */
-    border-radius: 50%; /* Make it circular */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 15px; /* Adjust the font size as needed */
-    z-index: 1; /* Ensure the icon is above the iframe */
-  }
+    .btn-primary {
+        width: 120px !important;
+    }
+
+    .volume-toggle {
+        position: absolute;
+        top: 45px;
+        /* Adjust the top position as needed */
+        right: 15px;
+        /* Adjust the right position as needed */
+        width: 25px;
+        height: 25px;
+        color: #ffffff;
+        background-color: #000000;
+        /* Background color of the toggle button */
+        border-radius: 50%;
+        /* Make it circular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        /* Adjust the font size as needed */
+        z-index: 1;
+        /* Ensure the icon is above the iframe */
+    }
 
     /* About Us */
     .about-us {
-    background-color: #191E28;
-    border-radius: 1rem; 
-    padding: 15% 15% !important;
+        background-color: #191E28;
+        border-radius: 1rem !important;
+        padding: 2rem 2rem !important;
+        margin: 1rem;
     }
+
 
     .about-us h5 {
         font-size: 2rem !important;
@@ -106,7 +121,7 @@
     }
 
     .about-us hr {
-        border: 0.05rem solid white; 
+        border: 0.05rem solid white;
         opacity: .5;
     }
 
@@ -120,7 +135,7 @@
         text-align: justify;
     }
 
-    .btn-about-us{
+    .btn-about-us {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -130,7 +145,7 @@
     }
 
     /*-Feautered Images-*/
-    .featured-work-img{
+    .featured-work-img {
         border-radius: 1rem !important;
     }
 
@@ -138,14 +153,18 @@
         margin: 0 0rem !important;
     }
 
-    .featured-section h1{
+    .featured-section h1 {
         text-align: center;
     }
 
-    .featured-all-projects button{
+    .featured-all-projects button {
         margin-top: 2rem !important;
         font-size: 0.8rem !important;
-        padding: 0.5rem 0.8rem !important;
+    }
+
+    .btn{
+        font-size: .7rem !important;
+        padding: .5rem 1rem !important;
     }
 
     /*-B2B and B2C Videos-*/
@@ -154,101 +173,106 @@
         text-align: center !important;
     }
 
-    .B2B-text{
+    .B2B-text {
         font-size: 1rem !important;
         text-align: center !important;
     }
 
-    .btn-know-more{
+    .btn-know-more {
         font-size: 1rem !important;
-        width: 100%;
+        width: 100% !important;
     }
 
     .B2B-margin-top {
-        margin-top: 2rem !important; 
+        margin-top: 2rem !important;
     }
 
     /*-Who We Helped Explain-*/
-    .helped-margin{
+    .helped-margin {
         margin-bottom: 3rem !important;
         margin-top: 5rem !important;
     }
 
-    .slick-slide{
+    .slick-slide {
         margin: 0 .8rem;
     }
 
-    .helped-text{
+    .helped-text {
         font-size: 1.2rem !important;
         text-align: center !important;
     }
 
-    .container-padding-helped{
+    .container-padding-helped {
         padding: 0 2rem !important;
     }
 
+    .container-padding {
+        padding: 0 0 !important;
+    }
+
     /*-Learn-*/
-    .learn-text{
+    .learn-text {
         margin-top: 1rem;
         font-size: 1rem !important;
         font-weight: 500;
         margin-bottom: 3rem !important;
     }
 
-    .learn-last{
+    .learn-last {
         margin-bottom: -1rem !important;
     }
 
     /* What they say about us */
 
-    .btn-arrow{
+    .btn-arrow {
         display: none !important;
     }
-    
-    .comments-text-bold{
+
+    .comments-text-bold {
         font-size: 1.2rem !important;
         font-weight: 900;
     }
 
-    .comments-text{
+    .comments-text {
         font-size: 1rem !important;
     }
 
     /* Social Media Styles */
     .social-text {
-        font-size: 1.2rem !important; 
+        font-size: 1.8rem !important;
         font-weight: 900 !important;
-        line-height: 2rem !important;
+        line-height: 2.5rem !important;
         color: #FFF !important;
         margin-bottom: 2rem !important;
+        text-align: center !important;
     }
 
-    .mobile-top-margin{
+    .mobile-top-margin {
         margin-top: 5rem;
     }
 
     /* Contact Us */
-    .contact-textarea{
+    .contact-textarea {
         margin-top: 1.6rem !important;
         margin-bottom: 2rem !important;
     }
 
     /*footer*/
-    .footer-head{
+    .footer-head {
         font-size: 2rem !important;
         font-weight: 900 !important;
         text-align: center;
     }
 
-    .footer-address{
+    .footer-address {
         margin-bottom: 0 !important;
     }
 
-    .footer-ul{
+    .footer-ul {
         text-align: center !important;
     }
 
-    .footer-ul-3{
+    .footer-ul-3 {
         text-align: center !important;
         margin-top: -5rem !important;
     }
@@ -260,20 +284,20 @@
         text-align: center !important;
     }
 
-    .footer-margin-section-2{
+    .footer-margin-section-2 {
         margin-bottom: 1.4rem !important;
     }
 
-    .footer-margin-section-3{
+    .footer-margin-section-3 {
         margin-bottom: 1.4rem !important;
     }
 
-    .footer-margin-section-3-first{
+    .footer-margin-section-3-first {
         margin-top: -3rem !important;
         margin-bottom: 1.4rem !important;
     }
 
-    .footer-hr{
+    .footer-hr {
         display: block !important;
         margin-top: 3rem !important;
         height: .1rem !important;
@@ -283,36 +307,36 @@
         margin-right: auto;
     }
 
-    .footer-link-hover:hover{
+    .footer-link-hover:hover {
         color: #007BFF;
     }
 
-    .last-footer-section{
+    .last-footer-section {
         margin-top: 5rem !important;
     }
 
-    .footer-link{
+    .footer-link {
         color: #000;
     }
 
-    .footer-hr{
+    .footer-hr {
         display: none;
     }
 
     /* About Us Page  */
-    .banner-header-about-text{
+    .banner-header-about-text {
         font-size: 2rem !important;
         font-weight: 900 !important;
         line-height: 1.3rem !important;
     }
 
-    .who-we-are-head{
+    .who-we-are-head {
         font-size: 2rem !important;
         font-weight: 900 !important;
         text-align: center !important;
     }
 
-    .who-we-are-para-1{
+    .who-we-are-para-1 {
         font-size: 1.5rem !important;
         font-weight: 700 !important;
         line-height: 2rem !important;
@@ -320,7 +344,7 @@
         text-align: center !important;
     }
 
-    .who-we-are-para-2{
+    .who-we-are-para-2 {
         font-size: 1.2rem !important;
         font-weight: 500 !important;
         line-height: 2rem !important;
@@ -329,12 +353,12 @@
         text-align: center !important;
     }
 
-    .who-we-are-para-img{
+    .who-we-are-para-img {
         margin-top: 1rem !important;
         margin-left: 2rem !important;
     }
 
-    .what-motivates-our-actions-para-1{
+    .what-motivates-our-actions-para-1 {
         font-size: 1.5rem !important;
         font-weight: 700 !important;
         line-height: 2rem !important;
@@ -342,7 +366,7 @@
         text-align: center !important;
     }
 
-    .what-motivates-our-actions-para-2{
+    .what-motivates-our-actions-para-2 {
         margin-top: 2rem !important;
         font-size: 1.2rem !important;
         font-weight: 500 !important;
@@ -351,12 +375,7 @@
         text-align: center !important;
     }
 
-    .about-us {
-        border-radius: 1rem !important; 
-        padding: 0rem 0rem !important;
-    }
-
-    .chit-chat{
+    .chit-chat {
         color: #FFF !important;
         font-weight: 900 !important;
         font-size: 2rem !important;
@@ -364,7 +383,7 @@
 
     }
 
-    .accordion-margin{
+    .accordion-margin {
         margin-top: 3rem !important;
     }
 
@@ -388,34 +407,34 @@
     .accordion-button:not(.collapsed) {
         color: #000 !important;
         font-weight: 600 !important;
-        background-color: hsl(0, 0%, 100%) !important; 
-        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
+        background-color: hsl(0, 0%, 100%) !important;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125) !important;
     }
-    
-    .accordion-button{
+
+    .accordion-button {
         font-weight: 600 !important;
         font-size: 1rem !important;
     }
 
     /*Learn Page*/
-    .banner-header-learn-text{
+    .banner-header-learn-text {
         font-size: 1.5rem !important;
         font-weight: 900 !important;
         line-height: 1rem;
     }
 
-    .learn-search{
+    .learn-search {
         padding: .5rem 2rem !important;
         border: 1px solid #000 !important;
         margin-bottom: 5rem !important;
         margin-top: 5rem !important;
     }
 
-    .learn-search::placeholder{
+    .learn-search::placeholder {
         color: #000 !important;
     }
 
-    .pagination{
+    .pagination {
         margin-top: 5rem !important;
         margin-bottom: 5rem !important;
         display: flex !important;
@@ -423,7 +442,7 @@
         align-items: center !important;
     }
 
-    .learn-pagination{
+    .learn-pagination {
         height: 2.5rem !important;
         width: 2.5rem !important;
         background-color: #FFF !important;
@@ -431,49 +450,66 @@
         font-weight: 600;
     }
 
-    .learn-pagination:hover{
+    .learn-pagination:hover {
         background-color: #007BFF !important;
         color: #FFF !important;
         border: none !important;
     }
 
-    .GotIdea-text{
-        font-size: 3rem !important;
-        font-weight: 900 !important;
-        color: #FFF !important;
+    .GotIdea{
+        padding: 2rem !important;
     }
 
-    .GotIdea-button{
-        font-size: 1.3rem !important;
+    .GotIdea-text {
+        font-size: 2.5rem !important;
+        font-weight: 900 !important;
+        color: #FFF !important;
+        text-align: center;
+        margin: 0;
+    }
+
+    .GotIdea-button {
+        font-size: 1rem !important;
         padding: .5rem 2rem !important;
         margin-top: 1rem !important;
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
-    .image-size{
+    .image-size {
         width: 10rem !important;
     }
 
-    .home-video{
+    .home-video {
         padding: 3rem 0rem 0rem 0rem !important;
     }
 
-    .image_margin{
+    .image_margin {
         margin-top: 1rem !important;
         transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-              opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
+            opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
 
-      .image_margin:hover {
+    .image_margin:hover {
         transform: scale(1.2);
-      }
+    }
+
+    .chit-chat{
+        font-size: 1.8rem !important;
+        line-height: 2.5rem !important;
+    }
+
+    .pagination{
+        display: none !important;
+    }
 }
+
 /* Small screens (phones) */
 @media only screen and (min-width: 322px) and (max-width: 479px) {
     .hamburger {
         display: block;
     }
+
     header nav {
         position: absolute;
         width: 100%;
@@ -485,86 +521,96 @@
         transition: 0.3s;
         text-align: center;
     }
-    header #nav_check:checked ~ nav {
+
+    header #nav_check:checked~nav {
         left: 0;
     }
+
     header nav ul {
         display: block;
     }
+
     header nav ul li a {
         margin: 5px 0;
     }
 
-    .banner-header-text{
+    .banner-header-text {
         font-size: 2.7rem !important;
         font-weight: 900;
         line-height: 1.5rem !important;
     }
 
-    .home .mt-3{
-        margin-top: 2rem !important;    
+    .home .mt-3 {
+        margin-top: 2rem !important;
     }
 
-  .header-para{
-    font-size: .9rem !important;
-    font-weight: 600 !important;
-  }
+    .header-para {
+        font-size: .9rem !important;
+        font-weight: 600 !important;
+    }
 
-  .hero-video{
-    width: 350px;
-    height: 200px;
-    margin-top: 2rem !important;
-  }
+    .hero-video {
+        width: 350px;
+        height: 200px;
+        margin-top: 2rem !important;
+    }
 
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .button {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .8rem !important;
-    cursor: pointer;
-    padding: .5rem .7rem !important;
-  }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .button-container-margin{
-    margin-top: 3rem !important;
-  }
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .8rem !important;
+        cursor: pointer;
+        padding: .5rem .7rem !important;
+    }
 
-  .btn-group-sm>.btn, .btn-sm{
-    width: 120px !important;
-  }
+    .button-container-margin {
+        margin-top: 3rem !important;
+    }
 
-  .btn-primary{
-    width: 120px !important;
-  }
+    .btn-group-sm>.btn,
+    .btn-sm {
+        width: 120px !important;
+    }
 
-  .volume-toggle {
-    position: absolute;
-    top: 45px; /* Adjust the top position as needed */
-    right: 25px; /* Adjust the right position as needed */
-    width: 25px;
-    height: 25px;
-    color: #ffffff;
-    background-color: #000000; /* Background color of the toggle button */
-    border-radius: 50%; /* Make it circular */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 15px; /* Adjust the font size as needed */
-    z-index: 1; /* Ensure the icon is above the iframe */
-  }
+    .btn-primary {
+        width: 120px !important;
+    }
+
+    .volume-toggle {
+        position: absolute;
+        top: 45px;
+        /* Adjust the top position as needed */
+        right: 25px;
+        /* Adjust the right position as needed */
+        width: 25px;
+        height: 25px;
+        color: #ffffff;
+        background-color: #000000;
+        /* Background color of the toggle button */
+        border-radius: 50%;
+        /* Make it circular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        /* Adjust the font size as needed */
+        z-index: 1;
+        /* Ensure the icon is above the iframe */
+    }
 
     /* About Us */
     .about-us {
-    background-color: #191E28;
-    border-radius: 1rem; 
-    padding: 15% 15% !important;
+        background-color: #191E28;
+        border-radius: 1rem;
+        padding: 15% 15% !important;
     }
 
     .about-us h5 {
@@ -573,7 +619,7 @@
     }
 
     .about-us hr {
-        border: 0.05rem solid white; 
+        border: 0.05rem solid white;
         opacity: .5;
     }
 
@@ -587,7 +633,7 @@
         text-align: justify;
     }
 
-    .btn-about-us{
+    .btn-about-us {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -597,7 +643,7 @@
     }
 
     /*-Feautered Images-*/
-    .featured-work-img{
+    .featured-work-img {
         border-radius: 1rem !important;
     }
 
@@ -605,7 +651,7 @@
         margin: 0 1rem !important;
     }
 
-    .featured-section h1{
+    .featured-section h1 {
         text-align: center;
     }
 
@@ -615,75 +661,75 @@
         text-align: center !important;
     }
 
-    .B2B-text{
+    .B2B-text {
         font-size: 1rem !important;
         text-align: center !important;
     }
 
-    .btn-know-more{
+    .btn-know-more {
         font-size: 1rem !important;
         width: 100%;
     }
 
     .B2B-margin-top:nth-child(2) {
-        margin-top: 2rem !important; 
+        margin-top: 2rem !important;
     }
 
     /*-Who We Helped Explain-*/
-    .helped-margin{
+    .helped-margin {
         margin-bottom: 3rem !important;
         margin-top: 5rem !important;
     }
 
-    .slick-slide{
+    .slick-slide {
         margin: 0 1rem;
     }
 
-    .helped-text{
+    .helped-text {
         font-size: 2rem !important;
         text-align: center !important;
         font-weight: 900 !important;
     }
 
-    .container-padding-helped{
+    .container-padding-helped {
         padding: 0 2rem !important;
     }
 
     /*-Learn-*/
-    .learn-text{
+    .learn-text {
         margin-top: 1rem;
         font-size: 1.2rem !important;
         font-weight: 500;
         margin-bottom: 3rem !important;
     }
 
-    .learn-last{
+    .learn-last {
         margin-bottom: -1rem !important;
     }
 
-    .learn-text-bold{
+    .learn-text-bold {
         font-size: 2rem !important;
         font-weight: 900;
         text-align: center;
     }
 
     /* What they say about us */
-    .btn-arrow{
+    .btn-arrow {
         display: none !important;
     }
 
-    .comments-text-bold{
+    .comments-text-bold {
         font-size: 1.5rem !important;
         font-weight: 900;
     }
 
-    .comments-text{
+    .comments-text {
         font-size: 1rem !important;
     }
 
     /* Social Media Styles */
     .social-text {
-        font-size: 2rem !important; 
+        font-size: 2rem !important;
         font-weight: 900 !important;
         line-height: 3rem !important;
         color: #FFF !important;
@@ -691,24 +737,24 @@
         text-align: left;
     }
 
-    .mobile-top-margin{
+    .mobile-top-margin {
         margin-top: 5rem;
     }
 
     /* Contact Us */
-    .contact-textarea{
+    .contact-textarea {
         margin-top: 1.6rem !important;
         margin-bottom: 2rem !important;
     }
 
     /*footer*/
-    .footer-head{
+    .footer-head {
         font-size: 2rem !important;
         font-weight: 900 !important;
         text-align: center;
     }
 
-    .footer-address{
+    .footer-address {
         margin-bottom: 0 !important;
     }
 
@@ -719,29 +765,29 @@
         text-align: center;
     }
 
-    .footer-ul{
+    .footer-ul {
         text-align: center !important;
     }
 
-    .footer-ul-3{
+    .footer-ul-3 {
         text-align: center !important;
         margin-top: -5rem !important;
     }
 
-    .footer-margin-section-2{
+    .footer-margin-section-2 {
         margin-bottom: 1.4rem !important;
     }
 
-    .footer-margin-section-3{
+    .footer-margin-section-3 {
         margin-bottom: 1.4rem !important;
     }
 
-    .footer-margin-section-3-first{
+    .footer-margin-section-3-first {
         margin-top: -3rem !important;
         margin-bottom: 1.4rem !important;
     }
 
-    .footer-hr{
+    .footer-hr {
         display: block !important;
         margin-top: 3rem !important;
         height: .1rem !important;
@@ -751,139 +797,139 @@
         margin-right: auto;
     }
 
-    .footer-link-hover:hover{
+    .footer-link-hover:hover {
         color: #007BFF;
     }
 
-    .last-footer-section{
+    .last-footer-section {
         margin-top: 5rem !important;
     }
 
-    .footer-link{
+    .footer-link {
         color: #000;
     }
 
-    .footer-hr{
+    .footer-hr {
         display: none;
     }
 
 
-        /* About Us Page  */
-        .banner-header-about-text{
-            font-size: 2.7rem !important;
-            font-weight: 900 !important;
-            line-height: 2rem !important;
-        }
-    
-        .who-we-are-head{
-            font-size: 2rem !important;
-            font-weight: 900 !important;
-            text-align: center !important;
-        }
-    
-        .who-we-are-para-1{
-            font-size: 1.5rem !important;
-            font-weight: 700 !important;
-            line-height: 2rem !important;
-            margin-top: 1rem !important;
-            text-align: center !important;
-        }
-    
-        .who-we-are-para-2{
-            font-size: 1.2rem !important;
-            font-weight: 500 !important;
-            line-height: 2rem !important;
-            margin-top: 2rem !important;
-            margin-bottom: 3rem !important;
-            text-align: center !important;
-        }
-    
-        .who-we-are-para-img{
-            margin-top: 1rem !important;
-            margin-left: 2rem !important;
-        }
-    
-        .what-motivates-our-actions-para-1{
-            font-size: 1.5rem !important;
-            font-weight: 700 !important;
-            line-height: 2rem !important;
-            margin-top: 2rem !important;
-            text-align: center !important;
-        }
-    
-        .what-motivates-our-actions-para-2{
-            margin-top: 2rem !important;
-            font-size: 1.2rem !important;
-            font-weight: 500 !important;
-            line-height: 2rem !important;
-            margin-left: .5rem !important;
-            text-align: center !important;
-        }
+    /* About Us Page  */
+    .banner-header-about-text {
+        font-size: 2.7rem !important;
+        font-weight: 900 !important;
+        line-height: 2rem !important;
+    }
 
-        .about-us {
-            border-radius: 1rem !important; 
-            padding: 3rem 3rem !important;
-        }
-    
-        .chit-chat{
-            color: #FFF;
-            font-weight: 900;
-            font-size: 2rem !important;
-            line-height: 3rem;
-        }
-    
-        .accordion-margin{
-            margin-top: 3rem !important;
-        }
-    
-        .accordion-button:not(.collapsed)::after {
-            background-image: url(../images/minus.png) !important;
-            transform: rotate(-180deg);
-        }
-    
-        .accordion-button::after {
-            flex-shrink: 0;
-            width: 1.3rem;
-            height: 1.3rem;
-            margin-left: auto;
-            content: "";
-            background-image: url(../images/plus.png) !important;
-            background-repeat: no-repeat;
-            background-size: 1.3rem;
-            transition: transform .2s ease-in-out;
-        }
-    
-        .accordion-button:not(.collapsed) {
-            color: #000 !important;
-            font-weight: 600 !important;
-            background-color: hsl(0, 0%, 100%) !important; 
-            box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
-        }
-        
-        .accordion-button{
-            font-weight: 600 !important;
-            font-size: 1rem !important;
-        }
+    .who-we-are-head {
+        font-size: 2rem !important;
+        font-weight: 900 !important;
+        text-align: center !important;
+    }
 
-        /*Learn Page*/
-    .banner-header-learn-text{
+    .who-we-are-para-1 {
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+        line-height: 2rem !important;
+        margin-top: 1rem !important;
+        text-align: center !important;
+    }
+
+    .who-we-are-para-2 {
+        font-size: 1.2rem !important;
+        font-weight: 500 !important;
+        line-height: 2rem !important;
+        margin-top: 2rem !important;
+        margin-bottom: 3rem !important;
+        text-align: center !important;
+    }
+
+    .who-we-are-para-img {
+        margin-top: 1rem !important;
+        margin-left: 2rem !important;
+    }
+
+    .what-motivates-our-actions-para-1 {
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+        line-height: 2rem !important;
+        margin-top: 2rem !important;
+        text-align: center !important;
+    }
+
+    .what-motivates-our-actions-para-2 {
+        margin-top: 2rem !important;
+        font-size: 1.2rem !important;
+        font-weight: 500 !important;
+        line-height: 2rem !important;
+        margin-left: .5rem !important;
+        text-align: center !important;
+    }
+
+    .about-us {
+        border-radius: 1rem !important;
+        padding: 3rem 3rem !important;
+    }
+
+    .chit-chat {
+        color: #FFF;
+        font-weight: 900;
+        font-size: 2rem !important;
+        line-height: 3rem;
+    }
+
+    .accordion-margin {
+        margin-top: 3rem !important;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url(../images/minus.png) !important;
+        transform: rotate(-180deg);
+    }
+
+    .accordion-button::after {
+        flex-shrink: 0;
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-left: auto;
+        content: "";
+        background-image: url(../images/plus.png) !important;
+        background-repeat: no-repeat;
+        background-size: 1.3rem;
+        transition: transform .2s ease-in-out;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #000 !important;
+        font-weight: 600 !important;
+        background-color: hsl(0, 0%, 100%) !important;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125) !important;
+    }
+
+    .accordion-button {
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+    }
+
+    /*Learn Page*/
+    .banner-header-learn-text {
         font-size: 2rem !important;
         font-weight: 900 !important;
         line-height: 1.5rem;
     }
 
-    .learn-search{
+    .learn-search {
         padding: .5rem 2rem !important;
         border: 1px solid #000 !important;
         margin-bottom: 5rem !important;
         margin-top: 5rem !important;
     }
 
-    .learn-search::placeholder{
+    .learn-search::placeholder {
         color: #000 !important;
     }
 
-    .pagination{
+    .pagination {
         margin-top: 5rem !important;
         margin-bottom: 5rem !important;
         display: flex !important;
@@ -891,7 +937,7 @@
         align-items: center !important;
     }
 
-    .learn-pagination{
+    .learn-pagination {
         height: 2.5rem !important;
         width: 2.5rem !important;
         background-color: #FFF !important;
@@ -899,20 +945,20 @@
         font-weight: 600;
     }
 
-    .learn-pagination:hover{
+    .learn-pagination:hover {
         background-color: #007BFF !important;
         color: #FFF !important;
         border: none !important;
     }
 
-    .GotIdea-text{
+    .GotIdea-text {
         font-size: 2.5rem !important;
         font-weight: 900 !important;
         color: #FFF !important;
         text-align: center;
     }
 
-    .GotIdea-button{
+    .GotIdea-button {
         font-size: 1.3rem !important;
         padding: .5rem 2rem !important;
         margin-top: 1rem !important;
@@ -924,43 +970,49 @@
     .flex-container {
         display: flex;
         flex-wrap: wrap;
-      }
-    
-      .service-section {
+    }
+
+    .service-section {
         flex: 1 0 calc(100% - 20px) !important;
         margin: 1rem .6rem;
         padding: 1.8rem 1.3rem;
         box-sizing: border-box;
-      }
-      .image-size{
+    }
+
+    .image-size {
         width: 10rem !important;
-      }
-      .verticle-padding{
+    }
+
+    .verticle-padding {
         padding: 1rem 0rem !important;
     }
-    .btn-verticle-padding{
-        padding:1rem .5rem !important;
+
+    .btn-verticle-padding {
+        padding: 1rem .5rem !important;
     }
-    .home-video{
+
+    .home-video {
         padding: 3rem 0rem 0rem 0rem !important;
     }
 
-    .image_margin{
+    .image_margin {
         margin-top: 1rem !important;
         transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-              opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
+            opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
 
-      .image_margin:hover {
+    .image_margin:hover {
         transform: scale(1.2);
-      }
+    }
 
 }
+
 /* Small screens (phones) */
 @media only screen and (min-width: 480px) and (max-width: 599px) {
     .hamburger {
         display: block;
     }
+
     header nav {
         position: absolute;
         width: 100%;
@@ -972,85 +1024,95 @@
         transition: 0.3s;
         text-align: center;
     }
-    header #nav_check:checked ~ nav {
+
+    header #nav_check:checked~nav {
         left: 0;
     }
+
     header nav ul {
         display: block;
     }
+
     header nav ul li a {
         margin: 5px 0;
     }
 
-    .banner-header-text{
+    .banner-header-text {
         font-size: 2.7rem !important;
         font-weight: 900;
         line-height: 1.5rem !important;
     }
 
-    .home .mt-3{
-        margin-top: 2rem !important;    
+    .home .mt-3 {
+        margin-top: 2rem !important;
     }
 
-  .header-para{
-    font-size: .9rem !important;
-    font-weight: 600 !important;
-  }
+    .header-para {
+        font-size: .9rem !important;
+        font-weight: 600 !important;
+    }
 
-  .hero-video{
-    width: 400px;
-    height: 230px;
-    margin-top: 2rem !important;
-  }
+    .hero-video {
+        width: 400px;
+        height: 230px;
+        margin-top: 2rem !important;
+    }
 
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .button {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .8rem !important;
-    cursor: pointer;
-    padding: .5rem .7rem !important;
-  }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .button-container-margin{
-    margin-top: 3rem !important;
-  }
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .8rem !important;
+        cursor: pointer;
+        padding: .5rem .7rem !important;
+    }
 
-  .btn-group-sm>.btn, .btn-sm{
-    width: 120px !important;
-  }
+    .button-container-margin {
+        margin-top: 3rem !important;
+    }
 
-  .btn-primary{
-    width: 120px !important;
-  }
+    .btn-group-sm>.btn,
+    .btn-sm {
+        width: 120px !important;
+    }
 
-  .volume-toggle {
-    position: absolute;
-    top: 45px; /* Adjust the top position as needed */
-    right: 15px; /* Adjust the right position as needed */
-    width: 25px;
-    height: 25px;
-    color: #ffffff;
-    background-color: #000000; /* Background color of the toggle button */
-    border-radius: 50%; /* Make it circular */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 15px; /* Adjust the font size as needed */
-    z-index: 1; /* Ensure the icon is above the iframe */
-  }
+    .btn-primary {
+        width: 120px !important;
+    }
+
+    .volume-toggle {
+        position: absolute;
+        top: 45px;
+        /* Adjust the top position as needed */
+        right: 15px;
+        /* Adjust the right position as needed */
+        width: 25px;
+        height: 25px;
+        color: #ffffff;
+        background-color: #000000;
+        /* Background color of the toggle button */
+        border-radius: 50%;
+        /* Make it circular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        /* Adjust the font size as needed */
+        z-index: 1;
+        /* Ensure the icon is above the iframe */
+    }
 
     /* About Us */
     .about-us {
         background-color: #191E28;
-        border-radius: 1rem; 
+        border-radius: 1rem;
         padding: 15% 15% !important;
     }
 
@@ -1060,7 +1122,7 @@
     }
 
     .about-us hr {
-        border: 0.05rem solid white; 
+        border: 0.05rem solid white;
         opacity: .5;
     }
 
@@ -1074,7 +1136,7 @@
         text-align: justify;
     }
 
-    .btn-about-us{
+    .btn-about-us {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -1084,7 +1146,7 @@
     }
 
     /*-Feautered Images-*/
-    .featured-work-img{
+    .featured-work-img {
         border-radius: 1rem !important;
     }
 
@@ -1092,7 +1154,7 @@
         margin: 0 1rem !important;
     }
 
-    .featured-section h1{
+    .featured-section h1 {
         text-align: center;
     }
 
@@ -1102,70 +1164,70 @@
         text-align: center !important;
     }
 
-    .B2B-text{
+    .B2B-text {
         font-size: 1.3rem !important;
         text-align: center !important;
     }
 
-    .btn-know-more{
+    .btn-know-more {
         font-size: 1rem !important;
         width: 100%;
         margin-bottom: 2rem !important;
     }
 
     .B2B-margin-top {
-        margin-top: 2rem !important; 
+        margin-top: 2rem !important;
     }
 
     /*-Who We Helped Explain-*/
-    .helped-margin{
+    .helped-margin {
         margin-bottom: 3rem !important;
         margin-top: 5rem !important;
     }
 
-    .slick-slide{
+    .slick-slide {
         margin: 0 .8rem;
     }
 
-    .helped-text{
+    .helped-text {
         font-size: 1.5rem !important;
         text-align: center !important;
     }
 
-    .container-padding-helped{
+    .container-padding-helped {
         padding: 0 2rem !important;
     }
 
     /*-Learn-*/
-    .learn-text{
+    .learn-text {
         margin-top: 1rem;
         font-size: .8rem !important;
         font-weight: 500;
     }
 
-    .learn-text-bold{
+    .learn-text-bold {
         font-size: 2rem !important;
         font-weight: 900;
         text-align: center;
     }
 
     /* What they say about us */
-    .comments-text-bold{
+    .comments-text-bold {
         font-size: 2rem !important;
         font-weight: 900;
     }
 
-    .comments-text{
+    .comments-text {
         font-size: 1.2rem !important;
     }
 
     /*footer*/
-    .footer-head{
+    .footer-head {
         font-size: 1.6rem !important;
         font-weight: 900 !important;
     }
 
-    .footer-address{
+    .footer-address {
         margin-bottom: 0 !important;
     }
 
@@ -1175,55 +1237,55 @@
         font-weight: 600 !important;
     }
 
-    .footer-margin-section-2{
+    .footer-margin-section-2 {
         margin-bottom: 1rem !important;
     }
 
-    .footer-margin-section-3{
+    .footer-margin-section-3 {
         margin-bottom: 1rem !important;
     }
 
-    .footer-margin-section-3-first{
+    .footer-margin-section-3-first {
         margin-top: 2.5rem !important;
         margin-bottom: 1rem !important;
     }
 
-    .footer-link-hover:hover{
+    .footer-link-hover:hover {
         color: #007BFF;
     }
 
-    .last-footer-section{
+    .last-footer-section {
         margin-top: 5rem !important;
     }
 
-    .footer-link{
+    .footer-link {
         color: #000;
     }
 
-    .footer-hr{
+    .footer-hr {
         display: none;
     }
 
     /* About Us Page  */
-    .banner-header-about-text{
+    .banner-header-about-text {
         font-size: 2.7rem !important;
         font-weight: 900 !important;
         line-height: 2rem !important;
     }
 
-    .who-we-are-head{
+    .who-we-are-head {
         font-size: 2rem;
         font-weight: 900;
     }
 
-    .who-we-are-para-1{
+    .who-we-are-para-1 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
         margin-top: 1rem;
     }
 
-    .who-we-are-para-2{
+    .who-we-are-para-2 {
         font-size: 1.2rem;
         font-weight: 500;
         line-height: 2rem;
@@ -1231,19 +1293,19 @@
         margin-bottom: 3rem;
     }
 
-    .who-we-are-para-img{
+    .who-we-are-para-img {
         margin-top: 1rem;
         margin-left: 2rem;
     }
 
-    .what-motivates-our-actions-para-1{
+    .what-motivates-our-actions-para-1 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
         margin-top: 2rem;
     }
 
-    .what-motivates-our-actions-para-2{
+    .what-motivates-our-actions-para-2 {
         margin-top: 2rem;
         font-size: .98rem !important;
         font-weight: 500;
@@ -1253,18 +1315,18 @@
 
     .about-us {
         background-color: #191E28;
-        border-radius: 1rem; 
+        border-radius: 1rem;
         padding: 3rem 3rem !important;
     }
 
-    .chit-chat{
+    .chit-chat {
         color: #FFF;
         font-weight: 900;
         font-size: 2rem !important;
         line-height: 3rem;
     }
 
-    .accordion-margin{
+    .accordion-margin {
         margin-top: 3rem !important;
     }
 
@@ -1288,38 +1350,38 @@
     .accordion-button:not(.collapsed) {
         color: #000 !important;
         font-weight: 600 !important;
-        background-color: hsl(0, 0%, 100%) !important; 
-        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
+        background-color: hsl(0, 0%, 100%) !important;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125) !important;
     }
-    
-    .accordion-button{
+
+    .accordion-button {
         font-weight: 600 !important;
         font-size: 1rem !important;
     }
 
     /*Learn Page*/
-    .banner-header-learn-text{
+    .banner-header-learn-text {
         font-size: 2rem !important;
         font-weight: 900 !important;
         line-height: 1.5rem;
     }
 
-    .banner-header-learn-text:first-child{
+    .banner-header-learn-text:first-child {
         margin-top: 4rem !important;
     }
 
-    .learn-search{
+    .learn-search {
         padding: .5rem 2rem !important;
         border: 1px solid #000 !important;
         margin-bottom: 5rem !important;
         margin-top: 1rem !important;
     }
 
-    .learn-search::placeholder{
+    .learn-search::placeholder {
         color: #000 !important;
     }
 
-    .pagination{
+    .pagination {
         margin-top: 5rem !important;
         margin-bottom: 5rem !important;
         display: flex !important;
@@ -1327,7 +1389,7 @@
         align-items: center !important;
     }
 
-    .learn-pagination{
+    .learn-pagination {
         height: 2.5rem !important;
         width: 2.5rem !important;
         background-color: #FFF !important;
@@ -1335,19 +1397,19 @@
         font-weight: 600;
     }
 
-    .learn-pagination:hover{
+    .learn-pagination:hover {
         background-color: #007BFF !important;
         color: #FFF !important;
         border: none !important;
     }
 
-    .GotIdea-text{
+    .GotIdea-text {
         font-size: 3rem !important;
         font-weight: 900 !important;
         color: #FFF !important;
     }
 
-    .GotIdea-button{
+    .GotIdea-button {
         font-size: 1rem !important;
         padding: .5rem 1.5rem !important;
         margin-top: 1rem !important;
@@ -1359,20 +1421,22 @@
 
     }
 
-    .image-size{
+    .image-size {
         width: 10rem !important;
     }
 
-    .home-video{
+    .home-video {
         padding: 1rem !important;
     }
 
 
 }
+
 @media only screen and (min-width: 600px) and (max-width: 900px) {
     .hamburger {
         display: block;
     }
+
     header nav {
         position: absolute;
         width: 100%;
@@ -1384,85 +1448,95 @@
         transition: 0.3s;
         text-align: center;
     }
-    header #nav_check:checked ~ nav {
+
+    header #nav_check:checked~nav {
         left: 0;
     }
+
     header nav ul {
         display: block;
     }
+
     header nav ul li a {
         margin: 5px 0;
     }
 
-    .banner-header-text{
+    .banner-header-text {
         font-size: 2.7rem !important;
         font-weight: 900;
         line-height: 1.5rem !important;
     }
 
-    .home .mt-3{
-        margin-top: 2rem !important;    
+    .home .mt-3 {
+        margin-top: 2rem !important;
     }
 
-  .header-para{
-    font-size: .9rem !important;
-    font-weight: 600 !important;
-  }
+    .header-para {
+        font-size: .9rem !important;
+        font-weight: 600 !important;
+    }
 
-  .hero-video{
-    width: 400px;
-    height: 230px;
-    margin-top: 2rem !important;
-  }
+    .hero-video {
+        width: 400px;
+        height: 230px;
+        margin-top: 2rem !important;
+    }
 
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .button {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .8rem !important;
-    cursor: pointer;
-    padding: .5rem .7rem !important;
-  }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .button-container-margin{
-    margin-top: 3rem !important;
-  }
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .8rem !important;
+        cursor: pointer;
+        padding: .5rem .7rem !important;
+    }
 
-  .btn-group-sm>.btn, .btn-sm{
-    width: 120px !important;
-  }
+    .button-container-margin {
+        margin-top: 3rem !important;
+    }
 
-  .btn-primary{
-    width: 120px !important;
-  }
+    .btn-group-sm>.btn,
+    .btn-sm {
+        width: 120px !important;
+    }
 
-  .volume-toggle {
-    position: absolute;
-    top: 45px; /* Adjust the top position as needed */
-    right: 15px; /* Adjust the right position as needed */
-    width: 25px;
-    height: 25px;
-    color: #ffffff;
-    background-color: #000000; /* Background color of the toggle button */
-    border-radius: 50%; /* Make it circular */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 15px; /* Adjust the font size as needed */
-    z-index: 1; /* Ensure the icon is above the iframe */
-  }
+    .btn-primary {
+        width: 120px !important;
+    }
+
+    .volume-toggle {
+        position: absolute;
+        top: 45px;
+        /* Adjust the top position as needed */
+        right: 15px;
+        /* Adjust the right position as needed */
+        width: 25px;
+        height: 25px;
+        color: #ffffff;
+        background-color: #000000;
+        /* Background color of the toggle button */
+        border-radius: 50%;
+        /* Make it circular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        /* Adjust the font size as needed */
+        z-index: 1;
+        /* Ensure the icon is above the iframe */
+    }
 
     /* About Us */
     .about-us {
         background-color: #191E28;
-        border-radius: 1rem; 
+        border-radius: 1rem;
         padding: 15% 15% !important;
     }
 
@@ -1472,7 +1546,7 @@
     }
 
     .about-us hr {
-        border: 0.05rem solid white; 
+        border: 0.05rem solid white;
         opacity: .5;
     }
 
@@ -1486,7 +1560,7 @@
         text-align: justify;
     }
 
-    .btn-about-us{
+    .btn-about-us {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -1496,7 +1570,7 @@
     }
 
     /*-Feautered Images-*/
-    .featured-work-img{
+    .featured-work-img {
         border-radius: 1rem !important;
     }
 
@@ -1504,7 +1578,7 @@
         margin: 0 1rem !important;
     }
 
-    .featured-section h1{
+    .featured-section h1 {
         text-align: center;
     }
 
@@ -1514,70 +1588,70 @@
         text-align: center !important;
     }
 
-    .B2B-text{
+    .B2B-text {
         font-size: 1.3rem !important;
         text-align: center !important;
     }
 
-    .btn-know-more{
+    .btn-know-more {
         font-size: 1rem !important;
         width: 100%;
         margin-bottom: 2rem !important;
     }
 
     .B2B-margin-top {
-        margin-top: 2rem !important; 
+        margin-top: 2rem !important;
     }
 
     /*-Who We Helped Explain-*/
-    .helped-margin{
+    .helped-margin {
         margin-bottom: 3rem !important;
         margin-top: 5rem !important;
     }
 
-    .slick-slide{
+    .slick-slide {
         margin: 0 .8rem;
     }
 
-    .helped-text{
+    .helped-text {
         font-size: 1.5rem !important;
         text-align: center !important;
     }
 
-    .container-padding-helped{
+    .container-padding-helped {
         padding: 0 2rem !important;
     }
 
     /*-Learn-*/
-    .learn-text{
+    .learn-text {
         margin-top: 1rem;
         font-size: .8rem !important;
         font-weight: 500;
     }
 
-    .learn-text-bold{
+    .learn-text-bold {
         font-size: 2rem !important;
         font-weight: 900;
         text-align: center;
     }
 
     /* What they say about us */
-    .comments-text-bold{
+    .comments-text-bold {
         font-size: 2rem !important;
         font-weight: 900;
     }
 
-    .comments-text{
+    .comments-text {
         font-size: 1.2rem !important;
     }
 
     /*footer*/
-    .footer-head{
+    .footer-head {
         font-size: 1.6rem !important;
         font-weight: 900 !important;
     }
 
-    .footer-address{
+    .footer-address {
         margin-bottom: 0 !important;
     }
 
@@ -1587,55 +1661,55 @@
         font-weight: 600 !important;
     }
 
-    .footer-margin-section-2{
+    .footer-margin-section-2 {
         margin-bottom: 1rem !important;
     }
 
-    .footer-margin-section-3{
+    .footer-margin-section-3 {
         margin-bottom: 1rem !important;
     }
 
-    .footer-margin-section-3-first{
+    .footer-margin-section-3-first {
         margin-top: 2.5rem !important;
         margin-bottom: 1rem !important;
     }
 
-    .footer-link-hover:hover{
+    .footer-link-hover:hover {
         color: #007BFF;
     }
 
-    .last-footer-section{
+    .last-footer-section {
         margin-top: 5rem !important;
     }
 
-    .footer-link{
+    .footer-link {
         color: #000;
     }
 
-    .footer-hr{
+    .footer-hr {
         display: none;
     }
 
     /* About Us Page  */
-    .banner-header-about-text{
+    .banner-header-about-text {
         font-size: 2.7rem !important;
         font-weight: 900 !important;
         line-height: 2rem !important;
     }
 
-    .who-we-are-head{
+    .who-we-are-head {
         font-size: 2rem;
         font-weight: 900;
     }
 
-    .who-we-are-para-1{
+    .who-we-are-para-1 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
         margin-top: 1rem;
     }
 
-    .who-we-are-para-2{
+    .who-we-are-para-2 {
         font-size: 1.2rem;
         font-weight: 500;
         line-height: 2rem;
@@ -1643,19 +1717,19 @@
         margin-bottom: 3rem;
     }
 
-    .who-we-are-para-img{
+    .who-we-are-para-img {
         margin-top: 1rem;
         margin-left: 2rem;
     }
 
-    .what-motivates-our-actions-para-1{
+    .what-motivates-our-actions-para-1 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
         margin-top: 2rem;
     }
 
-    .what-motivates-our-actions-para-2{
+    .what-motivates-our-actions-para-2 {
         margin-top: 2rem;
         font-size: .98rem !important;
         font-weight: 500;
@@ -1665,18 +1739,18 @@
 
     .about-us {
         background-color: #191E28;
-        border-radius: 1rem; 
+        border-radius: 1rem;
         padding: 3rem 3rem !important;
     }
 
-    .chit-chat{
+    .chit-chat {
         color: #FFF;
         font-weight: 900;
         font-size: 2rem !important;
         line-height: 3rem;
     }
 
-    .accordion-margin{
+    .accordion-margin {
         margin-top: 3rem !important;
     }
 
@@ -1700,38 +1774,38 @@
     .accordion-button:not(.collapsed) {
         color: #000 !important;
         font-weight: 600 !important;
-        background-color: hsl(0, 0%, 100%) !important; 
-        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
+        background-color: hsl(0, 0%, 100%) !important;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125) !important;
     }
-    
-    .accordion-button{
+
+    .accordion-button {
         font-weight: 600 !important;
         font-size: 1rem !important;
     }
 
     /*Learn Page*/
-    .banner-header-learn-text{
+    .banner-header-learn-text {
         font-size: 2rem !important;
         font-weight: 900 !important;
         line-height: 1.5rem;
     }
 
-    .banner-header-learn-text:first-child{
+    .banner-header-learn-text:first-child {
         margin-top: 4rem !important;
     }
 
-    .learn-search{
+    .learn-search {
         padding: .5rem 2rem !important;
         border: 1px solid #000 !important;
         margin-bottom: 5rem !important;
         margin-top: 1rem !important;
     }
 
-    .learn-search::placeholder{
+    .learn-search::placeholder {
         color: #000 !important;
     }
 
-    .pagination{
+    .pagination {
         margin-top: 5rem !important;
         margin-bottom: 5rem !important;
         display: flex !important;
@@ -1739,7 +1813,7 @@
         align-items: center !important;
     }
 
-    .learn-pagination{
+    .learn-pagination {
         height: 2.5rem !important;
         width: 2.5rem !important;
         background-color: #FFF !important;
@@ -1747,19 +1821,19 @@
         font-weight: 600;
     }
 
-    .learn-pagination:hover{
+    .learn-pagination:hover {
         background-color: #007BFF !important;
         color: #FFF !important;
         border: none !important;
     }
 
-    .GotIdea-text{
+    .GotIdea-text {
         font-size: 3rem !important;
         font-weight: 900 !important;
         color: #FFF !important;
     }
 
-    .GotIdea-button{
+    .GotIdea-button {
         font-size: 1rem !important;
         padding: .5rem 1.5rem !important;
         margin-top: 1rem !important;
@@ -1771,16 +1845,17 @@
 
     }
 
-    .image-size{
+    .image-size {
         width: 10rem !important;
     }
 
-    .home-video{
+    .home-video {
         padding: 1rem !important;
     }
 
 
 }
+
 /*----- Screen Responsive -------*/
 @media only screen and (min-width: 991px) and (max-width: 1023px) {
     header {
@@ -1788,134 +1863,141 @@
     }
 
     /*NavBar*/
-  header nav ul li a {
-    display: inline-block;
-    color: #000;
-    margin: 0 20px;
-    border: 3px solid transparent;
-    transition: 0.2s;
-    font-weight: 600;
-    font-size: .8rem !important;
-    padding: .5rem .5rem;
+    header nav ul li a {
+        display: inline-block;
+        color: #000;
+        margin: 0 20px;
+        border: 3px solid transparent;
+        transition: 0.2s;
+        font-weight: 600;
+        font-size: .8rem !important;
+        padding: .5rem .5rem;
     }
 
     /*Home*/
-    .banner-header-text{
+    .banner-header-text {
         font-size: 3rem !important;
         font-weight: 900;
         line-height: 2rem !important;
     }
 
-    .header-para{
+    .header-para {
         font-size: 2.5rem !important;
         font-weight: 600 !important;
     }
 
-  .hero-video{
-    width: 520px !important;
-    height: 300px !important;
-  }
+    .hero-video {
+        width: 520px !important;
+        height: 300px !important;
+    }
 
-  .button-container {
-    display: flex;
-  }
-  
-  .button {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5rem !important;
-    cursor: pointer;
-    padding: .7rem 2rem !important;
-  }
+    .button-container {
+        display: flex;
+    }
 
-  .button-container-margin{
-    margin-top: 3rem !important;
-  }
+    .button {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.5rem !important;
+        cursor: pointer;
+        padding: .7rem 2rem !important;
+    }
 
-  .btn-group-sm>.btn, .btn-sm{
-    width: 140px !important;
-  }
+    .button-container-margin {
+        margin-top: 3rem !important;
+    }
 
-  .volume-toggle {
-    position: absolute;
-    top: 25px; /* Adjust the top position as needed */
-    right: 25px !important; /* Adjust the right position as needed */
-    width: 30px;
-    height: 30px;
-    color: #ffffff;
-    background-color: #000000; /* Background color of the toggle button */
-    border-radius: 50%; /* Make it circular */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 20px; /* Adjust the font size as needed */
-    z-index: 1; /* Ensure the icon is above the iframe */
-  }
+    .btn-group-sm>.btn,
+    .btn-sm {
+        width: 140px !important;
+    }
+
+    .volume-toggle {
+        position: absolute;
+        top: 25px;
+        /* Adjust the top position as needed */
+        right: 25px !important;
+        /* Adjust the right position as needed */
+        width: 30px;
+        height: 30px;
+        color: #ffffff;
+        background-color: #000000;
+        /* Background color of the toggle button */
+        border-radius: 50%;
+        /* Make it circular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 20px;
+        /* Adjust the font size as needed */
+        z-index: 1;
+        /* Ensure the icon is above the iframe */
+    }
 
     /*-Who We Helped Explain-*/
-    .helped-margin{
+    .helped-margin {
         margin-bottom: 3rem !important;
         margin-top: 5rem !important;
     }
 
-    .slick-slide{
+    .slick-slide {
         margin: 0 1rem;
     }
 
-    .helped-text{
+    .helped-text {
         font-size: 1.2rem !important;
         text-align: center !important;
     }
 
     /*-Learn-*/
-    .learn-text{
+    .learn-text {
         margin-top: 1rem;
         font-size: 1.2rem !important;
         font-weight: 500;
     }
 
-    .learn-text-bold{
+    .learn-text-bold {
         font-size: 2rem !important;
         font-weight: 900;
         text-align: center;
     }
 
-    .container-padding-helped{
+    .container-padding-helped {
         padding: 0 2rem !important;
     }
 
     /* What they say about us */
-    .comments-text-bold{
+    .comments-text-bold {
         font-size: 2rem !important;
         font-weight: 900;
     }
 
-    .comments-text{
+    .comments-text {
         font-size: 1.5rem !important;
     }
-    
+
     /* Social Media Styles */
     .social-text {
-        font-size: 1.5rem !important; 
+        font-size: 1.5rem !important;
         font-weight: 900 !important;
         line-height: 2.5rem !important;
         color: #FFF !important;
         margin-bottom: 2rem !important;
     }
 
-    .mobile-top-margin{
+    .mobile-top-margin {
         margin-top: 5rem;
     }
 
     /*footer*/
-    .footer-head{
+    .footer-head {
         font-size: 1.6rem !important;
         font-weight: 900 !important;
     }
 
-    .footer-address{
+    .footer-address {
         margin-bottom: 0 !important;
     }
 
@@ -1925,55 +2007,55 @@
         font-weight: 600 !important;
     }
 
-    .footer-margin-section-2{
+    .footer-margin-section-2 {
         margin-bottom: 1.2rem !important;
     }
 
-    .footer-margin-section-3{
+    .footer-margin-section-3 {
         margin-bottom: 1.2rem !important;
     }
 
-    .footer-margin-section-3-first{
+    .footer-margin-section-3-first {
         margin-top: 2.5rem !important;
         margin-bottom: 1rem !important;
     }
 
-    .footer-link-hover:hover{
+    .footer-link-hover:hover {
         color: #007BFF;
     }
 
-    .last-footer-section{
+    .last-footer-section {
         margin-top: 5rem !important;
     }
 
-    .footer-link{
+    .footer-link {
         color: #000;
     }
 
-    .footer-hr{
+    .footer-hr {
         display: none;
     }
 
     /* About Us Page  */
-    .banner-header-about-text{
+    .banner-header-about-text {
         font-size: 3.5rem;
         font-weight: 900;
         line-height: 3rem;
     }
 
-    .who-we-are-head{
+    .who-we-are-head {
         font-size: 3rem;
         font-weight: 900;
     }
 
-    .who-we-are-para-1{
+    .who-we-are-para-1 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
         margin-top: 1rem;
     }
 
-    .who-we-are-para-2{
+    .who-we-are-para-2 {
         font-size: 1.2rem;
         font-weight: 500;
         line-height: 2rem;
@@ -1981,19 +2063,19 @@
         margin-bottom: 3rem;
     }
 
-    .who-we-are-para-img{
+    .who-we-are-para-img {
         margin-top: 1rem;
         margin-left: 2rem;
     }
 
-    .what-motivates-our-actions-para-1{
+    .what-motivates-our-actions-para-1 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
         margin-top: 2rem;
     }
 
-    .what-motivates-our-actions-para-2{
+    .what-motivates-our-actions-para-2 {
         margin-top: 2rem;
         font-size: .99rem;
         font-weight: 500;
@@ -2002,18 +2084,18 @@
 
     .about-us {
         background-color: #191E28;
-        border-radius: 1rem; 
+        border-radius: 1rem;
         padding: 3rem 3rem !important;
     }
 
-    .chit-chat{
+    .chit-chat {
         color: #FFF;
         font-weight: 900;
         font-size: 2rem !important;
         line-height: 3rem;
     }
 
-    .accordion-margin{
+    .accordion-margin {
         margin-top: 3rem !important;
     }
 
@@ -2037,37 +2119,37 @@
     .accordion-button:not(.collapsed) {
         color: #000 !important;
         font-weight: 600 !important;
-        background-color: hsl(0, 0%, 100%) !important; 
-        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
+        background-color: hsl(0, 0%, 100%) !important;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125) !important;
     }
-    
-    .accordion-button{
+
+    .accordion-button {
         font-weight: 600 !important;
         font-size: 1rem !important;
     }
 
     /*Learn Page*/
-    .banner-header-learn-text{
+    .banner-header-learn-text {
         font-size: 2.8rem !important;
         font-weight: 900 !important;
         line-height: 2.5rem;
     }
 
-    .banner-header-learn-text:first-child{
+    .banner-header-learn-text:first-child {
         margin-top: 1rem !important;
     }
 
-    .learn-search{
+    .learn-search {
         padding: .5rem 2rem !important;
         border: 1px solid #000 !important;
         margin-bottom: 5rem !important;
     }
 
-    .learn-search::placeholder{
+    .learn-search::placeholder {
         color: #000 !important;
     }
 
-    .pagination{
+    .pagination {
         margin-top: 5rem !important;
         margin-bottom: 5rem !important;
         display: flex !important;
@@ -2075,7 +2157,7 @@
         align-items: center !important;
     }
 
-    .learn-pagination{
+    .learn-pagination {
         height: 2.5rem !important;
         width: 2.5rem !important;
         background-color: #FFF !important;
@@ -2083,19 +2165,19 @@
         font-weight: 600;
     }
 
-    .learn-pagination:hover{
+    .learn-pagination:hover {
         background-color: #007BFF !important;
         color: #FFF !important;
         border: none !important;
     }
 
-    .GotIdea-text{
+    .GotIdea-text {
         font-size: 3rem !important;
         font-weight: 900 !important;
         color: #FFF !important;
     }
 
-    .GotIdea-button{
+    .GotIdea-button {
         font-size: 1.3rem !important;
         padding: .5rem 2rem !important;
         margin-top: 1rem !important;
@@ -2103,7 +2185,7 @@
         margin-right: auto !important;
     }
 
-    .image-size{
+    .image-size {
         width: 9rem !important;
     }
 }
