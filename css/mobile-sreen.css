@@ -1093,24 +1093,18 @@
     .volume-toggle {
         position: absolute;
         top: 45px;
-        /* Adjust the top position as needed */
         right: 15px;
-        /* Adjust the right position as needed */
         width: 25px;
         height: 25px;
         color: #ffffff;
         background-color: #000000;
-        /* Background color of the toggle button */
         border-radius: 50%;
-        /* Make it circular */
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         font-size: 15px;
-        /* Adjust the font size as needed */
         z-index: 1;
-        /* Ensure the icon is above the iframe */
     }
 
     /* About Us */
@@ -1175,7 +1169,7 @@
 
     .btn-know-more {
         font-size: 1rem !important;
-        width: 100%;
+        width: 100% !important;
         margin-bottom: 2rem !important;
     }
 
@@ -1229,29 +1223,35 @@
     .footer-head {
         font-size: 1.6rem !important;
         font-weight: 900 !important;
+        text-align: center !important;
     }
 
     .footer-address {
         margin-bottom: 0 !important;
+        text-align: center !important;
     }
 
     .footer-para {
         font-family: 'Urbanist', sans-serif !important;
         font-size: .9rem !important;
         font-weight: 600 !important;
+        text-align: center !important;
     }
 
     .footer-margin-section-2 {
         margin-bottom: 1rem !important;
+        text-align: center !important;
     }
 
     .footer-margin-section-3 {
         margin-bottom: 1rem !important;
+        text-align: center !important;
     }
 
     .footer-margin-section-3-first {
         margin-top: 2.5rem !important;
         margin-bottom: 1rem !important;
+        text-align: center !important;
     }
 
     .footer-link-hover:hover {
@@ -1260,14 +1260,11 @@
 
     .last-footer-section {
         margin-top: 5rem !important;
+        text-align: center !important;
     }
 
     .footer-link {
         color: #000;
-    }
-
-    .footer-hr {
-        display: none;
     }
 
     /* About Us Page  */
@@ -1326,8 +1323,6 @@
     .chit-chat {
         color: #FFF;
         font-weight: 900;
-        font-size: 2rem !important;
-        line-height: 3rem;
     }
 
     .accordion-margin {
@@ -1391,6 +1386,7 @@
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
+        display: none !important;
     }
 
     .learn-pagination {
@@ -1433,7 +1429,33 @@
         padding: 1rem !important;
     }
 
+    .btn-arrow {
+        display: none !important;
+    }
 
+    .GotIdea {
+        padding: 2rem !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }
+
+    .vidoe-responsive{
+        margin-top: 2rem !important;
+    }
+
+    .service-section {
+        flex: 1 0 calc(100% - 20px);
+        margin: 1rem .7rem;
+        padding: 2rem 2rem;
+        box-sizing: border-box;
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .chit-chat{
+        font-size: 3.3rem !important;
+        line-height: 4rem !important;
+      }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
