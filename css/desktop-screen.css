@@ -112,7 +112,7 @@
     padding: 0 1rem !important;
   }
 
-  .home-section .container-fluid .row .mt-md-5{
+  .home-section .container-fluid .row .mt-md-5 {
     margin-top: 2rem !important;
   }
 
@@ -122,7 +122,7 @@
     line-height: 2rem !important;
   }
 
-  .banner-header-learn-text{
+  .banner-header-learn-text {
     font-size: 2.1rem !important;
     font-weight: 900;
     line-height: 1.7rem !important;
@@ -190,11 +190,11 @@
     margin: 0 2rem !important;
   }
 
-  .about-us .btn-primary{
+  .about-us .btn-primary {
     width: 200px !important;
   }
 
-  .arrow-btns .btn-primary{
+  .arrow-btns .btn-primary {
     width: 60px !important;
   }
 }
@@ -279,11 +279,11 @@
     border-radius: 1rem !important;
   }
 
-  .about-us .btn-primary{
+  .about-us .btn-primary {
     width: 230px !important;
   }
 
-  .arrow-btns .btn-primary{
+  .arrow-btns .btn-primary {
     width: 60px !important;
   }
 }
@@ -358,7 +358,7 @@
     z-index: 1;
   }
 
-  .learn-section .featured-work .learn-text-bold{
+  .learn-section .featured-work .learn-text-bold {
     margin-top: 6rem !important;
   }
 }
@@ -433,11 +433,11 @@
     z-index: 1;
   }
 
-  .learn-section .featured-work .learn-text-bold{
+  .learn-section .featured-work .learn-text-bold {
     margin-top: 6rem !important;
   }
 
-  .social-text{
+  .social-text {
     font-size: 3.5rem !important;
     line-height: 5rem !important;
   }
@@ -499,24 +499,27 @@
   .volume-toggle {
     position: absolute;
     top: 25px;
-    /* Adjust the top position as needed */
     right: 25px;
-    /* Adjust the right position as needed */
     width: 30px;
     height: 30px;
     color: #ffffff;
     background-color: #000000;
-    /* Background color of the toggle button */
     border-radius: 50%;
-    /* Make it circular */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     font-size: 20px;
-    /* Adjust the font size as needed */
     z-index: 1;
-    /* Ensure the icon is above the iframe */
+  }
+
+  .learn-section .featured-work .learn-text-bold {
+    margin-top: 6rem !important;
+  }
+
+  .social-text {
+    font-size: 3.5rem !important;
+    line-height: 5rem !important;
   }
 }
 
