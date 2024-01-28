@@ -544,6 +544,16 @@
     line-height: 4.5rem;
   }
 
+  .banner-header-learn-text {
+    font-size: 4rem !important;
+    font-weight: 900;
+    line-height: 4rem !important;
+  }
+
+  .banner-header-learn-text:first-child{
+    margin-top: 2rem !important;
+  }
+
   .header-para {
     font-size: 2rem !important;
     font-weight: 600 !important;
@@ -583,24 +593,18 @@
   .volume-toggle {
     position: absolute;
     top: 25px;
-    /* Adjust the top position as needed */
     right: 45px;
-    /* Adjust the right position as needed */
     width: 30px;
     height: 30px;
     color: #ffffff;
     background-color: #000000;
-    /* Background color of the toggle button */
     border-radius: 50%;
-    /* Make it circular */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     font-size: 20px;
-    /* Adjust the font size as needed */
     z-index: 1;
-    /* Ensure the icon is above the iframe */
   }
 
   /* Feature Section */
@@ -612,5 +616,13 @@
     font-size: 1.5rem !important;
   }
 
+  .learn-section .featured-work .learn-text-bold{
+    margin-top: 6rem !important;
+  }
+
+  .social-text {
+    font-size: 3.5rem !important;
+    line-height: 5rem !important;
+  }
 
 }
