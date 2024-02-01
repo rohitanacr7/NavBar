@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
     list-style: none;
     box-sizing: border-box;
 }
+
 body {
     background: #FFFFFF !important;
     padding-top: 3rem;
@@ -51,13 +53,14 @@ header {
     padding: 0 50px;
 }
 
-header nav{
+header nav {
     z-index: 9999 !important;
 }
 
 header nav ul {
     display: flex;
 }
+
 header nav ul li a {
     display: inline-block;
     color: #000;
@@ -67,27 +70,35 @@ header nav ul li a {
     font-weight: 600;
     font-size: 1.2rem !important;
     padding: .5rem .5rem;
-    
+
 }
+
 header nav ul li a:hover {
     color: #2061f2;
 }
 
-.link-contact{
-    color: #FFF;
-    background-color: #000;
-    padding: .5rem 1.5rem;
+header nav ul li .active {
+    color: #2061f2;
 }
 
-.link-contact:hover{
+.link-contact {
     color: #FFF;
     background-color: #000;
+    padding: .5rem 1.5rem !important;
+}
+
+.link-contact:hover {
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #000;
+    padding: .6rem 1.6rem !important;
 }
 
 .hamburger {
     cursor: pointer;
     display: none;
 }
+
 .hamburger div {
     width: 30px;
     height: 3px;
@@ -95,12 +106,22 @@ header nav ul li a:hover {
     background: #000;
 }
 
+.btn-primary:hover{
+    background-color: #39A7FF !important;
+}
+
+.btn-dark:hover{
+    color: #000 !important;
+    background-color: #FFF !important;
+    border: 1px solid #000 !important;
+}
+
 /*--Home--*/
-.container-padding{
+.container-padding {
     padding: 0 2rem !important;
 }
 
-.banner-header-text{
+.banner-header-text {
     font-size: 4rem;
     font-weight: 900;
     line-height: 3.7rem;
@@ -108,545 +129,565 @@ header nav ul li a:hover {
 
 .button-container {
     display: flex;
-  }
-  
-  .button {
+}
+
+.button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1.2rem !important;
     cursor: pointer;
     padding: .7rem 2rem !important;
-  }
+}
 
-  .button-container-margin{
+.button-container-margin {
     margin-top: 3rem;
-  }
+}
 
-  .btn-group-sm>.btn, .btn-sm{
+.btn-group-sm>.btn,
+.btn-sm {
     width: 181.1px !important;
-  }
+}
 
-  .header-para{
+.header-para {
     font-size: 1.4rem !important;
     font-weight: 600 !important;
-  }
+}
 
-  .hero-video{
+.hero-video {
     width: 480px;
     height: 270px;
-  }
+}
 
-    .home-video iframe{
-        border-radius: 1rem !important;
-    }
+.home-video iframe {
+    border-radius: 1rem !important;
+}
 
-  .video-container {
+.video-container {
     position: relative;
     width: 100%;
-  }
+}
 
-  .volume-toggle {
+.volume-toggle {
     position: absolute;
-    top: 25px; /* Adjust the top position as needed */
-    right: 50px; /* Adjust the right position as needed */
+    top: 25px;
+    /* Adjust the top position as needed */
+    right: 50px;
+    /* Adjust the right position as needed */
     width: 35px;
     height: 35px;
     color: #ffffff;
-    background-color: #000000; /* Background color of the toggle button */
-    border-radius: 50%; /* Make it circular */
+    background-color: #000000;
+    /* Background color of the toggle button */
+    border-radius: 50%;
+    /* Make it circular */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 20px; /* Adjust the font size as needed */
-    z-index: 1; /* Ensure the icon is above the iframe */
-  }
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    z-index: 1;
+    /* Ensure the icon is above the iframe */
+}
 
-  /* About Us */
-  .about-us {
+/* About Us */
+.about-us {
     background-color: #191E28;
-    border-radius: 1rem; 
+    border-radius: 1rem;
     padding: 5% 10% !important;
-    }
-
-    .about-us h5 {
-        font-size: 2.6rem !important;
-    }
-
-    .about-us hr {
-        border: 0.05rem solid white; 
-        opacity: .5;
-    }
-
-    .about-us .about-bold-text {
-        font-size: 2rem !important;
-    }
-
-    .about-us .about-light-text {
-        font-size: 1.2rem !important;
-    }
-
-    .featured-section {
-        margin: 0 8rem !important;
-    }
-
-    .featured-all-projects button{
-        margin-top: 2rem !important;
-    }
-
-    /*-B2B and B2C Videos-*/
-    .about-us .B2B-bold-text {
-        font-size: 2.5rem !important;
-    }
-
-    .B2B-text{
-        font-size: 1.4rem !important;
-    }
-
-    /*-Who We Helped Explain-*/
-    .slick-slide{
-        margin: 0 0;
-    }
-    .slick-slide img{
-        width: 100%;
-    }
-    .slick-slider{
-        position: relative;
-        display: block;
-        box-sizing: border-box;
-    }
-
-    .slick-list{
-        position: relative;
-        display: block;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-    }
-    .slick-track{
-        position: relative;
-        top: 0;
-        left: 0;
-        display: block
-    }
-    .slick-slide{
-        display: none;
-        float: left;
-        height: 100%;
-        min-height: 1px;
-    }
-    .slick-slide img{
-        display: block;
-    }
-    .slick-initialized .slick-slide{
-        display: block;
-    }
-    .copy{
-        padding-top: 250px;
-    }
-    .helped-margin{
-        margin-bottom: 5rem !important;
-    }
-
-    .container-padding-helped{
-        padding: 0 7rem !important;
-    }
-
-    
-    /* Learn */
-    .learn-img{
-        border-radius: .8rem !important;
-    }
-
-    .learn-text{
-        margin-top: 1rem;
-        font-size: 1.4rem !important;
-        font-weight: 500;
-    }
-
-    .helped-text, .learn-text-bold{
-        font-weight: 900;
-    }
-
-    /* What they say about us */
-    .comments-margin{
-        margin-top: 3rem !important;
-    }
-
-    /* What they say about us */
-    .comments-text-bold{
-        font-size: 2.5rem !important;
-        font-weight: 900;
-    }
-
-    .comments-text{
-        font-size: 1.8rem !important;
-    }
-
-    /* Social Media Styles */
-    .social-text {
-        font-size: 3rem !important; 
-        font-weight: 900 !important;
-        line-height: 4rem !important;
-        color: #FFF !important;
-    }
-
-    .insta {
-        background: linear-gradient(to right, #FF312C, #FFB131);
-    }
-    
-    .insta:hover {
-        background: linear-gradient(to right, #FFB131, #FF312C);
-    }
-
-    .behance{
-        background-color: #2061F2 !important;
-    }
-
-    .behance:hover{
-        background-color: #11009E !important;
-    }
-
-    /* Contact Us */
-    .contact-textarea,
-    .contact-gradient{
-        border: none;
-        border-radius: 0.7rem; 
-        background-color: #E9F0FE !important;
-        margin-top: 1rem !important;
-        color: #000 !important;
-    }
-
-    .contact-textarea::placeholder,.contact-gradient::placeholder, select{
-        color: #000 !important;
-        font-weight: 600 !important;
-    }
-
-    #dropdown1 option {
-        border-radius: 0.7rem; 
-        background: #007BFF;
-        color: white;
-        border: none;
-    }
-
-    .btn-btnsubmit {
-        align-items: end;
-    }
-
-    /*footer*/
-    .footer-head{
-        font-size: 2rem !important;
-        font-weight: 900 !important;
-    }
-
-    .footer-address{
-        margin-bottom: 0 !important;
-    }
-
-    .footer-para {
-        font-family: 'Urbanist', sans-serif !important;
-        font-size: 1.3rem !important;
-        font-weight: 600 !important;
-    }
-
-    .footer-margin-section-2{
-        margin-bottom: 1.4rem !important;
-    }
-
-    .footer-margin-section-3{
-        margin-bottom: 1.4rem !important;
-    }
-
-    .footer-margin-section-3-first{
-        margin-top: 2.5rem !important;
-        margin-bottom: 1.4rem !important;
-    }
-
-    .footer-link{
-        color: #000 !important;
-    }
-
-    .footer-link:hover{
-        color: #007BFF !important;
-    }
-
-    .last-footer-section{
-        margin-top: 5rem !important;
-    }
-
-    ul{
-        padding-left: 0 !important;
-    }
-
-
-    .footer-hr{
-        display: none;
-    }
-
-    ::placeholder {
-        color: black;
-        opacity: 1;
-    }
-
-    .contact.dropdown,
-    .blue-bg {
-        background-color: #2061F2;
-        color: white;
-    }
-
-    /* About Us Page  */
-    .banner-header-about-text{
-        font-size: 5rem;
-        font-weight: 900;
-        line-height: 4.5rem;
-    }
-
-    .who-we-are-head{
-        font-size: 3.5rem;
-        font-weight: 900;
-    }
-
-    .who-we-are-para-1{
-        font-size: 2rem;
-        font-weight: 700;
-        line-height: 2.5rem;
-        margin-top: 3rem;
-    }
-
-    .who-we-are-para-2{
-        font-size: 1.5rem;
-        font-weight: 500;
-        line-height: 2rem;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-    }
-
-    .who-we-are-para-img{
-        margin-top: 1rem;
-    }
-
-    .what-motivates-our-actions-para-1{
-        font-size: 2rem;
-        font-weight: 700;
-        line-height: 2.5rem;
-        margin-top: 2rem;
-    }
-
-    .what-motivates-our-actions-para-2{
-        margin-top: 2rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-        line-height: 2rem;
-        margin-left: 3rem;
-    }
-
-    .about-us {
-        background-color: #191E28;
-        border-radius: 1rem; 
-        padding: 3rem 7rem !important;
-    }
-
-    .chit-chat{
-        color: #FFF;
-        font-weight: 900;
-        font-size: 3rem !important;
-        line-height: 4.5rem;
-    }
-
-    .accordion-margin{
-        margin-top: 3rem !important;
-    }
-
-    .accordion-button:not(.collapsed)::after {
-        background-image: url(../images/minus.png) !important;
-        transform: rotate(-180deg);
-    }
-
-    .accordion-button::after {
-        flex-shrink: 0;
-        width: 1.25rem;
-        height: 1.25rem;
-        margin-left: auto;
-        content: "";
-        background-image: url(../images/plus.png) !important;
-        background-repeat: no-repeat;
-        background-size: 1.25rem;
-        transition: transform .2s ease-in-out;
-    }
-
-    .accordion-button:not(.collapsed) {
-        color: #000 !important;
-        font-weight: 600 !important;
-        background-color: hsl(0, 0%, 100%) !important; 
-        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
-    }
-    
-    .accordion-button{
-        font-weight: 600 !important;
-        font-size: 1.5rem !important;
-    }
-
-    /*Learn Page*/
-    .banner-header-learn-text{
-        font-size: 3rem;
-        font-weight: 900;
-        line-height: 3rem;
-    }
-
-    .learn-search{
-        padding: 1rem 2rem !important;
-        border: 1px solid #000 !important;
-        margin-bottom: 5rem !important;
-    }
-
-    .learn-search::placeholder{
-        color: #000 !important;
-    }
-
-    .pagination{
-        margin-top: 5rem !important;
-        margin-bottom: 5rem !important;
-        /* display: flex !important; */
-        display: none !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-
-    .learn-pagination{
-        height: 3.5rem !important;
-        width: 3.5rem !important;
-        background-color: #FFF !important;
-        margin-right: 1rem !important;
-        font-weight: 600;
-    }
-
-    .learn-pagination:hover{
-        background-color: #007BFF !important;
-        color: #FFF !important;
-        border: none !important;
-    }
-
-    .GotIdea{
-        padding: 2rem 5rem !important;
-        border-radius: 2rem;
-        margin: 0rem 3rem !important;
-    }
-
-    .GotIdea-text{
-        font-size: 3rem !important;
-        font-weight: 900 !important;
-        color: #FFF !important;
-    }
-
-    .GotIdea-button{
-        font-size: 1.5rem !important;
-        padding: .6rem 2rem !important;
-    }
-
-    .service-gradient {
-        border: none;
-        border-radius: 15px;
-        background-color: #E9F0FE;
-    }
-
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .image-size{
-        width: 10rem !important;
-      }
-    
-      .service-section {
-        flex: 1 0 calc(33% - 20px);
-        margin: 1rem .7rem;
-        padding: 2rem 2rem;
-        box-sizing: border-box;
-        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-              opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
-
-      .service-section:hover{
-        transform: scale(1.04);
-        box-shadow: .3rem .3rem #454F6B !important;
-      }
-
-      .service-section h5{
-        font-size: 1.7rem !important;
-      }
-
-      .service-section p{
-        font-size: 1.2rem !important;
-      }
-
-      .learn-image-section .service-section:first-child{
-        padding: 0 !important;
-      }
-
-      .search-col{
-        display: none !important;
-      }
-
-    .verticle-padding{
-        padding: 1.5rem 0rem !important;
-        vertical-align:center;
-    }
-    .btn-verticle-padding{
-        padding:2rem 1.5rem !important;
-    }
-
-    .hidden {
-        display: none !important;
-    }
-
-    .modal-title i {
-        margin-right: 8px;
-        font-size: 1.5rem;
-    }
-    
-      .modal-header {
-        border-bottom: 2px solid #d9d9d9;
-      }
-    
-      .modal-body {
-        padding: 20px;
-      }
-
-      .vidoe-responsive{
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        position: relative;
-        height: 0;
-        border-radius: 1rem;
-      }
-
-      .vidoe-responsive iframe{
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        border-radius: 1rem;
-      }
-
-      .image_margin{
-        margin-top: 2rem !important;
-        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-              opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
-
-      .image_margin:hover {
-        transform: scale(1.2);
-      }
-
-      .accordion-item{
-        border: none !important;
-      }
+}
+
+.about-us h5 {
+    font-size: 2.6rem !important;
+}
+
+.about-us hr {
+    border: 0.05rem solid white;
+    opacity: .5;
+}
+
+.about-us .about-bold-text {
+    font-size: 2rem !important;
+}
+
+.about-us .about-light-text {
+    font-size: 1.2rem !important;
+}
+
+.featured-section {
+    margin: 0 8rem !important;
+}
+
+.featured-all-projects button {
+    margin-top: 2rem !important;
+}
+
+/*-B2B and B2C Videos-*/
+.about-us .B2B-bold-text {
+    font-size: 2.5rem !important;
+}
+
+.B2B-text {
+    font-size: 1.4rem !important;
+}
+
+/*-Who We Helped Explain-*/
+.slick-slide {
+    margin: 0 0;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.copy {
+    padding-top: 250px;
+}
+
+.helped-margin {
+    margin-bottom: 5rem !important;
+}
+
+.container-padding-helped {
+    padding: 0 7rem !important;
+}
+
+
+/* Learn */
+.learn-img {
+    border-radius: .8rem !important;
+}
+
+.learn-text {
+    margin-top: 1rem;
+    font-size: 1.4rem !important;
+    font-weight: 500;
+}
+
+.helped-text,
+.learn-text-bold {
+    font-weight: 900;
+}
+
+/* What they say about us */
+.comments-margin {
+    margin-top: 3rem !important;
+}
+
+/* What they say about us */
+.comments-text-bold {
+    font-size: 2.5rem !important;
+    font-weight: 900;
+}
+
+.comments-text {
+    font-size: 1.8rem !important;
+}
+
+/* Social Media Styles */
+.social-text {
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+    line-height: 4rem !important;
+    color: #FFF !important;
+}
+
+.insta {
+    background: linear-gradient(to right, #FF312C, #FFB131);
+}
+
+.insta:hover {
+    background: linear-gradient(to right, #FFB131, #FF312C);
+}
+
+.behance {
+    background-color: #2061F2 !important;
+}
+
+.behance:hover {
+    background-color: #11009E !important;
+}
+
+/* Contact Us */
+.contact-textarea,
+.contact-gradient {
+    border: none;
+    border-radius: 0.7rem;
+    background-color: #E9F0FE !important;
+    margin-top: 1rem !important;
+    color: #000 !important;
+}
+
+.contact-textarea::placeholder,
+.contact-gradient::placeholder,
+select {
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+#dropdown1 option {
+    border-radius: 0.7rem;
+    background: #007BFF;
+    color: white;
+    border: none;
+}
+
+.btn-btnsubmit {
+    align-items: end;
+}
+
+/*footer*/
+.footer-head {
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+}
+
+.footer-address {
+    margin-bottom: 0 !important;
+}
+
+.footer-para {
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+}
+
+.footer-margin-section-2 {
+    margin-bottom: 1.4rem !important;
+}
+
+.footer-margin-section-3 {
+    margin-bottom: 1.4rem !important;
+}
+
+.footer-margin-section-3-first {
+    margin-top: 2.5rem !important;
+    margin-bottom: 1.4rem !important;
+}
+
+.footer-link {
+    color: #000 !important;
+}
+
+.footer-link:hover {
+    color: #007BFF !important;
+}
+
+.last-footer-section {
+    margin-top: 5rem !important;
+}
+
+ul {
+    padding-left: 0 !important;
+}
+
+
+.footer-hr {
+    display: none;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.contact.dropdown,
+.blue-bg {
+    background-color: #2061F2;
+    color: white;
+}
+
+/* About Us Page  */
+.banner-header-about-text {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+}
+
+.who-we-are-head {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.who-we-are-para-1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-top: 3rem;
+}
+
+.who-we-are-para-2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.who-we-are-para-img {
+    margin-top: 1rem;
+}
+
+.what-motivates-our-actions-para-1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+}
+
+.what-motivates-our-actions-para-2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-left: 3rem;
+}
+
+.about-us {
+    background-color: #191E28;
+    border-radius: 1rem;
+    padding: 3rem 7rem !important;
+}
+
+.chit-chat {
+    color: #FFF;
+    font-weight: 900;
+    font-size: 3rem !important;
+    line-height: 4.5rem;
+}
+
+.accordion-margin {
+    margin-top: 3rem !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/minus.png) !important;
+    transform: rotate(-180deg);
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/plus.png) !important;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000 !important;
+    font-weight: 600 !important;
+    background-color: hsl(0, 0%, 100%) !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125) !important;
+}
+
+.accordion-button {
+    font-weight: 600 !important;
+    font-size: 1.5rem !important;
+}
+
+/*Learn Page*/
+.banner-header-learn-text {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+.learn-search {
+    padding: 1rem 2rem !important;
+    border: 1px solid #000 !important;
+    margin-bottom: 5rem !important;
+}
+
+.learn-search::placeholder {
+    color: #000 !important;
+}
+
+.pagination {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+    /* display: flex !important; */
+    display: none !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.learn-pagination {
+    height: 3.5rem !important;
+    width: 3.5rem !important;
+    background-color: #FFF !important;
+    margin-right: 1rem !important;
+    font-weight: 600;
+}
+
+.learn-pagination:hover {
+    background-color: #007BFF !important;
+    color: #FFF !important;
+    border: none !important;
+}
+
+.GotIdea {
+    padding: 2rem 5rem !important;
+    border-radius: 2rem;
+    margin: 0rem 3rem !important;
+}
+
+.GotIdea-text {
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+    color: #FFF !important;
+}
+
+.GotIdea-button {
+    font-size: 1.5rem !important;
+    padding: .6rem 2rem !important;
+}
+
+.service-gradient {
+    border: none;
+    border-radius: 15px;
+    background-color: #E9F0FE;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-size {
+    width: 10rem !important;
+}
+
+.service-section {
+    flex: 1 0 calc(33% - 20px);
+    margin: 1rem .7rem;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-section:hover {
+    transform: scale(1.04);
+    box-shadow: .3rem .3rem #454F6B !important;
+}
+
+.service-section h5 {
+    font-size: 1.7rem !important;
+}
+
+.service-section p {
+    font-size: 1.2rem !important;
+}
+
+.learn-image-section .service-section:first-child {
+    padding: 0 !important;
+}
+
+.search-col {
+    display: none !important;
+}
+
+.verticle-padding {
+    padding: 1.5rem 0rem !important;
+    vertical-align: center;
+}
+
+.btn-verticle-padding {
+    padding: 2rem 1.5rem !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.modal-title i {
+    margin-right: 8px;
+    font-size: 1.5rem;
+}
+
+.modal-header {
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.vidoe-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    border-radius: 1rem;
+}
+
+.vidoe-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 1rem;
+}
+
+.image_margin {
+    margin-top: 2rem !important;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.image_margin:hover {
+    transform: scale(1.2);
+}
+
+.accordion-item {
+    border: none !important;
+}
 
 /* Extra-large screens (large desktops) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
     /*--Home--*/
     .container-padding {
         padding: 0 2rem !important;
@@ -665,63 +706,70 @@ header nav ul li a:hover {
     }
 
     /*Home*/
-    .banner-header-text{
+    .banner-header-text {
         font-size: 2.5rem !important;
         font-weight: 900;
         line-height: 5rem;
     }
 
-    .header-para{
+    .header-para {
         font-size: 1rem !important;
         font-weight: 600 !important;
-      }
-    
-      .hero-video{
+    }
+
+    .hero-video {
         width: 480px;
         height: 270px;
-      }
-    
-      .button-container {
+    }
+
+    .button-container {
         display: flex;
-      }
-      
-      .button {
+    }
+
+    .button {
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 1.5rem !important;
         cursor: pointer;
         padding: .7rem 2rem !important;
-      }
-    
-      .button-container-margin{
-        margin-top: 3rem !important;
-      }
-    
-      .btn-group-sm>.btn, .btn-sm{
-        width: 125px !important;
-      }
+    }
 
-      .volume-toggle {
+    .button-container-margin {
+        margin-top: 3rem !important;
+    }
+
+    .btn-group-sm>.btn,
+    .btn-sm {
+        width: 125px !important;
+    }
+
+    .volume-toggle {
         position: absolute;
-        top: 20px; /* Adjust the top position as needed */
-        right: 20px; /* Adjust the right position as needed */
+        top: 20px;
+        /* Adjust the top position as needed */
+        right: 20px;
+        /* Adjust the right position as needed */
         width: 30px;
         height: 30px;
         color: #ffffff;
-        background-color: #000000; /* Background color of the toggle button */
-        border-radius: 50%; /* Make it circular */
+        background-color: #000000;
+        /* Background color of the toggle button */
+        border-radius: 50%;
+        /* Make it circular */
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        font-size: 20px; /* Adjust the font size as needed */
-        z-index: 1; /* Ensure the icon is above the iframe */
-      }
+        font-size: 20px;
+        /* Adjust the font size as needed */
+        z-index: 1;
+        /* Ensure the icon is above the iframe */
+    }
 
 
     /*-Feautered Images-*/
-    .featured-work-img{
+    .featured-work-img {
         border-radius: 1rem !important;
     }
 
@@ -729,72 +777,72 @@ header nav ul li a:hover {
         margin: 0 10rem !important;
     }
 
-    .container-padding-helped{
+    .container-padding-helped {
         padding: 0 5rem !important;
     }
 
     /*-Learn-*/
-    .learn-text{
+    .learn-text {
         margin-top: 1rem;
         font-size: 1.2rem !important;
         font-weight: 500;
         margin-bottom: 3rem !important;
     }
 
-    .learn-last{
+    .learn-last {
         margin-bottom: -1rem !important;
     }
 
-    .learn-text-bold{
+    .learn-text-bold {
         font-size: 2rem !important;
         font-weight: 900;
         text-align: center;
     }
-    
+
     /* What they say about us */
-    .comments-text-bold{
+    .comments-text-bold {
         font-size: 2rem !important;
         font-weight: 900;
     }
 
-    .comments-text{
+    .comments-text {
         font-size: 1.5rem !important;
     }
-    
+
 
     /* Social Media Styles */
     .social-text {
-        font-size: 2.2rem !important; 
+        font-size: 2.2rem !important;
         font-weight: 900 !important;
         line-height: 3rem !important;
         color: #FFF !important;
         margin-bottom: 2rem !important;
     }
 
-    .mobile-top-margin{
+    .mobile-top-margin {
         margin-top: 5rem;
     }
 
     /* About Us Page  */
-    .banner-header-about-text{
+    .banner-header-about-text {
         font-size: 3.5rem !important;
         font-weight: 900 !important;
         line-height: 2.8rem !important;
     }
 
-    .who-we-are-head{
+    .who-we-are-head {
         font-size: 2rem;
         font-weight: 900;
     }
 
-    .who-we-are-para-1{
+    .who-we-are-para-1 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
         margin-top: 1rem;
     }
 
-    .who-we-are-para-2{
+    .who-we-are-para-2 {
         font-size: 1.2rem;
         font-weight: 500;
         line-height: 2rem;
@@ -802,19 +850,19 @@ header nav ul li a:hover {
         margin-bottom: 3rem;
     }
 
-    .who-we-are-para-img{
+    .who-we-are-para-img {
         margin-top: 1rem;
         margin-left: 2rem;
     }
 
-    .what-motivates-our-actions-para-1{
+    .what-motivates-our-actions-para-1 {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2rem;
         margin-top: 2rem;
     }
 
-    .what-motivates-our-actions-para-2{
+    .what-motivates-our-actions-para-2 {
         margin-top: 2rem;
         font-size: .98rem !important;
         font-weight: 500;
@@ -824,18 +872,18 @@ header nav ul li a:hover {
 
     .about-us {
         background-color: #191E28;
-        border-radius: 1rem; 
+        border-radius: 1rem;
         padding: 3rem 3rem !important;
     }
 
-    .chit-chat{
+    .chit-chat {
         color: #FFF;
         font-weight: 900;
         font-size: 2.5rem !important;
         line-height: 3.2rem;
     }
 
-    .accordion-margin{
+    .accordion-margin {
         margin-top: 3rem !important;
     }
 
@@ -859,81 +907,82 @@ header nav ul li a:hover {
     .accordion-button:not(.collapsed) {
         color: #000 !important;
         font-weight: 600 !important;
-        background-color: hsl(0, 0%, 100%) !important; 
-        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
+        background-color: hsl(0, 0%, 100%) !important;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125) !important;
     }
-    
-    .accordion-button{
+
+    .accordion-button {
         font-weight: 600 !important;
         font-size: 1rem !important;
     }
 
     /*footer*/
-    .footer-head{
+    .footer-head {
         font-size: 1.6rem !important;
         font-weight: 900 !important;
     }
 
-    .footer-address{
+    .footer-address {
         margin-bottom: 0 !important;
     }
 
-    .footer-block-3{
+    .footer-block-3 {
         display: block !important;
     }
+
     .footer-para {
         font-family: 'Urbanist', sans-serif !important;
         font-size: 1rem !important;
         font-weight: 600 !important;
     }
 
-    .footer-margin-section-2{
+    .footer-margin-section-2 {
         margin-bottom: 1.2rem !important;
     }
 
-    .footer-margin-section-3{
+    .footer-margin-section-3 {
         margin-bottom: 1.2rem !important;
     }
 
-    .footer-margin-section-3-first{
+    .footer-margin-section-3-first {
         margin-top: 2.5rem !important;
         margin-bottom: 1rem !important;
     }
 
-    .footer-link-hover:hover{
+    .footer-link-hover:hover {
         color: #007BFF;
     }
 
-    .last-footer-section{
+    .last-footer-section {
         margin-top: 5rem !important;
     }
 
-    .footer-link{
+    .footer-link {
         color: #000;
     }
 
-    .footer-hr{
+    .footer-hr {
         display: none;
     }
 
     /*Learn Page*/
-    .banner-header-learn-text{
+    .banner-header-learn-text {
         font-size: 2.8rem !important;
         font-weight: 900 !important;
         line-height: 2.5rem;
     }
 
-    .learn-search{
+    .learn-search {
         padding: .5rem 2rem !important;
         border: 1px solid #000 !important;
         margin-bottom: 5rem !important;
     }
 
-    .learn-search::placeholder{
+    .learn-search::placeholder {
         color: #000 !important;
     }
 
-    .pagination{
+    .pagination {
         margin-top: 5rem !important;
         margin-bottom: 5rem !important;
         /* display: flex !important; */
@@ -942,7 +991,7 @@ header nav ul li a:hover {
         align-items: center !important;
     }
 
-    .learn-pagination{
+    .learn-pagination {
         height: 2.5rem !important;
         width: 2.5rem !important;
         background-color: #FFF !important;
@@ -950,19 +999,19 @@ header nav ul li a:hover {
         font-weight: 600;
     }
 
-    .learn-pagination:hover{
+    .learn-pagination:hover {
         background-color: #007BFF !important;
         color: #FFF !important;
         border: none !important;
     }
 
-    .GotIdea-text{
+    .GotIdea-text {
         font-size: 2rem !important;
         font-weight: 900 !important;
         color: #FFF !important;
     }
 
-    .GotIdea-button{
+    .GotIdea-button {
         font-size: 1rem !important;
         padding: .5rem 1rem !important;
         margin-top: 1rem !important;
@@ -970,7 +1019,7 @@ header nav ul li a:hover {
         margin-right: auto !important;
     }
 
-    .image-size{
+    .image-size {
         width: 10rem !important;
     }
 }
