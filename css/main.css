@@ -341,7 +341,11 @@ header nav ul li .active {
     background-color: #2061F2 !important;
 }
 
-.behance:hover {
+.contact-behance{
+    background-color: #191E28 !important;
+}
+
+.behance:hover, .contact-behance:hover {
     background-color: #11009E !important;
 }
 
