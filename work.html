@@ -412,7 +412,6 @@
       // Attach hover event handler to each iframe
       videoIframes.hover(
         function () {
-          // On hover, update the src attribute with a new link
           var videoId = $(this).attr('id');
           switch (videoId) {
             case 'videoIframe0':
@@ -493,7 +492,6 @@
           }
         },
         function () {
-          // On mouseout, revert to the original src attribute
           var originalSrc = $(this).attr('data-original-src');
           $(this).attr('src', originalSrc);
         }

@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             commentElement.style.opacity = "1";
             nameElement.style.opacity = "1";
-        }, 200); // Adjust the delay as needed
+        }, 200); 
     }
 
     function nextTestimonial() {
@@ -82,51 +82,3 @@ dropdown.addEventListener("change", function() {
 });
 
 window.addEventListener('load', hideSelectedOption);
-
-//banner Slider
-$(document).ready(function () {
-    $(".customer-logos").slick({
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      arrows: false,
-      infinite: true,
-      cssEase: "ease",
-      draggable: true,
-      swipeToSlide: true,
-      pauseOnHover: false,
-      responsive: [
-        {
-          breakpoint: 1920,
-          settings: {
-            slidesToShow: 6,
-          },
-        },
-        {
-          breakpoint: 1440,
-          settings: {
-            slidesToShow: 5,
-          },
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 520,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-      ],
-    });
-  });
