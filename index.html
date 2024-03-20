@@ -33,26 +33,98 @@
   <script type="text/javascript">
     window.onload = function () {
       // Attach a submit event listener to the form
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
 
-          // Generate a random contact number
-          this.contact_number.value = (Math.random() * 100000) | 0;
-
+        // Validate form fields
+        if (validateForm()) {
           // Send the form using EmailJS
           emailjs.sendForm("service_fs6v6lc", "template_wydf3r5", this).then(
             function () {
               console.log("SUCCESS!");
               $("#successModal").modal("show");
+              resetForm(); // Reset form fields on success
             },
             function (error) {
               console.log("FAILED...", error);
-              $("#errorModal").modal("show");
+              showAlert("Oops! Something went wrong. Please try again later.", "danger");
             }
           );
+        }
+      });
+
+      // Function to validate form fields
+      function validateForm() {
+        var name = document.getElementById("username").value;
+        var email = document.getElementById("Email").value;
+        var contact = document.getElementById("contact").value;
+        var message = document.getElementById("txtarea").value;
+        // Check if name field is empty
+        if (name === "" || name === undefined) {
+        showAlert("Please enter your name.", "danger");
+        return false;
+    }
+
+        // Check if email field is empty
+        if (email === "") {
+          showAlert("Please enter your email.", "danger");
+          return false;
+        }
+
+        // Check if email is valid using a regular expression
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          showAlert("Please enter a valid email address.", "danger");
+          return false;
+        }
+
+        // Check if contact number field is empty
+        if (contact === "") {
+          showAlert("Please enter your contact number.", "danger");
+          return false;
+        }
+
+        // Check if message field is empty
+        if (message === "") {
+          showAlert("Please enter your message.", "danger");
+          return false;
+        }
+
+        return true; // Form is valid
+      }
+
+      // Function to display Bootstrap alerts
+      function showAlert(message, type) {
+        var alertDiv = document.createElement("div");
+        alertDiv.classList.add("alert", "alert-" + type);
+        alertDiv.setAttribute("role", "alert");
+
+        var alertInner = document.createElement("div");
+        alertInner.classList.add("alert-inner");
+        alertInner.textContent = message;
+
+        var closeBtn = document.createElement("span");
+        closeBtn.innerHTML = "&times;";
+        closeBtn.classList.add("close-btn");
+        closeBtn.addEventListener("click", function () {
+          alertDiv.classList.remove("show");
+          setTimeout(function () {
+            alertDiv.remove();
+          }, 100);
         });
+
+        alertInner.appendChild(closeBtn);
+        alertDiv.appendChild(alertInner);
+        document.getElementById("contact-form").prepend(alertDiv);
+        setTimeout(function () {
+          alertDiv.classList.add("show");
+        }, 100);
+      }
+
+      // Function to reset form fields
+      function resetForm() {
+        document.getElementById("contact-form").reset();
+      }
     };
   </script>
 </head>
@@ -380,7 +452,7 @@
     </div>
   </section>
   <!--Contact Us-->
-  <section id="ContactUs" class="ContactUsSection">
+  <section id="ContactUs">
     <div class="container-fluid container-padding-helped mobile-top-margin container-top-space contact">
       <h1 class="comments-text-bold">Let us know about your idea</h1>
       <hr />
@@ -390,7 +462,7 @@
 
         <div class="row contactform">
           <div class="col-md-6">
-            <input type="text" id="name" name="user_name"
+            <input type="text" id="username" name="user_name"
               class="col-12 ps-4 ps-lg-5 pe-4 pe-lg-5 pt-3 pt-lg-4 pb-3 pb-lg-4 contact-gradient" placeholder="Name" />
           </div>
           <div class="col-md-6">

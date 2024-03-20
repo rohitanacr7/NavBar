@@ -39,12 +39,12 @@
 
         // Validate form fields
         if (validateForm()) {
-
           // Send the form using EmailJS
           emailjs.sendForm("service_fs6v6lc", "template_wydf3r5", this).then(
             function () {
               console.log("SUCCESS!");
               $("#successModal").modal("show");
+              resetForm(); // Reset form fields on success
             },
             function (error) {
               console.log("FAILED...", error);
@@ -121,6 +121,11 @@
         setTimeout(function () {
           alertDiv.classList.add("show");
         }, 100);
+      }
+
+      // Function to reset form fields
+      function resetForm() {
+        document.getElementById("contact-form").reset();
       }
     };
   </script>
