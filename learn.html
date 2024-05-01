@@ -7,14 +7,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>StoryHumor - Learn</title>
   <link rel="stylesheet" href="css/style.css" />
-  <meta name="description" content="Creative animated videos for startups & agencies. Elevate your brand with captivating storytelling. Explore our portfolio for innovative animation solutions." />
-  <meta name="keywords" content="Explainer video companies in India, explainer video, animated video, 2d animation, animation studio, video production company, best animation studio" />
+  <meta name="description"
+    content="Creative animated videos for startups & agencies. Elevate your brand with captivating storytelling. Explore our portfolio for innovative animation solutions." />
+  <meta name="keywords"
+    content="Explainer video companies in India, explainer video, animated video, 2d animation, animation studio, video production company, best animation studio" />
   <meta name="author" content="Story Humor" />
   <link rel="icon" href="./images/Favicon.svg" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ20L0HFR9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-HJ20L0HFR9');
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Get all the video iframes
+      var videoIframes = $('.video-iframe');
+
+      // Attach hover event handler to each iframe
+      videoIframes.hover(
+        function () {
+          // On hover, update the src attribute with a new link
+          var videoId = $(this).attr('id');
+          switch (videoId) {
+            case 'videoIframe0':
+              $(this).attr('src', 'https://player.vimeo.com/video/880447747?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+          }
+        },
+        function () {
+          // On mouseout, revert to the original src attribute
+          var originalSrc = $(this).attr('data-original-src');
+          $(this).attr('src', originalSrc);
+        }
+      );
+    });
+  </script>
 </head>
 
 <body>
@@ -52,9 +90,9 @@
     <div class="container-fluid container-padding-helped mt-3">
       <div class="row pt-md-3 pt-xl-5 pt-xxl-5">
         <div class="col-md-5 col-sm-12 mt-md-5 ">
-          <p class="banner-header-learn-text mt-3">The world's most</p>
-          <p class="banner-header-learn-text">influential market is</p>
-          <p class="banner-header-learn-text">dominated by videos.</p>
+          <p class="banner-header-text">Videos are the</p>
+          <p class="banner-header-text">most influential</p>
+          <p class="banner-header-text">media.</p>
           <div class="button-container button-container-margin">
             <a href="./work.html" class="button btn btn-primary rounded-pill">
               See Our Work
@@ -166,7 +204,7 @@
     </div>
   </section>
   <!-- Got an Idea -->
-  <div class="container-fluid container-top-space mobile-top-margin container-padding mb-5">
+  <div class="container-fluid container-top-space mobile-top-margin container-padding">
     <section id="GotIdea">
       <div class="GotIdea bg-primary">
         <div class="row">
@@ -188,17 +226,37 @@
       <div class="col-md-6 mt-5 footer-block-1">
         <div>
           <p class="footer-head">Reach Us</p>
-          <p class="footer-para footer-margin-section-1">+91 7525853573</p>
-          <p class="footer-para footer-margin-section-1">
-            hello@storyhumor.com
-          </p>
-          <p class="footer-para footer-margin-section-1 footer-address">
-            10 Floor, Summit, Vibhuti Khand,
-          </p>
-          <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
-          <p class="footer-para footer-address">
-            Uttar Pradesh, India. - 226501
-          </p>
+          <div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-md-6">
+                <p class="footer-para footer-margin-section-1">+91 7525853573</p>
+                <p class="footer-para footer-margin-section-1">
+                  hello@storyhumor.com
+                </p>
+                <p class="footer-para footer-margin-section-1 footer-address">
+                  10 Floor, Summit, Vibhuti Khand,
+                </p>
+                <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
+                <p class="footer-para footer-address">
+                  Uttar Pradesh, India. - 226501
+                </p>
+              </div>
+              <div class="col">
+                <p class="footer-para footer-margin-section-1">+91 7525853573</p>
+                <p class="footer-para footer-margin-section-1">
+                  hello@storyhumor.com
+                </p>
+                <p class="footer-para footer-margin-section-1 footer-address">
+                  WeWork, 10th Floor Building 4, 
+                </p>
+                <p class="footer-para footer-address">Nesco IT Park, Goregaon (East), </p>
+                <p class="footer-para footer-address">
+                  Mumbai, Maharashtra 400063
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <hr class="footer-hr" />
@@ -266,8 +324,6 @@
     crossorigin="anonymous"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </body>
 
 </html>

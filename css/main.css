@@ -36,40 +36,42 @@ body {
 
 @keyframes slideIn {
     from {
-      opacity: 0;
-      transform: translateY(-50%);
+        opacity: 0;
+        transform: translateY(-50%);
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
-  @keyframes slideOut {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
     from {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-    to {
-      opacity: 0;
-      transform: translateY(-50%);
-    }
-  }
 
-  .alert {
+    to {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.alert {
     position: relative;
     padding: 0.25rem !important;
     margin-bottom: 0.5rem !important;
     border-radius: 0.25rem !important;
     border: 1px solid transparent;
-  }
+}
 
-  .alert-inner {
+.alert-inner {
     padding: 0.5rem !important;
     position: relative;
-  }
+}
 
-  .close-btn {
+.close-btn {
     font-size: 1.8rem;
     cursor: pointer;
     position: absolute;
@@ -78,7 +80,7 @@ body {
     bottom: 0 !important;
     margin: 0 0 0 .2rem;
     padding: 0rem 0.5rem 0.3rem 0.5rem !important;
-  }
+}
 
 .container-top-space {
     margin-top: 10%;
@@ -130,6 +132,7 @@ header nav ul li .active {
 .link-contact {
     color: #FFF;
     background-color: #000;
+    border: 1px solid #000;
     padding: .5rem 1.5rem !important;
 }
 
@@ -137,7 +140,7 @@ header nav ul li .active {
     color: #000;
     background-color: #FFF;
     border: 1px solid #000;
-    padding: .6rem 1.6rem !important;
+    padding: .5rem 1.5rem !important;
 }
 
 .hamburger {
@@ -152,11 +155,11 @@ header nav ul li .active {
     background: #000;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #39A7FF !important;
 }
 
-.btn-dark:hover{
+.btn-dark:hover {
     color: #000 !important;
     background-color: #FFF !important;
     border: 1px solid #000 !important;
@@ -387,11 +390,12 @@ header nav ul li .active {
     background-color: #2061F2 !important;
 }
 
-.contact-behance{
+.contact-behance {
     background-color: #191E28 !important;
 }
 
-.behance:hover, .contact-behance:hover {
+.behance:hover,
+.contact-behance:hover {
     background-color: #11009E !important;
 }
 

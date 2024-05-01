@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>StoryHumor - Home</title>
-  <meta name="description" content="Creative animated videos for startups & agencies. Elevate your brand with captivating storytelling. Explore our portfolio for innovative animation solutions." />
-  <meta name="keywords" content="Explainer video companies in India, explainer video, animated video, 2d animation, animation studio, video production company, best animation studio" />
+  <meta name="description"
+    content="Creative animated videos for startups & agencies. Elevate your brand with captivating storytelling. Explore our portfolio for innovative animation solutions." />
+  <meta name="keywords"
+    content="Explainer video companies in India, explainer video, animated video, 2d animation, animation studio, video production company, best animation studio" />
   <meta name="author" content="Story Humor" />
   <link rel="icon" href="./images/Favicon.svg" type="image/x-icon" />
   <meta name="robots" content="index, follow" />
@@ -16,6 +18,54 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ20L0HFR9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-HJ20L0HFR9');
+  </script>
+  <script>
+    $(document).ready(function () {
+      // Get all the video iframes
+      var videoIframes = $('.video-iframe');
+
+      // Attach hover event handler to each iframe
+      videoIframes.hover(
+        function () {
+          // On hover, update the src attribute with a new link
+          var videoId = $(this).attr('id');
+          switch (videoId) {
+            case 'videoIframe0':
+              $(this).attr('src', 'https://player.vimeo.com/video/880447747?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+            case 'videoIframe1':
+              $(this).attr('src', 'https://player.vimeo.com/video/880927523?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+            case 'videoIframe2':
+              $(this).attr('src', 'https://player.vimeo.com/video/880446093?h=fc0fe55a7a&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+            case 'videoIframe3':
+              $(this).attr('src', 'https://player.vimeo.com/video/885907143?h=d4cf241e02&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+            case 'videoIframe4':
+              $(this).attr('src', 'https://player.vimeo.com/video/880817248?h=32baa1ae03&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
+              break;
+          }
+        },
+        function () {
+          // On mouseout, revert to the original src attribute
+          var originalSrc = $(this).attr('data-original-src');
+          $(this).attr('src', originalSrc);
+        }
+      );
+    });
+  </script>
 </head>
 
 <body>
@@ -93,7 +143,7 @@
         <div class="row">
           <div class="col-md-5 text-white fw-bold about-bold-text">
             <p>
-              We are a B2B design & animation studio, help agencies keep thier
+              We are a B2B design & animation studio, help agencies keep their
               work flow.
             </p>
           </div>
@@ -237,22 +287,21 @@
           <img src="./images/helped_images/logo13.png" alt="logo" class="img-fluid image_margin " />
         </div>
         <div class="col-md-2 col-sm-4 col-4">
-          <img src="./images/helped_images/logo14.png" alt="logo" class="img-fluid image_margin " />
+          <img src="https://i.ibb.co/MMwgk20/Logo14.png" alt="logo" class="img-fluid image_margin " />
         </div>
         <div class="col-md-2 col-sm-4 col-4">
-          <img src="./images/helped_images/logo15.png" alt="logo" class="img-fluid image_margin " />
+          <img src="https://i.ibb.co/xYFJsLV/Logo15.png" alt="logo" class="img-fluid image_margin " />
         </div>
         <div class="col-md-2 col-sm-4 col-4">
-          <img src="./images/helped_images/logo16.png" alt="logo" class="img-fluid image_margin " />
+          <img src="https://i.ibb.co/ZXTzyzG/Logo16.png" alt="logo" class="img-fluid image_margin " />
         </div>
         <div class="col-md-2 col-sm-4 col-4">
-          <img src="./images/helped_images/logo17.png" alt="logo" class="img-fluid image_margin " />
+          <img src="https://i.ibb.co/DCpm01c/Logo17.png" alt="logo" class="img-fluid image_margin " />
         </div>
         <div class="col-md-2 col-sm-4 col-4">
-          <img src="./images/helped_images/logo18.png" alt="logo" class="img-fluid image_margin " />
+          <img src="https://i.ibb.co/gZKXZC8/Logo18.png" alt="logo" class="img-fluid image_margin " />
         </div>
       </div>
-    </section>
   </div>
   <!-- Learn -->
   <section id="learn" class="container-fluid container-padding-helped learn-container-top-space learn-section">
@@ -403,17 +452,37 @@
       <div class="col-md-6 mt-5 footer-block-1">
         <div>
           <p class="footer-head">Reach Us</p>
-          <p class="footer-para footer-margin-section-1">+91 7525853573</p>
-          <p class="footer-para footer-margin-section-1">
-            hello@storyhumor.com
-          </p>
-          <p class="footer-para footer-margin-section-1 footer-address">
-            10 Floor, Summit, Vibhuti Khand,
-          </p>
-          <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
-          <p class="footer-para footer-address">
-            Uttar Pradesh, India. - 226501
-          </p>
+          <div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-md-6">
+                <p class="footer-para footer-margin-section-1">+91 7525853573</p>
+                <p class="footer-para footer-margin-section-1">
+                  hello@storyhumor.com
+                </p>
+                <p class="footer-para footer-margin-section-1 footer-address">
+                  10 Floor, Summit, Vibhuti Khand,
+                </p>
+                <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
+                <p class="footer-para footer-address">
+                  Uttar Pradesh, India. - 226501
+                </p>
+              </div>
+              <div class="col">
+                <p class="footer-para footer-margin-section-1">+91 7525853573</p>
+                <p class="footer-para footer-margin-section-1">
+                  hello@storyhumor.com
+                </p>
+                <p class="footer-para footer-margin-section-1 footer-address">
+                  WeWork, 10th Floor Building 4, 
+                </p>
+                <p class="footer-para footer-address">Nesco IT Park, Goregaon (East), </p>
+                <p class="footer-para footer-address">
+                  Mumbai, Maharashtra 400063
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <hr class="footer-hr" />
@@ -513,26 +582,6 @@
     </div>
   </div>
   <script type="text/javascript" src="js/main.js"></script>
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <script>
-    var player = new Vimeo.Player(document.getElementById("videoIframe"));
-    var isMuted = false;
-
-    function toggleVolume() {
-      isMuted = !isMuted;
-      var volumeIcon = document.getElementById("volumeIcon");
-
-      if (isMuted) {
-        player.setVolume(0); // Mute the video
-        volumeIcon.classList.remove("bi-volume-up-fill");
-        volumeIcon.classList.add("bi-volume-mute-fill");
-      } else {
-        player.setVolume(1); // Unmute the video
-        volumeIcon.classList.remove("bi-volume-mute-fill");
-        volumeIcon.classList.add("bi-volume-up-fill");
-      }
-    }
-  </script>
   <script>
     $(document).ready(function () {
       // Get all the video iframes
@@ -570,116 +619,115 @@
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-  // Initialize EmailJS with your correct service ID
-  (function () {
-    emailjs.init("rkHbLB0zEG8yrILt5");
-  })();
-</script>
-<script type="text/javascript">
-  window.onload = function () {
-    // Attach a submit event listener to the form
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-      event.preventDefault();
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    // Initialize EmailJS with your correct service ID
+    (function () {
+      emailjs.init("y46YPvd3ZlQtYWV1K");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      // Attach a submit event listener to the form
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
 
-      // Validate form fields
-      if (validateForm()) {
-        // Send the form using EmailJS
-        emailjs.sendForm("service_fs6v6lc", "template_wydf3r5", this).then(
-          function () {
-            console.log("SUCCESS!");
-            $("#successModal").modal("show");
-            resetForm(); // Reset form fields on success
-          },
-          function (error) {
-            console.log("FAILED...", error);
-            showAlert("Oops! Something went wrong. Please try again later.", "danger");
-          }
-        );
-      }
-    });
-
-    // Function to validate form fields
-    function validateForm() {
-      var name = document.getElementById("username").value;
-      var email = document.getElementById("Email").value;
-      var contact = document.getElementById("contact").value;
-      var message = document.getElementById("txtarea").value;
-      // Check if name field is empty
-      if (name === "" || name === undefined) {
-      showAlert("Please enter your name.", "danger");
-      return false;
-  }
-
-      // Check if email field is empty
-      if (email === "") {
-        showAlert("Please enter your email.", "danger");
-        return false;
-      }
-
-      // Check if email is valid using a regular expression
-      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        showAlert("Please enter a valid email address.", "danger");
-        return false;
-      }
-
-      // Check if contact number field is empty
-      if (contact === "") {
-        showAlert("Please enter your contact number.", "danger");
-        return false;
-      }
-
-      // Check if message field is empty
-      if (message === "") {
-        showAlert("Please enter your message.", "danger");
-        return false;
-      }
-
-      return true; // Form is valid
-    }
-
-    // Function to display Bootstrap alerts
-    function showAlert(message, type) {
-      var alertDiv = document.createElement("div");
-      alertDiv.classList.add("alert", "alert-" + type);
-      alertDiv.setAttribute("role", "alert");
-
-      var alertInner = document.createElement("div");
-      alertInner.classList.add("alert-inner");
-      alertInner.textContent = message;
-
-      var closeBtn = document.createElement("span");
-      closeBtn.innerHTML = "&times;";
-      closeBtn.classList.add("close-btn");
-      closeBtn.addEventListener("click", function () {
-        alertDiv.classList.remove("show");
-        setTimeout(function () {
-          alertDiv.remove();
-        }, 100);
+        // Validate form fields
+        if (validateForm()) {
+          // Send the form using EmailJS
+          emailjs.sendForm("service_ojjip7v", "template_3leo7w6", this).then(
+            function () {
+              console.log("SUCCESS!");
+              $("#successModal").modal("show");
+              resetForm(); // Reset form fields on success
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              showAlert("Oops! Something went wrong. Please try again later.", "danger");
+            }
+          );
+        }
       });
 
-      alertInner.appendChild(closeBtn);
-      alertDiv.appendChild(alertInner);
-      document.getElementById("contact-form").prepend(alertDiv);
-      setTimeout(function () {
-        alertDiv.classList.add("show");
-      }, 100);
-    }
+      // Function to validate form fields
+      function validateForm() {
+        var name = document.getElementById("username").value;
+        var email = document.getElementById("Email").value;
+        var contact = document.getElementById("contact").value;
+        var message = document.getElementById("txtarea").value;
+        // Check if name field is empty
+        if (name === "" || name === undefined) {
+          showAlert("Please enter your name.", "danger");
+          return false;
+        }
 
-    // Function to reset form fields
-    function resetForm() {
-      document.getElementById("contact-form").reset();
-    }
-  };
-</script>
+        // Check if email field is empty
+        if (email === "") {
+          showAlert("Please enter your email.", "danger");
+          return false;
+        }
+
+        // Check if email is valid using a regular expression
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          showAlert("Please enter a valid email address.", "danger");
+          return false;
+        }
+
+        // Check if contact number field is empty
+        if (contact === "") {
+          showAlert("Please enter your contact number.", "danger");
+          return false;
+        }
+
+        // Check if message field is empty
+        if (message === "") {
+          showAlert("Please enter your message.", "danger");
+          return false;
+        }
+
+        return true; // Form is valid
+      }
+
+      // Function to display Bootstrap alerts
+      function showAlert(message, type) {
+        var alertDiv = document.createElement("div");
+        alertDiv.classList.add("alert", "alert-" + type);
+        alertDiv.setAttribute("role", "alert");
+
+        var alertInner = document.createElement("div");
+        alertInner.classList.add("alert-inner");
+        alertInner.textContent = message;
+
+        var closeBtn = document.createElement("span");
+        closeBtn.innerHTML = "&times;";
+        closeBtn.classList.add("close-btn");
+        closeBtn.addEventListener("click", function () {
+          alertDiv.classList.remove("show");
+          setTimeout(function () {
+            alertDiv.remove();
+          }, 100);
+        });
+
+        alertInner.appendChild(closeBtn);
+        alertDiv.appendChild(alertInner);
+        document.getElementById("contact-form").prepend(alertDiv);
+        setTimeout(function () {
+          alertDiv.classList.add("show");
+        }, 100);
+      }
+
+      // Function to reset form fields
+      function resetForm() {
+        document.getElementById("contact-form").reset();
+      }
+    };
+  </script>
 </body>
 
 </html>
