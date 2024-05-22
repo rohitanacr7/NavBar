@@ -21,50 +21,20 @@
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ20L0HFR9"></script>
+  <!-- Google tag (gtag.js) -->l̥
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEGGNTM2KY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-HJ20L0HFR9');
+    gtag('config', 'G-JEGGNTM2KY');
   </script>
-  <script>
-    $(document).ready(function () {
-      // Get all the video iframes
-      var videoIframes = $('.video-iframe');
-
-      // Attach hover event handler to each iframe
-      videoIframes.hover(
-        function () {
-          // On hover, update the src attribute with a new link
-          var videoId = $(this).attr('id');
-          switch (videoId) {
-            case 'videoIframe0':
-              $(this).attr('src', 'https://player.vimeo.com/video/880447747?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-            case 'videoIframe1':
-              $(this).attr('src', 'https://player.vimeo.com/video/880927523?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-            case 'videoIframe2':
-              $(this).attr('src', 'https://player.vimeo.com/video/880446093?h=fc0fe55a7a&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-            case 'videoIframe3':
-              $(this).attr('src', 'https://player.vimeo.com/video/885907143?h=d4cf241e02&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-            case 'videoIframe4':
-              $(this).attr('src', 'https://player.vimeo.com/video/880817248?h=32baa1ae03&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-          }
-        },
-        function () {
-          // On mouseout, revert to the original src attribute
-          var originalSrc = $(this).attr('data-original-src');
-          $(this).attr('src', originalSrc);
-        }
-      );
-    });
+  <script type="text/javascript">
+    // Initialize EmailJS with your correct service ID
+    (function () {
+      emailjs.init("y46YPvd3ZlQtYWV1K");
+    })();
   </script>
 </head>
 
@@ -168,37 +138,41 @@
       <div class="featured-work">
         <h1 class="text-md-start helped-margin learn-text-bold">Featured Work</h1>
         <div class="row mt-5">
-          <div class="col-md-6 featured-work-videos-padding">
-            <div class="vidoe-responsive">
-              <iframe title="storyhumor-home-video"
-                src="https://player.vimeo.com/video/880927523?h=743be9eade&loop=1&muted=1&controls=0&background=1"
-                class="shadow video-iframe" id="videoIframe1"></iframe>
+          <div class="col-md-6">
+            <div class="image-container">
+              <img src="images/work/Works-1.jpg" alt="storyhumor PebbleBae"
+                class="img-fluid learn-img Featured-Hover" />
+              <div class="overlay learn-img"></div>
+              <div class="play-icon" data-bs-toggle="modal" data-bs-target="#Work1Modal"></div>
             </div>
             <p class="mt-2 fw-bold featured-work-text">PebbleBae</p>
           </div>
-          <div class="col-md-6 featured-work-videos-padding">
-            <div class="vidoe-responsive">
-              <iframe title="storyhumor-home-video"
-                src="https://player.vimeo.com/video/880446093?h=fc0fe55a7a&loop=1&muted=1&controls=0&background=1"
-                class="shadow video-iframe" id="videoIframe2"></iframe>
+          <div class="col-md-6">
+            <div class="image-container">
+              <img src="images/work/Works-2.png" alt="storyhumor Boat Watchface"
+                class="img-fluid learn-img Featured-Hover" />
+              <div class="overlay learn-img"></div>
+              <div class="play-icon" data-bs-toggle="modal" data-bs-target="#Work2Modal"></div>
             </div>
             <p class="mt-2 fw-bold featured-work-text">Boat Watchface</p>
           </div>
         </div>
         <div class="row mt-4 mb-5">
-          <div class="col-md-6 featured-work-videos-padding">
-            <div class="vidoe-responsive">
-              <iframe title="storyhumor-home-video"
-                src="https://player.vimeo.com/video/885907143?h=d4cf241e02&loop=1&muted=1&controls=0&background=1"
-                class="shadow video-iframe" id="videoIframe3"></iframe>
+          <div class="col-md-6">
+            <div class="image-container">
+              <img src="images/work/Works-3.jpg" alt="storyhumor National Epilepsy Day"
+                class="img-fluid learn-img Featured-Hover" />
+              <div class="overlay learn-img"></div>
+              <div class="play-icon" data-bs-toggle="modal" data-bs-target="#Work3Modal"></div>
             </div>
             <p class="mt-2 fw-bold featured-work-text">National Epilepsy Day</p>
           </div>
-          <div class="col-md-6 featured-work-videos-padding">
-            <div class="vidoe-responsive">
-              <iframe title="storyhumor-home-video"
-                src="https://player.vimeo.com/video/880817248?h=32baa1ae03&loop=1&muted=1&controls=0&background=1"
-                class="shadow video-iframe" id="videoIframe4"></iframe>
+          <div class="col-md-6">
+            <div class="image-container">
+              <img src="images/work/Works-12.jpg" alt="storyhumor Puma Shoes"
+                class="img-fluid learn-img Featured-Hover" />
+              <div class="overlay learn-img"></div>
+              <div class="play-icon" data-bs-toggle="modal" data-bs-target="#Work4Modal"></div>
             </div>
             <p class="mt-2 fw-bold featured-work-text">Puma Shoes</p>
           </div>
@@ -459,21 +433,17 @@
                 <p class="footer-para footer-margin-section-1">
                   hello@storyhumor.com
                 </p>
-                <p class="footer-para footer-margin-section-1 footer-address">
-                  10 Floor, Summit, Vibhuti Khand,
-                </p>
-                <p class="footer-para footer-address">Gomtinagar, Lucknow,</p>
-                <p class="footer-para footer-address">
-                  Uttar Pradesh, India. - 226501
-                </p>
+                <p class="footer-para footer-margin-section-1 footer-address">288, Munshiganj,</p>
+                <p class="footer-para footer-address">Amethi, Lucknow,</p>
+                <p class="footer-para footer-address">Uttar Pradesh 226501</p>
               </div>
-              <div class="col">
-                <p class="footer-para footer-margin-section-1">+91 7525853573</p>
+              <div class="col-12 col-md-6 col-md-6">
+                <p class="footer-para footer-margin-section-1">+91 8800610267</p>
                 <p class="footer-para footer-margin-section-1">
                   hello@storyhumor.com
                 </p>
                 <p class="footer-para footer-margin-section-1 footer-address">
-                  WeWork, 10th Floor Building 4, 
+                  WeWork, 10th Floor Building 4,
                 </p>
                 <p class="footer-para footer-address">Nesco IT Park, Goregaon (East), </p>
                 <p class="footer-para footer-address">
@@ -581,43 +551,84 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Get all the video iframes
-      var videoIframes = $('.video-iframe');
+  <!--Modals-->
+  <!--Modal 1-->
+  <div class="modal fade" id="Work1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><b>PebbleBae</b></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="vidoe-responsive">
+            <iframe title="storyhumor-home-video"
+              src="https://player.vimeo.com/video/880927523?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=1"
+              class="shadow video-iframe"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      // Attach hover event handler to each iframe
-      videoIframes.hover(
-        function () {
-          // On hover, update the src attribute with a new link
-          var videoId = $(this).attr('id');
-          switch (videoId) {
-            case 'videoIframe0':
-              $(this).attr('src', 'https://player.vimeo.com/video/880447747?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-            case 'videoIframe1':
-              $(this).attr('src', 'https://player.vimeo.com/video/880927523?h=743be9eade&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-            case 'videoIframe2':
-              $(this).attr('src', 'https://player.vimeo.com/video/880446093?h=fc0fe55a7a&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-            case 'videoIframe3':
-              $(this).attr('src', 'https://player.vimeo.com/video/885907143?h=d4cf241e02&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-            case 'videoIframe4':
-              $(this).attr('src', 'https://player.vimeo.com/video/880817248?h=32baa1ae03&muted=1&loop=1&controls=1&title=0&byline=0&background=0');
-              break;
-          }
-        },
-        function () {
-          // On mouseout, revert to the original src attribute
-          var originalSrc = $(this).attr('data-original-src');
-          $(this).attr('src', originalSrc);
-        }
-      );
-    });
-  </script>
+  <!--Modal 2-->
+  <div class="modal fade" id="Work2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><b>Boat Watchface</b></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="vidoe-responsive">
+            <iframe title="storyhumor-home-video"
+              src="https://player.vimeo.com/video/880446093?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=1"
+              class="shadow video-iframe"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal 3-->
+  <div class="modal fade" id="Work3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><b>National Epilepsy Day</b></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="vidoe-responsive">
+            <iframe title="storyhumor-home-video"
+              src="https://player.vimeo.com/video/885907143?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=1"
+              class="shadow video-iframe"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal 4-->
+  <div class="modal fade" id="Work4Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><b>Puma Shoes</b></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="vidoe-responsive">
+            <iframe title="storyhumor-home-video"
+              src="https://player.vimeo.com/video/880817248?h=d4cf241e02&autoplay=1&loop=1&muted=1&controls=1"
+              class="shadow video-iframe"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -625,12 +636,6 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    // Initialize EmailJS with your correct service ID
-    (function () {
-      emailjs.init("y46YPvd3ZlQtYWV1K");
-    })();
-  </script>
   <script type="text/javascript">
     window.onload = function () {
       // Attach a submit event listener to the form

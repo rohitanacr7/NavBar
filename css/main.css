@@ -739,6 +739,54 @@ ul {
     border: none !important;
 }
 
+.image-container {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) as needed */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/play.png');
+    background-size: cover;
+    z-index: 2; /* Ensure play button is above the overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for the play icon */
+  }
+  
+  .image-container:hover .play-icon {
+    opacity: 1; /* Show play button on hover */
+  }
+  
+  .Featured-Hover {
+    transition: transform 0.3s ease; /* Smooth transition for the image */
+  }
+  
+  .Featured-Hover:hover {
+    transform: scale(1.03); /* Increase size on hover */
+  }
+  
+  
+
+
 /* Extra-large screens (large desktops) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
 
