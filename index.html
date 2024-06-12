@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StoryHumor - Home</title>
+  <title>Story Humor - Home</title>
   <meta name="description"
     content="Creative animated videos for startups & agencies. Elevate your brand with captivating storytelling. Explore our portfolio for innovative animation solutions." />
   <meta name="keywords"
@@ -30,12 +30,78 @@
 
     gtag('config', 'G-JEGGNTM2KY');
   </script>
-  <script type="text/javascript">
-    // Initialize EmailJS with your correct service ID
-    (function () {
-      emailjs.init("y46YPvd3ZlQtYWV1K");
-    })();
-  </script>
+  <style>
+    #success-alert,
+    #contact-success-alert {
+      display: none;
+      /* Hide the alert by default */
+      position: fixed;
+      padding: 35px !important;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+
+    /* Custom styles for the modal */
+    .modal-header-custom {
+      background-color: #007bff;
+      color: white;
+      border-bottom: none;
+      text-align: center;
+      z-index: 99999 !important;
+    }
+
+    .modal-title-custom {
+      flex: 1;
+      font-weight: bold;
+      z-index: 99999 !important;
+    }
+
+    .btn-close-custom {
+      background-color: white;
+      border-radius: 50%;
+      padding: 0.5rem;
+    }
+
+    .modal-body-custom {
+      padding: 2rem;
+      background-color: #f8f9fa;
+      z-index: 99999 !important;
+    }
+
+    .modal-footer-custom {
+      background-color: #f8f9fa;
+      border-top: none;
+    }
+
+    .form-control-custom {
+      border-radius: 20px;
+      padding: 0.75rem 1.25rem;
+      z-index: 99999 !important;
+    }
+
+    .btn-custom {
+      background-color: #007bff;
+      border: none;
+      border-radius: 20px;
+      padding: 0.75rem 1.25rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .input-group-text-custom {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .input-group-custom {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
@@ -55,7 +121,7 @@
           <a href="./about.html">About</a>
         </li>
         <li>
-          <a href="./learn.html">Learn</a>
+          <a href="./blog.html">Blog</a>
         </li>
         <li>
           <a href="./contactus.html" class="link-contact rounded-pill">Contact</a>
@@ -96,10 +162,9 @@
       </div>
       <div class="col-12 high-res">
         <p class="text-center mt-5 container-padding header-para">
-          We are a Boutique Design & Animation Studio specialization in
-          crafting engaging video content for startups and agencies. Our
-          expertise lies in bringing captivating stories to life through
-          animation, catering to all stages of production.
+          We are a Boutique Design & Animation Studio specialized in crafting engaging Animated Explainer video content
+          for startups and agencies. Our expertise lies in bringing captivating stories to life through animation,
+          catering to all stages of production.
         </p>
       </div>
     </div>
@@ -140,41 +205,41 @@
         <div class="row mt-5">
           <div class="col-md-6">
             <div class="image-container">
-              <img src="images/work/Works-1.jpg" alt="storyhumor PebbleBae"
+              <img src="images/works/Award winning 2d Animated Video.jpg" alt="storyhumor PebbleBae"
                 class="img-fluid learn-img Featured-Hover" />
               <div class="overlay learn-img"></div>
               <div class="play-icon" data-bs-toggle="modal" data-bs-target="#Work1Modal"></div>
             </div>
-            <p class="mt-2 fw-bold featured-work-text">PebbleBae</p>
+            <p class="mt-2 fw-bold featured-work-text">Pebblebae - Award winning short film</p>
           </div>
           <div class="col-md-6">
             <div class="image-container">
-              <img src="images/work/Works-2.png" alt="storyhumor Boat Watchface"
+              <img src="images/works/Boat Animated Explainer Video.png" alt="storyhumor Boat Watchface"
                 class="img-fluid learn-img Featured-Hover" />
               <div class="overlay learn-img"></div>
               <div class="play-icon" data-bs-toggle="modal" data-bs-target="#Work2Modal"></div>
             </div>
-            <p class="mt-2 fw-bold featured-work-text">Boat Watchface</p>
+            <p class="mt-2 fw-bold featured-work-text">Boat Watchface - Animated Explainer Video</p>
           </div>
         </div>
         <div class="row mt-4 mb-5">
           <div class="col-md-6">
             <div class="image-container">
-              <img src="images/work/Works-3.jpg" alt="storyhumor National Epilepsy Day"
+              <img src="images/works/Epilepsy Animated Explainer Video.jpg" alt="storyhumor National Epilepsy Day"
                 class="img-fluid learn-img Featured-Hover" />
               <div class="overlay learn-img"></div>
               <div class="play-icon" data-bs-toggle="modal" data-bs-target="#Work3Modal"></div>
             </div>
-            <p class="mt-2 fw-bold featured-work-text">National Epilepsy Day</p>
+            <p class="mt-2 fw-bold featured-work-text">National Epilepsy Day- Animated Explainer Video</p>
           </div>
           <div class="col-md-6">
             <div class="image-container">
-              <img src="images/work/Works-12.jpg" alt="storyhumor Puma Shoes"
+              <img src="images/works/Puma 2d Animated Ad.jpg" alt="storyhumor Puma Shoes"
                 class="img-fluid learn-img Featured-Hover" />
               <div class="overlay learn-img"></div>
               <div class="play-icon" data-bs-toggle="modal" data-bs-target="#Work4Modal"></div>
             </div>
-            <p class="mt-2 fw-bold featured-work-text">Puma Shoes</p>
+            <p class="mt-2 fw-bold featured-work-text">Puma RS X Shoes Animation</p>
           </div>
           <div class="featured-all-projects d-flex align-items-end justify-content-end">
             <a href="./work.html" class="btn btn-outline-dark rounded-pill mt-5 pt-md-3 pb-md-3 ps-md-5 pe-md-5">
@@ -284,20 +349,23 @@
     </div>
     <div class="row container-padding">
       <div class="col-md-4">
-        <img src="images/Home-01.jpg" alt="storyhumor-home-learn-img" class="img-fluid learn-img" />
+        <img src="images/Best Explainer Video Company In Mumbai.jpg" alt="storyhumor-home-learn-img"
+          class="img-fluid learn-img" />
         <p class="learn-text">
           How video is the best way to explain your product in all the other
           media.
         </p>
       </div>
       <div class="col-md-4">
-        <img src="images/Home-02.jpg" alt="storyhumor-home-learn-img" class="img-fluid learn-img" />
+        <img src="images/Top Animated Explainer Video.jpg" alt="storyhumor-home-learn-img"
+          class="img-fluid learn-img" />
         <p class="learn-text">
           Why do you remember most of old TV commercials but not print ads?
         </p>
       </div>
       <div class="col-md-4">
-        <img src="images/Home-03.jpg" alt="storyhumor-home-learn-img" class="img-fluid learn-img" />
+        <img src="images/2d Animated Explainer Video Company.jpg" alt="storyhumor-home-learn-img"
+          class="img-fluid learn-img" />
         <p class="learn-text learn-last">
           How world’s most big brands are marketed by videos.
         </p>
@@ -369,7 +437,7 @@
       <h1 class="comments-text-bold">Let us know about your idea</h1>
       <hr />
       <br /><br />
-      <form id="contact-form">
+      <form id="contact-form" method="POST">
         <input type="hidden" name="contact_number" />
 
         <div class="row contactform">
@@ -429,7 +497,7 @@
           <div>
             <div class="row">
               <div class="col-12 col-md-6 col-md-6">
-                <p class="footer-para footer-margin-section-1">+91 7525853573</p>
+                <p class="footer-para footer-margin-section-1">+91 8800610267</p>
                 <p class="footer-para footer-margin-section-1">
                   hello@storyhumor.com
                 </p>
@@ -438,7 +506,7 @@
                 <p class="footer-para footer-address">Uttar Pradesh 226501</p>
               </div>
               <div class="col-12 col-md-6 col-md-6">
-                <p class="footer-para footer-margin-section-1">+91 8800610267</p>
+                <p class="footer-para footer-margin-section-1">+91 7525853573</p>
                 <p class="footer-para footer-margin-section-1">
                   hello@storyhumor.com
                 </p>
@@ -506,8 +574,8 @@
               </a>
             </li>
             <li class="footer-margin-section-3">
-              <a href="./learn.html" class="footer-para footer-link">
-                Learn
+              <a href="./blog.html" class="footer-para footer-link">
+                Blog
               </a>
             </li>
           </ul>
@@ -515,42 +583,6 @@
       </div>
     </div>
   </footer>
-  <!-- Success Modal -->
-  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
-          <h5 class="modal-title" id="successModalLabel">
-            <i class="bi bi-check-circle-fill"></i> Thank You!
-          </h5>
-          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p class="lead">Your message was sent successfully.</p>
-          <p>
-            We appreciate your interest and will get back to you as soon as
-            possible.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Error Modal -->
-  <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="errorModalLabel">
-            <i class="bi bi-exclamation-triangle-fill text-danger"></i> Error
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Oops! Something went wrong. Please try again later.
-        </div>
-      </div>
-    </div>
-  </div>
   <!--Modals-->
   <!--Modal 1-->
   <div class="modal fade" id="Work1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -628,6 +660,58 @@
     </div>
   </div>
 
+  <!-- Success Alert for Quick Call Modal -->
+  <div id="success-alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> Your message has been sent successfully.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <!-- Success Alert for Contact Form -->
+  <div id="contact-success-alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> Your idea has been sent successfully.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <div class="modal fade text-center" id="quickCallModal" tabindex="-1" aria-labelledby="quickCallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header modal-header-custom">
+          <h5 class="modal-title modal-title-custom" id="quickCallModalLabel">Let's have a quick call</h5>
+          <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <form method="POST" id="home-form">
+            <input type="hidden" name="access_key" value="076ec1c4-a4f5-46b0-b074-92b378ab353a">
+            <input type="hidden" name="subject" value="StoryHumor Notification">
+            <div class="mb-3">
+              <input type="text" class="form-control form-control-custom" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control form-control-custom" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control form-control-custom" name="home_companyname" id="companyName" placeholder="Company name">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control form-control-custom" name="home_message" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="mb-3">
+              <div class="input-group input-group-custom">
+                <span class="input-group-text input-group-text-custom">+91</span>
+                <input type="tel" class="form-control form-control-custom" name="home_phone" id="phone" placeholder="Mobile Number" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 btn-custom">Get an Instant Callback</button>
+          </form>
+        </div>
+        <div class="modal-footer modal-footer-custom text-center">
+          <small>We will only use your information to contact you and improve your experience. We don't keep data or spread spam.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script type="text/javascript" src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -636,103 +720,7 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    window.onload = function () {
-      // Attach a submit event listener to the form
-      document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault();
 
-        // Validate form fields
-        if (validateForm()) {
-          // Send the form using EmailJS
-          emailjs.sendForm("service_ojjip7v", "template_3leo7w6", this).then(
-            function () {
-              console.log("SUCCESS!");
-              $("#successModal").modal("show");
-              resetForm(); // Reset form fields on success
-            },
-            function (error) {
-              console.log("FAILED...", error);
-              showAlert("Oops! Something went wrong. Please try again later.", "danger");
-            }
-          );
-        }
-      });
-
-      // Function to validate form fields
-      function validateForm() {
-        var name = document.getElementById("username").value;
-        var email = document.getElementById("Email").value;
-        var contact = document.getElementById("contact").value;
-        var message = document.getElementById("txtarea").value;
-        // Check if name field is empty
-        if (name === "" || name === undefined) {
-          showAlert("Please enter your name.", "danger");
-          return false;
-        }
-
-        // Check if email field is empty
-        if (email === "") {
-          showAlert("Please enter your email.", "danger");
-          return false;
-        }
-
-        // Check if email is valid using a regular expression
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-          showAlert("Please enter a valid email address.", "danger");
-          return false;
-        }
-
-        // Check if contact number field is empty
-        if (contact === "") {
-          showAlert("Please enter your contact number.", "danger");
-          return false;
-        }
-
-        // Check if message field is empty
-        if (message === "") {
-          showAlert("Please enter your message.", "danger");
-          return false;
-        }
-
-        return true; // Form is valid
-      }
-
-      // Function to display Bootstrap alerts
-      function showAlert(message, type) {
-        var alertDiv = document.createElement("div");
-        alertDiv.classList.add("alert", "alert-" + type);
-        alertDiv.setAttribute("role", "alert");
-
-        var alertInner = document.createElement("div");
-        alertInner.classList.add("alert-inner");
-        alertInner.textContent = message;
-
-        var closeBtn = document.createElement("span");
-        closeBtn.innerHTML = "&times;";
-        closeBtn.classList.add("close-btn");
-        closeBtn.addEventListener("click", function () {
-          alertDiv.classList.remove("show");
-          setTimeout(function () {
-            alertDiv.remove();
-          }, 100);
-        });
-
-        alertInner.appendChild(closeBtn);
-        alertDiv.appendChild(alertInner);
-        document.getElementById("contact-form").prepend(alertDiv);
-        setTimeout(function () {
-          alertDiv.classList.add("show");
-        }, 100);
-      }
-
-      // Function to reset form fields
-      function resetForm() {
-        document.getElementById("contact-form").reset();
-      }
-    };
-  </script>
 </body>
 
 </html>

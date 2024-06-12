@@ -784,8 +784,135 @@ ul {
     transform: scale(1.03); /* Increase size on hover */
   }
   
-  
+  /* Custom styles for the modal */
+  .modal-header-custom {
+    background-color: #007bff;
+    color: white;
+    border-bottom: none;
+    text-align: center;
+    z-index: 99999 !important;
+  }
 
+  .modal-title-custom {
+    flex: 1;
+    font-weight: bold;
+    z-index: 99999 !important;
+  }
+
+  .btn-close-custom {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+
+  .modal-body-custom {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    z-index: 99999 !important;
+  }
+
+  .modal-footer-custom {
+    background-color: #f8f9fa;
+    border-top: none;
+  }
+
+  .form-control-custom {
+    border-radius: 20px;
+    padding: 0.75rem 1.25rem;
+    z-index: 99999 !important;
+  }
+
+  .btn-custom {
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .input-group-text-custom {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .input-group-custom {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  #success-alert {
+    display: none;
+    /* Hide the alert by default */
+    position: fixed;
+    padding: 35px !important;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  /* Custom styles for the modal */
+  .modal-header-custom {
+    background-color: #007bff;
+    color: white;
+    border-bottom: none;
+    text-align: center;
+    z-index: 99999 !important;
+  }
+
+  .modal-title-custom {
+    flex: 1;
+    font-weight: bold;
+    z-index: 99999 !important;
+  }
+
+  .btn-close-custom {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+
+  .modal-body-custom {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    z-index: 99999 !important;
+  }
+
+  .modal-footer-custom {
+    background-color: #f8f9fa;
+    border-top: none;
+  }
+
+  .form-control-custom {
+    border-radius: 20px;
+    padding: 0.75rem 1.25rem;
+    z-index: 99999 !important;
+  }
+
+  .btn-custom {
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .input-group-text-custom {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .input-group-custom {
+    border-radius: 20px;
+    overflow: hidden;
+  }
 
 /* Extra-large screens (large desktops) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
