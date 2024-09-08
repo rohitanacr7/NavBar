@@ -233,3 +233,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+//navbar
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  if (window.scrollY > 50) {
+    // Add class after 50px of scrolling
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
