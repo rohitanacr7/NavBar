@@ -2,24 +2,24 @@
 document.addEventListener("DOMContentLoaded", function () {
   const testimonials = [
     {
-      name: "Rishu Sharma",
+      name: "Frank",
       comment:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "I've been collaborating with Rishu for five years now. Initially, I worked with him from Singapore, and later I continued our partnership from Belgium. His keen sense of design adds a special flair to his animations, elevating them to another level. I can highly recommend him. Success with Story Humor Studio!",
     },
     {
-      name: "Omkar",
+      name: "Kristiina",
       comment:
-        "I love how user-friendly this video editing website is! It made editing my videos a breeze, even for someone like me who's not very tech-savvy.",
+        "Had a great help from Rishu and his colleagues. Beautiful work and easy to communicate.",
     },
     {
       name: "Rohit",
       comment:
-        "I've been using this video editing website for a while now, and I'm constantly impressed by the updates and new features they add. It's great to see a platform that keeps up.",
+        "Rishu is a talented professional who listens closely to feedback and delivers outstanding results. His animations have brought my projects to life in ways I couldn't have imagined!",
     },
     {
       name: "Manisha",
       comment:
-        "This video editing website has been a game-changer for my YouTube channel. The rendering speed is fantastic, and I appreciate the cloud storage for my projects",
+        "Rishu and his team did an excellent job on our animation project. The end result was exactly what we were hoping for, and the communication throughout was seamless.",
     },
   ];
 
