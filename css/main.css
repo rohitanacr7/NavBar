@@ -916,6 +916,60 @@ ul {
   overflow: hidden;
 }
 
+/* Cards */
+.card-container {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.card {
+  flex: 1 1 18rem; /* Flex-grow, flex-shrink, flex-basis to keep them uniform */
+  max-width: 18rem; /* Limit the card width */
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    max-width: 100%; /* Remove max-width constraint */
+  }
+}
+
 /* Extra-large screens (large desktops) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   /*--Home--*/
